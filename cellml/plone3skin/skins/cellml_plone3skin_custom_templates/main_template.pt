@@ -79,7 +79,14 @@
       Magic happens here.
       Determine which layout to use from the number of column slots filled.
       </tal:comment>
-      <div id="layoutOne">
+      <div id="layoutOne" 
+          tal:attributes="id python:{
+          (False,False):'layoutZero',
+          (True,False):'layoutFour',
+          (False,True):'layoutFour',
+          (True,True):'layoutOne',
+          }[(sl,sr)];">
+
       <div id="portal-columns" class="content">
 
         <tal:comment replace="nothing"> Start of main content block </tal:comment>

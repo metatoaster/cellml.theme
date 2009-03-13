@@ -64,6 +64,19 @@
 
 
 	/* 
+		Layout Zero: just one big main content area.
+	*/
+
+		#layoutZero #block1Wrapper {
+			float: left;
+			width: 100%;
+		}
+		
+		#layoutZero #block1 {
+			width: 100%;
+		}
+
+	/* 
 		Layout One: Main column left, two fixed width ancillary columns on right
 		Ref: Alex Robinson's 'One True Layout': http://www.positioniseverything.net/articles/onetruelayout/  
 	*/
@@ -84,7 +97,7 @@
 			width:220px;
 			/* border:1px solid red; */
 		}
-
+		
 		#layoutOne #block3 {
 			float: left;
 			margin-left: -220px;
@@ -156,7 +169,8 @@
 			margin-right: 320px;
 		}
 	
-		#layoutFour #block2 {
+		#layoutFour #block2 ,
+		#layoutFour #block3 {
 			width: 300px;
 			float: right;
 		}
