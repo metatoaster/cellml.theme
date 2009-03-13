@@ -66,8 +66,7 @@
   </head>
 
   <body tal:attributes="class string:${here/getSectionFromURL} template-${template/id};
-                        dir python:test(isRTL, 'rtl', 'ltr');
-                        id string:layoutFour;">
+                        dir python:test(isRTL, 'rtl', 'ltr')">
     <div id="visual-portal-wrapper">
 
       <div id="portal-top" i18n:domain="plone">
@@ -76,23 +75,17 @@
 
       <div class="visualClear" id="clear-space-before-wrapper-table"><!-- --></div>
 
-      <div id="portal-columns">
-       
-      
-            <tal:comment replace="nothing"> Start of the left column </tal:comment>
-            <div id="portal-column-one"
-                metal:define-slot="column_one_slot"
-                tal:condition="sl">
-              <div class="visualPadding">
-                <metal:portlets define-slot="portlets_one_slot">
-                  <tal:block replace="structure provider:plone.leftcolumn" />
-                </metal:portlets>
-                &nbsp;
-              </div>
-            </div>
-            <tal:comment replace="nothing"> End of the left column </tal:comment>
+      <tal:comment replace="nothing">
+      Magic happens here.
+      Determine which layout to use from the number of column slots filled.
+      </tal:comment>
+      <div id="layoutOne">
+      <div id="portal-columns" class="content">
 
-            <tal:comment replace="nothing"> Start of main content block </tal:comment>
+        <tal:comment replace="nothing"> Start of main content block </tal:comment>
+        <div id="block1Wrapper">
+          <div id="block1">
+
             <div id="portal-column-content"
                 tal:define="tabindex python:Iterator(mainSlot=False)">
 
@@ -149,12 +142,26 @@
 
               </metal:block>
             </div>
-            <tal:comment replace="nothing"> End of main content block </tal:comment>
+          </div>
+        </div>
+        <tal:comment replace="nothing"> End of main content block </tal:comment>
+      
+        <tal:comment replace="nothing"> Start of the left column </tal:comment>
+        <div id="block2" tal:condition="sl">
+            <div id="portal-column-one" metal:define-slot="column_one_slot">
+              <div class="visualPadding">
+                <metal:portlets define-slot="portlets_one_slot">
+                  <tal:block replace="structure provider:plone.leftcolumn" />
+                </metal:portlets>
+                &nbsp;
+              </div>
+            </div>
+        </div>
+        <tal:comment replace="nothing"> End of the left column </tal:comment>
 
-            <tal:comment replace="nothing"> Start of right column </tal:comment>
-            <div id="portal-column-two"
-                metal:define-slot="column_two_slot"
-                tal:condition="sr">
+        <tal:comment replace="nothing"> Start of right column </tal:comment>
+        <div id="block3" tal:condition="sr">
+            <div id="portal-column-two" metal:define-slot="column_two_slot">
               <div class="visualPadding">
                 <metal:portlets define-slot="portlets_two_slot">
                   <tal:block replace="structure provider:plone.rightcolumn" />
@@ -162,10 +169,13 @@
                 &nbsp;
               </div>
             </div>
-            <tal:comment replace="nothing"> End of the right column </tal:comment>
+        </div>
+        <tal:comment replace="nothing"> End of the right column </tal:comment>
           
       </div>
       <tal:comment replace="nothing"> end column wrapper </tal:comment>
+
+      </div>
 
       <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
       
