@@ -1,0 +1,136 @@
+/* - public.css - */
+/*
+** Plone style sheet - Public-facing Elements
+**
+** Style sheet documentation can be found at http://plone.org/documentation
+**
+** You should preferrably use ploneCustom.css to add your own CSS classes and to
+** customize your portal, as these are the base fundaments of Plone, and will
+** change and be refined in newer versions. Keeping your changes in
+** ploneCustom.css will make it easier to upgrade.
+**
+** Feel free to use whole or parts of this for your own designs, but give credit
+** where credit is due.
+**
+*/
+
+/*  (do not remove this :) */
+/*  (not this either :) */
+
+
+/* LiveSearch styles */
+.LSRes {
+    font-family:  "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    visibility: visible;
+    /*--- color: #436976; */
+    background-color: White;
+    vertical-align: middle;
+    display:block;
+    list-style-image: none;
+    list-style-type: none;
+    text-align: left;
+    min-width: 16.5em;
+    text-transform: none;
+    margin-left: 0;
+    line-height: 1.1em;
+}
+#LSHighlight,
+.LSHighlight {
+    background-color: #dee7ec;
+    border: 1px solid #8cacbb;
+    color: #436976;
+}
+.LSTable {
+    margin: 1em 0;
+}
+.LSRow {
+    border: 1px solid White;
+    white-space: normal;
+    padding:0;
+    margin: 0;
+    list-style-image: none;
+    list-style-type: none;
+}
+.LSRow a {
+    text-decoration: none;
+    font-weight:bold;
+    white-space:nowrap
+}
+.LSDescr {
+    color: #76797c;
+    text-transform: none;
+    padding-left:2.1em;
+    margin-top:-0.1em;
+}
+.LSResult {
+    position: relative;
+    display: block;
+    text-align: right;
+    padding-top: 5px;
+    margin: 0;
+    left: 3px;
+    z-index: 3;
+}
+.LSShadow {
+    position: relative;
+    text-align: right;
+}
+.livesearchContainer {
+    background-color: White;
+    margin-top: 0;
+    padding: 0 !important;
+    position: absolute !important;
+    right: 0px;
+    /* Currently exposes a rendering bug in Mozilla */
+    top: 0;
+    white-space: normal;
+    font-family:  "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    visibility: visible;
+    text-align: left;
+    /*-v-* color: #436976; */
+    color: #000;
+    /*-v-* border: 1px solid #8cacbb; */
+    border: 1px solid #000 !important;
+    width: 30em;
+    text-transform: none;
+}
+* html .livesearchContainer {
+    padding: 1px !important;
+    padding-top: 0 !important;
+    background-color: #8cacbb;
+    border: 0;
+}
+#livesearchLegend {
+    line-height: 1em;
+    margin-top: -2em;
+    margin-left: -0.1em;
+    /*-v- border: 1px solid #8cacbb; */
+    border: 1px solid #000 !important;
+    border-bottom: 0;
+}
+* html #livesearchLegend {
+    margin-top: -1.9em;
+    margin-left: -8px;
+    position: relative;
+}
+
+/* Workaround for Internet Explorer's broken z-index implementation */
+.LSIEFix {
+    background-color: White;
+    padding: 0.5em !important;
+    z-index: 20;
+}
+.LSBox {
+    clear: left;
+    float: right;
+    text-align: right;
+    padding-right: 1px;
+    display:block;
+}
+#LSNothingFound {
+    text-align: center;
+    padding: 2px;
+}
+.LSBox label {
+    font-weight: normal;
+}

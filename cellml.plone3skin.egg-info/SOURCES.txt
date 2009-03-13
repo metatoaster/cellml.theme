@@ -9,6 +9,7 @@ cellml.plone3skin.egg-info/dependency_links.txt
 cellml.plone3skin.egg-info/entry_points.txt
 cellml.plone3skin.egg-info/namespace_packages.txt
 cellml.plone3skin.egg-info/not-zip-safe
+cellml.plone3skin.egg-info/paster_plugins.txt
 cellml.plone3skin.egg-info/requires.txt
 cellml.plone3skin.egg-info/top_level.txt
 cellml/plone3skin/__init__.py
