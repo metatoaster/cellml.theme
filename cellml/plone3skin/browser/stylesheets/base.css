@@ -290,11 +290,11 @@
 	#CellMLLogo {
 		float:left;
 	}
-	
+
 	#portal-searchbox form  {
 		float:right;	
 		text-align:right;
-		width:432px;
+		width:auto;
 	}
 	
 	#portal-searchbox form fieldset {
