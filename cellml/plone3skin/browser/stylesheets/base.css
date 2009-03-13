@@ -26,7 +26,7 @@
 
 /* ---------------------- structure ---------------------- */
 
-	#layoutContainer {	
+	#visual-portal-wrapper {	
 	    margin:2em auto;
 		padding:0;
 		width:940px;
@@ -43,7 +43,7 @@
 		/* background:#f4f4f4 url(/templates/cellml/global/img/layout-grid.gif); */
 	}
 
-	#header {
+	#portal-top {
 		margin-top:0.75em;	
 	}
 
