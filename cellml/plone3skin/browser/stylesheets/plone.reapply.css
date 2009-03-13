@@ -139,13 +139,13 @@ dl.portletCalendar table a {
         display: block;
 	list-style-type: none;
 	position: relative;
-	margin-bottom: 1em;
-        margin-left: 0;
+        margin: 0;
         padding: 0;
         width: 100%;
         background-color: #333;
         border: 0;
         font-size: 0.9em;
+        margin-bottom: 1em;
 }
 
 #portal-column-content ul.contentViews li {
@@ -177,9 +177,13 @@ dl.portletCalendar table a {
 
 /* @group Content Actions */
 
+div.documentEditable {
+  width: 100%;
+}
+
 div.contentActions {
 	float: left;
-        background: #ccc;
+        background: #333;
         margin: -1em 0 1em;
         padding: 0;
         border: 0;
@@ -293,16 +297,15 @@ ul#contentActionMenus dl.activated dt a {
 	background: url(listBox-header-left.gif) no-repeat left top;
 	position: relative;
 	z-index: 1000;
-        width: 100%;
 }
 
 ul#contentActionMenus dl.activated dd {
 	display: block;
 	float: left;
-	text-align: left;
 	position: absolute;
 	right: 0;
-        width: 100%;
+        width: 150px;
+        overflow: hidden;
 }
 
 
@@ -322,11 +325,11 @@ ul#contentActionMenus dl.activated ul li {
 ul#contentActionMenus dl.activated ul li a {
         width: 100%;
 	display: block;
-	text-align: left;
 	text-decoration: none;
 	color: #ccc;
         padding: 0 5px;
         margin-left: -5px;
+	text-align: left;
 }
 
 ul#contentActionMenus dl.activated ul li a:hover {
