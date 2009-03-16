@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = open(os.path.join("cellml", "theme", "version.txt")).read(),
+version = open(os.path.join("cellml", "theme", "version.txt")).read()
 
 setup(name='cellml.theme',
       version=version,
