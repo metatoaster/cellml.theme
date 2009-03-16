@@ -1,0 +1,109 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="cellml.theme">
+
+    <!-- 'CellML Theme' Zope 3 browser layer
+      Register views, viewlets and resources for this layer to make sure
+      they only apply to the 'CellML Theme' theme.
+      You can also use this layer to override default Plone browser views
+      and viewlets only within the 'CellML Theme' theme.
+      -->
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="CellML Theme"
+        />
+
+    <!-- Viewlets registration -->
+<!-- EXAMPLE (UNCOMMENT TO MAKE AVAILABLE):
+     <browser:viewlet
+         name="cellml.someviewlet"
+         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+         class=".viewlets.SomeViewlet"
+         layer=".interfaces.IThemeSpecific"
+         permission="zope2.View"
+         />
+-->
+
+    <browser:viewlet
+        name="cellml.logo"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.CellMLLogoViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="cellml.search"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.CellMLSearchBoxViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="cellml.personal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.CellMLPersonalBarViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="cellml.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.CellMLGlobalSectionsViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="cellml.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IContentViews"
+        class=".viewlets.CellMLPathBarViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="cellml.footer"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        template="footer.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="cellml.site_actions"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        class="plone.app.layout.viewlets.common.SiteActionsViewlet"
+        permission="zope2.View"
+        />
+
+    <!-- Zope 3 browser resources -->
+
+    <!-- Resource directory for images
+      See cellml/theme/browser/images/README.txt
+      for more information about registering images as Zope 3 browser
+      resources.
+      -->
+    <browser:resourceDirectory
+        name="cellml.theme.images"
+        directory="images"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+    <!-- Resource directory for stylesheets
+      See cellml/theme/browser/stylesheets/README.txt
+      for more information about registering stylesheets as Zope 3 browser
+      resources.
+      -->
+    <browser:resourceDirectory
+        name="cellml.theme.stylesheets"
+        directory="stylesheets"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+</configure>

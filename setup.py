@@ -3,9 +3,9 @@ import os
 
 version = '0.0'
 
-setup(name='cellml.plone3skin',
+setup(name='cellml.theme',
       version=version,
-      description="The Official CellML theme for Plone 3.0",
+      description="CellML Theme",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
@@ -15,7 +15,7 @@ setup(name='cellml.plone3skin',
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='web zope plone theme',
-      author='CellML Team',
+      author='CellML Web Working Group',
       author_email='team@cellml.org',
       url='http://www.cellml.org/',
       license='GPL',
