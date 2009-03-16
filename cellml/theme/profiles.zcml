@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="cellml.theme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="CellML Theme"
+      directory="profiles/default"
+      description='The official theme for CellML Project website.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

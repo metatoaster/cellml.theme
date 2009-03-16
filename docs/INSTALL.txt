@@ -1,11 +1,11 @@
-cellml.plone3skin Installation
+cellml.theme Installation
 ==========================
 
-To install cellml.plone3skin into the global Python environment (or a workingenv),
+To install cellml.theme into the global Python environment (or a workingenv),
 using a traditional Zope 2 instance, you can do this:
 
  * When you're reading this you have probably already run 
-   ``easy_install cellml.plone3skin``. Find out how to install setuptools
+   ``easy_install cellml.theme``. Find out how to install setuptools
    (and EasyInstall) here:
    http://peak.telecommunity.com/DevCenter/EasyInstall
 
@@ -16,11 +16,11 @@ using a traditional Zope 2 instance, you can do this:
 
    into your Zope instance.
 
- * Create a file called ``cellml.plone3skin-configure.zcml`` in the
+ * Create a file called ``cellml.theme-configure.zcml`` in the
    ``/path/to/instance/etc/package-includes`` directory.  The file
    should only contain this::
 
-       <include package="cellml.plone3skin" />
+       <include package="cellml.theme" />
 
 .. _pythonproducts: http://plone.org/products/pythonproducts
 
@@ -28,13 +28,13 @@ using a traditional Zope 2 instance, you can do this:
 Alternatively, if you are using zc.buildout and the plone.recipe.zope2instance
 recipe to manage your project, you can do this:
 
- * Add ``cellml.plone3skin`` to the list of eggs to install, e.g.:
+ * Add ``cellml.theme`` to the list of eggs to install, e.g.:
  
     [buildout]
     ...
     eggs =
         ...
-        cellml.plone3skin
+        cellml.theme
         
   * Tell the plone.recipe.zope2instance recipe to install a ZCML slug:
   
@@ -42,7 +42,7 @@ recipe to manage your project, you can do this:
     recipe = plone.recipe.zope2instance
     ...
     zcml =
-        cellml.plone3skin
+        cellml.theme
         
   * Re-run buildout, e.g. with:
   
