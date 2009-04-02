@@ -1,7 +1,10 @@
+.gitignore
 MANIFEST.in
 README.txt
+cellml.theme-configure.zcml
 setup.cfg
 setup.py
+zopeskel.txt
 cellml/__init__.py
 cellml.theme.egg-info/PKG-INFO
 cellml.theme.egg-info/SOURCES.txt
@@ -65,3 +68,7 @@ cellml/theme/skins/cellml_theme_styles/base.css.dtml
 cellml/theme/skins/cellml_theme_styles/base_properties.props
 cellml/theme/skins/cellml_theme_styles/portlets.css.dtml
 cellml/theme/skins/cellml_theme_styles/public.css.dtml
+docs/HISTORY.txt
+docs/INSTALL.txt
+docs/LICENSE.GPL
+docs/LICENSE.txt
