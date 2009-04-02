@@ -306,9 +306,10 @@
 	}
 
 	#portal-searchbox form  {
+		margin-top:5em;
 		float:right;	
 		text-align:right;
-		width:auto;
+		width:432px;
 	}
 	
 	#portal-searchbox form fieldset {
