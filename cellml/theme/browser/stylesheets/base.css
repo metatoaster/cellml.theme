@@ -736,6 +736,18 @@
 	        background: #ce0026 url(++resource++cellml.theme.images/globalnav-hover.gif) no-repeat scroll center bottom;
 	}
 
+	/* these are entrapped inside the block2 and block3 which has fixed
+	 * width.  We remove the width restriction here.
+	 */
+
+	#portal-column-one {
+		width: 100%;
+	}
+
+	#portal-column-two {
+		width: 100%;
+	}
+
 	/* @end */
 
 	/* @group Content Actions */
