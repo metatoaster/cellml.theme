@@ -473,7 +473,14 @@
 	    margin-left: 0;
 	    line-height: 1.1em;
 	}
+
+	.LSBox {
+		float: right !important;
+	}
+
 	.LSResult {
+	    float: right !important;
+	    overflow: hidden;
 	    position: absolute;
 	        background-color: #fff;
 	        padding: 8px 0 12px;
@@ -806,26 +813,26 @@
 	ul#contentActionMenus li dt {
 		padding: 0;
 		margin: 0;
-	        background: #333 url(++resource++cellml.theme.images/globalnav-separator.gif) no-repeat scroll right bottom;
+		background: #333 url(++resource++cellml.theme.images/globalnav-separator.gif) no-repeat scroll right bottom;
 	}
 
 	ul#contentActionMenus li dt a {
 		display: block;
-	        color: #ccc;
+		color: #ccc;
 	}
 
 	ul#contentActionMenus li a img {
-			background-color: white;
-			width: 16px;
-			height: 16px;
+		background-color: white;
+		width: 16px;
+		height: 16px;
 		margin-top: -3px;
 	}
 
 	ul#contentActionMenus li dd.actionMenuContent img {
-			background-color: inherit;
-			margin-bottom: 0;
-			width: auto;
-			height: auto;
+		background-color: inherit;
+		margin-bottom: 0;
+		width: auto;
+		height: auto;
 		padding: 0;
 	}
 
