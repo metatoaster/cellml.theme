@@ -306,7 +306,8 @@
 	}
 
 	#portal-searchbox form  {
-		margin-top:5em;
+		clear: right;
+		margin-top:2.5em;
 		float:right;	
 		text-align:right;
 		width:432px;
