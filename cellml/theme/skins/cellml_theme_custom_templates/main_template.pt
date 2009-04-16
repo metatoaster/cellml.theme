@@ -85,7 +85,7 @@
           (True,False):'layoutFour',
           (False,True):'layoutFour',
           (True,True):'layoutOne',
-          }[(sl,sr)];">
+          }[(sl or request.get('sl', False),sr or request.get('sr', False))];">
 
       <div id="portal-columns" class="content">
 
@@ -154,8 +154,8 @@
         <tal:comment replace="nothing"> End of main content block </tal:comment>
       
         <tal:comment replace="nothing"> Start of the left column </tal:comment>
-        <div id="block2" tal:condition="sl">
-            <div id="portal-column-one" metal:define-slot="column_one_slot">
+        <div id="block2" tal:condition="sl" metal:define-slot="column_one_slot">
+            <div id="portal-column-one">
               <div class="visualPadding">
                 <metal:portlets define-slot="portlets_one_slot">
                   <tal:block replace="structure provider:plone.leftcolumn" />
@@ -167,8 +167,8 @@
         <tal:comment replace="nothing"> End of the left column </tal:comment>
 
         <tal:comment replace="nothing"> Start of right column </tal:comment>
-        <div id="block3" tal:condition="sr">
-            <div id="portal-column-two" metal:define-slot="column_two_slot">
+        <div id="block3" tal:condition="sr" metal:define-slot="column_two_slot">
+            <div id="portal-column-two">
               <div class="visualPadding">
                 <metal:portlets define-slot="portlets_two_slot">
                   <tal:block replace="structure provider:plone.rightcolumn" />
