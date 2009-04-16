@@ -245,6 +245,8 @@ dl.portletCalendar table a {
 }
 
 /* @group Content Views */
+/* This group is the bordered pane for the logged in users (or otherwise
+ * enabled because the view requires it for users not logged in). */
 
 #portal-column-content ul.contentViews {
     float: left;
@@ -283,18 +285,6 @@ dl.portletCalendar table a {
 #portal-column-content ul.contentViews li a:hover {
     color: #fff;
     background: #ce0026 url(++resource++cellml.theme.images/globalnav-hover.gif) no-repeat scroll center bottom;
-}
-
-/* these are entrapped inside the block2 and block3 which has fixed
- * width.  We remove the width restriction here.
- */
-
-#portal-column-one {
-    width: 100%;
-}
-
-#portal-column-two {
-    width: 100%;
 }
 
 /* @end */
@@ -472,7 +462,6 @@ ul#contentActionMenus li.actionSeparator a {
 
 /* @end */
 
-
 .documentEditable .documentContent {
     border: 1px solid #ccc;
 }
@@ -528,7 +517,22 @@ dl.error dd {
     background-color: #fd7;
 }
 
-/* overrides */
+/* Other overrides that are necessary due to the way this skin is built */
+
+/* these are entrapped inside the block2 and block3 which has fixed
+ * width.  We remove the width restriction here.
+ */
+
+#portal-column-one {
+    width: 100%;
+}
+
+#portal-column-two {
+    width: 100%;
+}
+
+/* Plone way of doing hidden structure, but this margin definition was
+ * overriden by Tripoli */
 
 .hiddenStructure {
     margin: -1px 0 0 -1px !important;
