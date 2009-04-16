@@ -23,27 +23,33 @@
       available keys and default values.
       -->
  <stylesheet title=""
-   id="++resource++cellml.theme.stylesheets/tripoli.base.css"
-   media="screen" rel="stylesheet" rendering="import"
-   cacheable="True" compression="safe" cookable="True"
-   enabled="1" expression=""/>
+    id="++resource++cellml.theme.stylesheets/tripoli.base.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression=""/>
 
  <stylesheet title=""
-   id="++resource++cellml.theme.stylesheets/plugins.tripoli.visual.css"
-   media="screen" rel="stylesheet" rendering="import"
-   cacheable="True" compression="safe" cookable="True"
-   enabled="1" expression=""/>
+    id="++resource++cellml.theme.stylesheets/plugins.tripoli.visual.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression=""/>
 
  <stylesheet title=""
-   id="++resource++cellml.theme.stylesheets/plugins.tripoli.type.css"
-   media="screen" rel="stylesheet" rendering="import"
-   cacheable="True" compression="safe" cookable="True"
-   enabled="1" expression=""/>
+    id="++resource++cellml.theme.stylesheets/plugins.tripoli.type.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression=""/>
 
  <stylesheet title=""
-   id="++resource++cellml.theme.stylesheets/base.css"
-   media="screen" rel="stylesheet" rendering="import"
-   cacheable="True" compression="safe" cookable="True"
-   enabled="1" expression=""/>
+    id="++resource++cellml.theme.stylesheets/base.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression=""/>
+
+ <stylesheet title=""
+    id="++resource++cellml.theme.stylesheets/plone.reapply.css"
+    media="screen" rel="stylesheet" rendering="import"
+    cacheable="True" compression="safe" cookable="True"
+    enabled="1" expression=""/>
 
 </object>
