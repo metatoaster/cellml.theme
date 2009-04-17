@@ -499,7 +499,7 @@ CONTENT */
 	padding-bottom:.8em;
 }
 
-.content ul ul,content ol ul,.content ul ol,content ol ol
+.content ul ul,.content ol ul,.content ul ol,.content ol ol
 {
 	margin-bottom:0;
 }
