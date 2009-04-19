@@ -1,0 +1,11 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="cellml.theme">
+
+  <utility
+      provides="zope.schema.interfaces.IVocabularyFactory"
+      component=".vocab.LayoutVocabFactory"
+      name="LayoutVocab"
+      />
+
+</configure>

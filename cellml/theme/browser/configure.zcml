@@ -15,16 +15,12 @@
         name="CellML Theme"
         />
 
-    <!-- Viewlets registration -->
-<!-- EXAMPLE (UNCOMMENT TO MAKE AVAILABLE):
-     <browser:viewlet
-         name="cellml.someviewlet"
-         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-         class=".viewlets.SomeViewlet"
-         layer=".interfaces.IThemeSpecific"
-         permission="zope2.View"
-         />
--->
+    <browser:page
+        for="*"
+        name="cellml_theme_layout"
+        class=".form.ThemeLayoutFormView"
+        permission="cmf.ModifyPortalContent"
+        />
 
     <browser:viewlet
         name="cellml.logo"

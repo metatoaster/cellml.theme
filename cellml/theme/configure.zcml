@@ -8,7 +8,9 @@
 
    <include package=".browser" />
 
+   <include file="adapter.zcml" />
    <include file="skins.zcml" />
    <include file="profiles.zcml" />
+   <include file="vocab.zcml" />
 
 </configure>

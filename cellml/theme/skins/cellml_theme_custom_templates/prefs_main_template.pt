@@ -4,7 +4,8 @@
     <metal:block fill-slot="top_slot"
                  tal:define="
                      dummy python:request.set('disable_border',1);
-                     dummy python:request.set('sl',1);
+                     dummy python:request.set('sl', 1);
+                     dummy python:request.set('sr', 0);
                  " />
 
     <metal:override fill-slot="column_one_slot">

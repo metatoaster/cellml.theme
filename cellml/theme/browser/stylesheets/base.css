@@ -94,7 +94,7 @@
 		#layoutOne #block2 {
 			float: left;
 			margin-left: -460px;
-			width:220px;
+			width: 220px;
 			/* border:1px solid red; */
 		}
 		
@@ -172,6 +172,48 @@
 		#layoutFour #block2 ,
 		#layoutFour #block3 {
 			width: 300px;
+			float: right;
+		}
+
+
+	/* 	
+		Layout Four Slim: Two columns 
+	*/
+	
+		#layoutFourSlim #block1Wrapper {
+			width: 100%;
+			float: left; 
+			margin-right: -240px;  
+		}
+	
+		#layoutFourSlim #block1 {
+			margin-right: 240px;
+		}
+	
+		#layoutFourSlim #block2 ,
+		#layoutFourSlim #block3 {
+			width: 220px;
+			float: right;
+		}
+
+
+	/* 	
+		Layout Four Slimmer: Two columns 
+	*/
+	
+		#layoutFourSlimmer #block1Wrapper {
+			width: 100%;
+			float: left; 
+			margin-right: -160px;  
+		}
+	
+		#layoutFourSlimmer #block1 {
+			margin-right: 160px;
+		}
+	
+		#layoutFourSlimmer #block2 ,
+		#layoutFourSlimmer #block3 {
+			width: 140px;
 			float: right;
 		}
 

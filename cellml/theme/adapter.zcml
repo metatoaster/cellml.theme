@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="cellml.theme">
+
+  <adapter
+      for="*"
+      provides=".interfaces.ILayoutSettings"
+      factory=".content.LayoutSettingsFactory"
+      name="CellMLThemeSettings"
+      />
+
+  <adapter
+      factory=".browser.view.Layout"
+      provides="zope.contentprovider.interfaces.IContentProvider"
+      for="* zope.publisher.interfaces.browser.IDefaultBrowserLayer *"
+      name="cellml.theme.layoutTheme"
+      />
+
+</configure>

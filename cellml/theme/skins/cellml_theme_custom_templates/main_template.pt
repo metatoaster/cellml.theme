@@ -79,13 +79,7 @@
       Magic happens here.
       Determine which layout to use from the number of column slots filled.
       </tal:comment>
-      <div id="layoutOne" 
-          tal:attributes="id python:{
-          (False,False):'layoutZero',
-          (True,False):'layoutFour',
-          (False,True):'layoutFour',
-          (True,True):'layoutOne',
-          }[(sl or request.get('sl', False),sr or request.get('sr', False))];">
+      <div tal:attributes="id provider:cellml.theme.layoutTheme">
 
       <div id="portal-columns" class="content">
 
