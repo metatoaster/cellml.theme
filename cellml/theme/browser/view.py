@@ -3,7 +3,7 @@ from zope.component import queryAdapter, queryMultiAdapter
 from zope.publisher import browser
 from zope.contentprovider.interfaces import IContentProvider
 
-from Acquisition import Explicit
+from Acquisition import aq_inner, aq_parent, Explicit
 from Products.CMFPlone.browser.interfaces import IPlone
 
 
@@ -63,7 +63,18 @@ class Layout(Explicit):
         if self.request.other.get('sr') is not None:
             sr = bool(self.request.other.get('sr'))
 
-        o = queryAdapter(self.context, name='CellMLThemeSettings')
+        context = aq_inner(self.context)
+        while context:
+            # see if parents have a specific layout set.
+            o = queryAdapter(context, name='CellMLThemeSettings')
+            if o.layout is not None:
+                break
+            context = aq_parent(context)
+
+        if not context:
+            # default is fine, too.
+            o = queryAdapter(self.context, name='CellMLThemeSettings')
+
         self.layout = o.get_layout(sl, sr)
 
         return self.layout
