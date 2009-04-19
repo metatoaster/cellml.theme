@@ -66,7 +66,12 @@ class Layout(Explicit):
         context = aq_inner(self.context)
         while context:
             # see if parents have a specific layout set.
-            o = queryAdapter(context, name='CellMLThemeSettings')
+            try:
+                o = queryAdapter(context, name='CellMLThemeSettings')
+            except:
+                context = None
+                break
+
             if o.layout is not None:
                 break
             context = aq_parent(context)
