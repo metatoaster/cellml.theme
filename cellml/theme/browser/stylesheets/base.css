@@ -27,7 +27,7 @@
 /* ---------------------- structure ---------------------- */
 
 	#visual-portal-wrapper {	
-	    margin:2em auto;
+		margin:2em auto;
 		padding:0;
 		width:940px;
 		background:#fff;
@@ -36,7 +36,7 @@
 		text-align:left;	
 		
 		/*
-	    min-width:800px;
+		min-width:800px;
 		max-width:940px;
 		*/
 		
