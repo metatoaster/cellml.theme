@@ -6,7 +6,7 @@ from zope.annotation.attribute import AttributeAnnotations
 from persistent import Persistent
 
 from cellml.theme.interfaces import ILayoutSettings
-from cellml.theme.vocab import default_value
+from cellml.theme.vocab import get_layout
 
 
 class LayoutSettings(Persistent):
@@ -24,10 +24,7 @@ class LayoutSettings(Persistent):
         Returns the new URI to the model, given the old model name.
         """
 
-        try:
-            leftcolumn, rightcolumn, bothcolumns = self.layout
-        except:
-            leftcolumn, rightcolumn, bothcolumns = default_value
+        leftcolumn, rightcolumn, bothcolumns = get_layout(self.layout)
 
         # a simple truth table to figure this out.
         return {

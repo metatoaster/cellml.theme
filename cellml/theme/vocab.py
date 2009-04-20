@@ -4,27 +4,35 @@ from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
 # The values could potentially be user configurable, but this feature
 # will not be used in this template as they are specifically defined.
-# 
-# First value in this tuple is the user description, the second value 
-# is a tuple describing the combination for columns in the order of 
-# (left, right, both), or the layout that will achieve the intended 
-# style described by the label.
+# First value is the key, second value is the description.
 values = (
-    (u'Both columns equal width (220px).', 
-        (u'layoutFourSlim', u'layoutFourSlim', u'layoutOne',),),
-    (u'Slim left, wide right (140px, 300px)', 
-        (u'layoutFourSlimmer', u'layoutFour', u'layoutFive',),),
-    (u'Wide left, slim right (300px, 140px)', 
-        (u'layoutFour', u'layoutFourSlimmer', u'layoutTwo',),),
+    (1, u'Both columns equal width (220px)'),
+    (2, u'Slim left, wide right (140px, 300px)'), 
+    (3, u'Wide left, slim right (300px, 140px)'), 
 )
-default_value = values[0][1]
+
+# The index would be a dict with key from the first element of the 
+# values from above, and the value will be a tuple for the styles to
+# be applied if there are only left, right or both columns visible in
+# the view.
+index = {
+    1: (u'layoutFourSlim', u'layoutFourSlim', u'layoutOne',),
+    2: (u'layoutFourSlimmer', u'layoutFour', u'layoutFive',),
+    3: (u'layoutFour', u'layoutFourSlimmer', u'layoutTwo',),
+}
+default_value = index[1]
+
+def get_layout(i):
+    # XXX this method should probably belong in a util method, along
+    # with values above.
+    return index.get(i, default_value)
 
 
 class LayoutVocab(SimpleVocabulary):
 
     def __init__(self, context):
         self.context = context
-        terms = [SimpleTerm(i[1], title=i[0]) for i in values]
+        terms = [SimpleTerm(i[0], title=i[1]) for i in values]
         super(LayoutVocab, self).__init__(terms)
 
 def LayoutVocabFactory(context):
