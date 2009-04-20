@@ -26,6 +26,9 @@ setup(name='cellml.theme',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'z3c.form',
+          'plone.app.z3cform>=0.4',
+          'plone.z3cform>=0.5',
       ],
       entry_points="""
       # -*- Entry points: -*-

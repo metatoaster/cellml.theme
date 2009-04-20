@@ -6,6 +6,7 @@
 
    <five:registerPackage package="." initialize=".initialize" />
 
+   <include package="plone.z3cform" />
    <include package=".browser" />
 
    <include file="adapter.zcml" />
