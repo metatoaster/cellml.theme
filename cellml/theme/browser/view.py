@@ -76,22 +76,21 @@ class Layout(Explicit):
 
         sl, sr = self.get_slots()
         context = aq_inner(self.context)
-        while context:
+        o = None
+        while context is not None:
             # see if parents have a specific layout set.
             try:
                 o = queryAdapter(context, name='CellMLThemeSettings')
+                if o.layout is not None:
+                    # we have layout, we are done.
+                    break
             except:
-                context = None
-                break
-
-            if o.layout is not None:
-                break
+                pass
             context = aq_parent(context)
 
-        if not context:
-            # default is fine, too.
-            o = queryAdapter(self.context, name='CellMLThemeSettings')
+        if not o:
+            # We cannot find the answer.
+            return None
 
         self.layout = o.get_layout(sl, sr)
-
         return self.layout
