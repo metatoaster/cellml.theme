@@ -35,6 +35,17 @@ class LayoutVocab(SimpleVocabulary):
         terms = [SimpleTerm(i[0], title=i[1]) for i in values]
         super(LayoutVocab, self).__init__(terms)
 
+    def getTerm(self, value):
+        """\
+        An upgrade or change to the values above may break this, so we
+        need to allow all terms.
+        """
+
+        try:
+            return super(LayoutVocab, self).getTerm(value)
+        except LookupError:
+            return SimpleTerm(value)
+
 def LayoutVocabFactory(context):
     return LayoutVocab(context)
 
