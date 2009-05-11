@@ -1,1 +1,4 @@
 setuptools
+z3c.form
+plone.app.z3cform>=0.4
+plone.z3cform>=0.5
