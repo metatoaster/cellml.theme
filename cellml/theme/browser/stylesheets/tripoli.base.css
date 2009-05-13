@@ -131,7 +131,7 @@ tr,th,td
 	border:none;
 }
 
-table[border],.content table[border]
+table[border],.documentContent table[border]
 {
 	border-collapse:separate;
 	border-spacing:0;
@@ -157,14 +157,9 @@ blink
 _______________________________
 GENERAL */
 
-html
-{
-	font-size:125%;
-}
-
 body
 {
-	font-size:50%;
+	font-size:62.5%;
 }
 
 a
@@ -327,55 +322,55 @@ input[type='hidden']
 _______________________________
 CONTENT */
 
-.content
+.documentContent
 {
-	font-size:1.2em;
+	font-size:1.0em;
 	line-height:1.6em;
 }
 
-.content h1
+.documentContent h1
 {
 	font-size:1.6em;
 	line-height:1;
 	margin:1em 0 .5em;
 }
 
-.content h2
+.documentContent h2
 {
 	font-size:1.5em;
 	line-height:1;
 	margin:1.07em 0 .535em;
 }
 
-.content h3
+.documentContent h3
 {
 	font-size:1.4em;
 	line-height:1;
 	margin:1.14em 0 .57em;
 }
 
-.content h4
+.documentContent h4
 {
 	font-size:1.3em;
 	line-height:1;
 	margin:1.23em 0 .615em;
 }
 
-.content h5
+.documentContent h5
 {
 	font-size:1.2em;
 	line-height:1;
 	margin:1.33em 0 .67em;
 }
 
-.content h6
+.documentContent h6
 {
 	font-size:1em;
 	line-height:1;
 	margin:1.6em 0 .8em;
 }
 
-.content hr
+.documentContent hr
 {
 	display:block;
 	background:black;
@@ -385,32 +380,32 @@ CONTENT */
 	border:none;
 }
 
-.content ul
+.documentContent ul
 {
 	list-style:disc outside;
 }
 
-.content ol
+.documentContent ol
 {
 	list-style:decimal outside;
 }
 
-.content table
+.documentContent table
 {
 	border-collapse:collapse;
 }
 
-.content hr,.content p,.content ul,.content ol,.content dl,.content pre, .content address,.content table,.content form
+.documentContent hr,.documentContent p,.documentContent ul,.documentContent ol,.documentContent dl,.documentContent pre, .documentContent address,.documentContent table,.documentContent form
 {
 	margin-bottom:1.6em;
 }
 
-.content p+p
+.documentContent p+p
 {
 	margin-top:-.8em;
 }
 
-.content fieldset
+.documentContent fieldset
 {
 	margin:1.6em 0;
 	padding:1.6em;
@@ -418,7 +413,7 @@ CONTENT */
 
 /* \*/
 
-.content legend
+.documentContent legend
 {
 	padding-left:.8em;
 	padding-right:.8em;
@@ -428,78 +423,78 @@ CONTENT */
 
 @media all and (min-width: 0px) /* for Opera 8 */
 { 
-	.content legend
+	.documentContent legend
 	{
 		margin-bottom:1.6em;
 	}
-	.content fieldset
+	.documentContent fieldset
 	{
 		margin-top:0;
 	}
-	.content[class^='content'] fieldset
+	.documentContent[class^='content'] fieldset
 	{
 		margin-top:1.6em;
 	}
 }
 
-.content fieldset>*:first-child
+.documentContent fieldset>*:first-child
 {
 	margin-top:0;
 }
 
-.content textarea,.content input[type='text']
+.documentContent textarea,.documentContent input[type='text']
 {
 	padding:.1em .2em;
 }
 
-.content input
+.documentContent input
 {
 	padding:.2em .1em;
 }
 
-.content select
+.documentContent select
 {
 	padding:.2em .1em 0;
 }
 
-.content select[multiple]
+.documentContent select[multiple]
 {
 	margin-bottom:.8em;
 }
 
-.content option
+.documentContent option
 {
 	padding:0 .4em .1em;
 }
 
-.content button
+.documentContent button
 {
 	padding:.3em .5em;
 }
 
-.content input[type='radio']
+.documentContent input[type='radio']
 {
 	position:relative;
 	bottom:-.2em;
 }
 
-.content dt
+.documentContent dt
 {
 	margin-top:.8em;
 	margin-bottom:.4em;
 }
 
-.content ul,.content ol
+.documentContent ul,.documentContent ol
 {
 	margin-left:2.2em;
 }
 
-.content caption,.content form div
+.documentContent caption,.documentContent form div
 {
 	padding-bottom:.8em;
 }
 
-.content ul ul,.content ol ul,.content ul ol,.content ol ol
+.documentContent ul ul,.documentContent ol ul,.documentContent ul ol,.documentContent ol ol
 {
 	margin-bottom:0;
 }
