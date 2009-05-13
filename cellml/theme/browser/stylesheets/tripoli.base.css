@@ -322,7 +322,7 @@ input[type='hidden']
 _______________________________
 CONTENT */
 
-.documentContent
+.documentContent, .portlets-manager, .portletWrapper
 {
 	font-size:1.0em;
 	line-height:1.6em;
@@ -497,6 +497,14 @@ CONTENT */
 .documentContent ul ul,.documentContent ol ul,.documentContent ul ol,.documentContent ol ol
 {
 	margin-bottom:0;
+}
+
+.portletHeader {
+	font-size:1.3em;
+	margin:1.23em 0 0.615em;
+	border-top:1px solid #666666;
+	color:#666666;
+	padding-top:0.5em;
 }
 
 /*

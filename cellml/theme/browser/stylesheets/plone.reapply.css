@@ -538,6 +538,17 @@ dl.error dd {
 .hiddenStructure {
     margin: -1px 0 0 -1px !important;
 }
+
+.image-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.image-right {
+    float: right;
+    margin-left: 1em;
+}
+
 /*
 _______________________________
 END */
