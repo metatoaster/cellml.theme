@@ -189,6 +189,14 @@
              Manage portlets
           </a>
       </div>
+      <div tal:define="context_state context/@@plone_context_state;"
+            tal:condition="python:checkPermission('Modify portal content', context)">
+          <a class="manageCellMLThemeLayout"
+             tal:attributes="href string:${context_state/canonical_object_url}/@@cellml_theme_layout"
+             i18n:translate="cellml_theme_layout">
+             CellML Theme Layout
+          </a>
+      </div>
 
       <metal:block i18n:domain="plone">
 
