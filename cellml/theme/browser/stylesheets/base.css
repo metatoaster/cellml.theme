@@ -7,18 +7,18 @@
 
 /* ---------------------- core ---------------------- */
 
-	body, html {			
-		color:#222;
-		font-family:Verdana, Arial, Helvetica, sans-serif;	
-		/* background:#f4f4f4 url(/templates/cellml/global/img/cellmlbkgrd.gif) center repeat-y; */
-		background:#f4f4f4;
-		/* background:#444444; */
-		background:#fff;
-	}
-	
-	html>body {	
-	
-	}
+body, html {			
+    color: #222;
+    font-family: Verdana, Arial, Helvetica, sans-serif;	
+    /* background: #f4f4f4 url(background.gif) center repeat-y; */
+    background: #f4f4f4;
+    /* background: #444444; */
+    background: #fff;
+}
+
+html>body {	
+
+}
 
 /* ---------------------- END core ---------------------- */
 
@@ -26,256 +26,254 @@
 
 /* ---------------------- structure ---------------------- */
 
-	#visual-portal-wrapper {	
-		margin:2em auto;
-		padding:0;
-		width:940px;
-		background:#fff;
-		/* border-top: 1px solid #CE0227; */
-		border-top: 1px solid #ccc;
-		text-align:left;	
-		
-		/*
-		min-width:800px;
-		max-width:940px;
-		*/
-		
-		/* background:#f4f4f4 url(/templates/cellml/global/img/layout-grid.gif); */
-	}
+#visual-portal-wrapper {	
+    margin: 2em auto;
+    padding: 0;
+    width: 940px;
+    background: #fff;
+    /* border-top: 1px solid #CE0227; */
+    border-top: 1px solid #ccc;
+    text-align: left;	
+    
+    /*
+    min-width: 800px;
+    max-width: 940px;
+    */
+    
+    /* background: #f4f4f4 url(/templates/cellml/global/img/layout-grid.gif); */
+}
 
-	#portal-top {
-		margin-top:0.75em;	
-	}
+#portal-top {
+    margin-top: 0.75em;	
+}
 
-	#blockContainer {	
-		background-color:#fff;
-		background:none;
-	}	
+#blockContainer {	
+    background-color: #fff;
+    background: none;
+}	
 
-	/*
-	
-		Grid information
-		12 (60px) columns with 11 gutters of 20px each and two margins of 10px
-		
-		Home page: 			LayoutOne - 3-2-2 grid units	- 412px + 268px + 268px = 988px
-		Secondary page: 	LayoutTwo - 4-2 grid units		- 660px + 330px = 990px	
-		
-	*/
+/*
+  Grid information
+  12 (60px) columns with 11 gutters of 20px each and two margins of 10px
+  
+  Home page: LayoutOne - 3-2-2 grid units - 412px + 268px + 268px = 988px
+  Secondary page: LayoutTwo - 4-2 grid units - 660px + 330px = 990px	
+*/
 
 
-	/* 
-		Layout Zero: just one big main content area.
-	*/
+/* 
+  Layout Zero: just one big main content area.
+*/
 
-		#layoutZero #block1Wrapper {
-			float: left;
-			width: 100%;
-		}
-		
-		#layoutZero #block1 {
-			width: 100%;
-		}
+#layoutZero #block1Wrapper {
+    float: left;
+    width: 100%;
+}
 
-	/* 
-		Layout One: Main column left, two fixed width ancillary columns on right
-		Ref: Alex Robinson's 'One True Layout': http://www.positioniseverything.net/articles/onetruelayout/  
-	*/
+#layoutZero #block1 {
+    width: 100%;
+}
 
-		#layoutOne #block1Wrapper {
-			float: left;
-			width: 100%;
-		}
-		
-		#layoutOne #block1 {
-			margin-right: 480px;
-			/* border:1px solid green; */
-		}
-		
-		#layoutOne #block2 {
-			float: left;
-			margin-left: -460px;
-			width: 220px;
-			/* border:1px solid red; */
-		}
-		
-		#layoutOne #block3 {
-			float: left;
-			margin-left: -220px;
-			width: 220px;
-			/* border:1px solid blue; */
-		}
+/* 
+  Layout One: Main column left, two fixed width ancillary columns on right
+  Ref: Alex Robinson's 'One True Layout': http://www.positioniseverything.net/articles/onetruelayout/  
+*/
 
+#layoutOne #block1Wrapper {
+    float: left;
+    width: 100%;
+}
 
-	/* 
-		Layout Two: Main column left, two fixed width ancillary columns on right
-	*/
+#layoutOne #block1 {
+    margin-right: 480px;
+    /* border: 1px solid green; */
+}
 
-		#layoutTwo #block1Wrapper {
-			float: left;
-			width: 100%;
-		}
-		
-		#layoutTwo #block1 {
-			margin-right: 480px;
-			/* border:1px solid green; */
-		}
-		
-		#layoutTwo #block2 {
-			float: left;
-			margin-left: -460px;
-			width:300px; 
-			/* border:1px solid red; */
-		}
+#layoutOne #block2 {
+    float: left;
+    margin-left: -460px;
+    width: 220px;
+    /* border: 1px solid red; */
+}
 
-		#layoutTwo #block3 {
-			float: left;
-			margin-left: -140px;
-			width: 140px; 
-			/* border:1px solid blue; */
-		}
-
-	/* 	
-		Layout Three: Two columns
-		Ref: Ryan Brill: http://www.alistapart.com/articles/negativemargins 
-	*/
-	
-		#layoutThree #block1Wrapper {
-			width: 100%;
-			float: left; 
-			margin-right: -480px;  
-		}
-	
-		#layoutThree #block1 {
-			margin-right: 480px;
-		}
-	
-		#layoutThree #block2 {
-			width: 460px;
-			float: right;
-		}
+#layoutOne #block3 {
+    float: left;
+    margin-left: -220px;
+    width: 220px;
+    /* border: 1px solid blue; */
+}
 
 
-	/* 	
-		Layout Four: Two columns 
-	*/
-	
-		#layoutFour #block1Wrapper {
-			width: 100%;
-			float: left; 
-			margin-right: -320px;  
-		}
-	
-		#layoutFour #block1 {
-			margin-right: 320px;
-		}
-	
-		#layoutFour #block2 ,
-		#layoutFour #block3 {
-			width: 300px;
-			float: right;
-		}
+/* 
+  Layout Two: Main column left, two fixed width ancillary columns on right
+*/
+
+#layoutTwo #block1Wrapper {
+    float: left;
+    width: 100%;
+}
+
+#layoutTwo #block1 {
+    margin-right: 480px;
+    /* border: 1px solid green; */
+}
+
+#layoutTwo #block2 {
+    float: left;
+    margin-left: -460px;
+    width: 300px; 
+    /* border: 1px solid red; */
+}
+
+#layoutTwo #block3 {
+    float: left;
+    margin-left: -140px;
+    width: 140px; 
+    /* border: 1px solid blue; */
+}
+
+/* 	
+  Layout Three: Two columns
+  Ref: Ryan Brill: http://www.alistapart.com/articles/negativemargins 
+*/
+
+#layoutThree #block1Wrapper {
+    width: 100%;
+    float: left; 
+    margin-right: -480px;  
+}
+
+#layoutThree #block1 {
+    margin-right: 480px;
+}
+
+#layoutThree #block2 {
+    width: 460px;
+    float: right;
+}
 
 
-	/* 	
-		Layout Four Slim: Two columns 
-	*/
-	
-		#layoutFourSlim #block1Wrapper {
-			width: 100%;
-			float: left; 
-			margin-right: -240px;  
-		}
-	
-		#layoutFourSlim #block1 {
-			margin-right: 240px;
-		}
-	
-		#layoutFourSlim #block2 ,
-		#layoutFourSlim #block3 {
-			width: 220px;
-			float: right;
-		}
+/* 	
+Layout Four: Two columns 
+*/
+
+#layoutFour #block1Wrapper {
+    width: 100%;
+    float: left; 
+    margin-right: -320px;  
+}
+
+#layoutFour #block1 {
+    margin-right: 320px;
+}
+
+#layoutFour #block2 ,
+#layoutFour #block3 {
+    width: 300px;
+    float: right;
+}
 
 
-	/* 	
-		Layout Four Slimmer: Two columns 
-	*/
-	
-		#layoutFourSlimmer #block1Wrapper {
-			width: 100%;
-			float: left; 
-			margin-right: -160px;  
-		}
-	
-		#layoutFourSlimmer #block1 {
-			margin-right: 160px;
-		}
-	
-		#layoutFourSlimmer #block2 ,
-		#layoutFourSlimmer #block3 {
-			width: 140px;
-			float: right;
-		}
+/* 	
+  Layout Four Slim: Two columns 
+*/
+
+#layoutFourSlim #block1Wrapper {
+    width: 100%;
+    float: left; 
+    margin-right: -240px;  
+}
+
+#layoutFourSlim #block1 {
+    margin-right: 240px;
+}
+
+#layoutFourSlim #block2 ,
+#layoutFourSlim #block3 {
+    width: 220px;
+    float: right;
+}
 
 
-	/* 
-		Layout Five: Main column left, two fixed width ancillary columns on right
-	*/
+/* 	
+  Layout Four Slimmer: Two columns 
+*/
 
-		#layoutFive #block1Wrapper {
-			float: left;
-			width: 100%;
-		}
-		
-		#layoutFive #block1 {
-			margin-right: 480px;
-			/* border:1px solid green; */
-		}
-		
-		#layoutFive #block2 {
-			float: left;
-			margin-left: -460px;
-			width:140px; 
-			/* border:1px solid red; */
-		}
+#layoutFourSlimmer #block1Wrapper {
+    width: 100%;
+    float: left; 
+    margin-right: -160px;  
+}
 
-		#layoutFive #block3 {
-			float: left;
-			margin-left: -300px;
-			width: 300px; 
-			/* border:1px solid blue; */
-		}
-		
+#layoutFourSlimmer #block1 {
+    margin-right: 160px;
+}
 
-	
-	/* End Layout Three */
+#layoutFourSlimmer #block2 ,
+#layoutFourSlimmer #block3 {
+    width: 140px;
+    float: right;
+}
 
-	
-	#footer {
-		padding: 1em 0;
-		border-top:1px solid #ccc;
-		background-color:#fff;		
-	}
+
+/* 
+  Layout Five: Main column left, two fixed width ancillary columns on right
+*/
+
+#layoutFive #block1Wrapper {
+    float: left;
+    width: 100%;
+}
+
+#layoutFive #block1 {
+    margin-right: 480px;
+    /* border: 1px solid green; */
+}
+
+#layoutFive #block2 {
+    float: left;
+    margin-left: -460px;
+    width: 140px; 
+    /* border: 1px solid red; */
+}
+
+#layoutFive #block3 {
+    float: left;
+    margin-left: -300px;
+    width: 300px; 
+    /* border: 1px solid blue; */
+}
+
+
+
+/* End Layout Three */
+
+
+#footer {
+    padding: 1em 0;
+    border-top: 1px solid #ccc;
+    background-color: #fff;		
+}
 
 .homeTopics {
-	border-top:5px solid #666;
-	border-top:5px solid #CE0026;
-	
+    border-top: 5px solid #666;
+    border-top: 5px solid #CE0026;
+    
 }
 
 .htRowA h2,
 .htRowB h2 {
-	margin-top:0.5em;
+    margin-top: 0.5em;
 }
 
 .htRowA {
-	float:left;
-	width:220px;
+    float: left;
+    width: 220px;
 }
 
 .htRowB {
-	float:right;
-	width:220px;
+    float: right;
+    width: 220px;
 }
 
 /* ---------------------- END structure ---------------------- */
@@ -284,31 +282,31 @@
 
 /* ---------------------- helpers ---------------------- */
 
-	/* Helper classes */
-	.clearfix:after {
-	    content: ".";
-	    display: block;
-	    clear: both;
-	    visibility: hidden;
-	    line-height: 0;
-	    height: 0;
-	}
+/* Helper classes */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
 
-	.clearfix {
-	    display: inline-block;
-	}
+.clearfix {
+    display: inline-block;
+}
 
-	html[xmlns] .clearfix {
-	    display: block;
-	}
+html[xmlns] .clearfix {
+    display: block;
+}
 
-	* html .clearfix {
-	    height: 1%;
-	}
+* html .clearfix {
+    height: 1%;
+}
 
-	.hide { 
-		display:none; 
-	}
+.hide { 
+    display: none; 
+}
 
 /* ---------------------- END helpers ---------------------- */
 
@@ -316,24 +314,21 @@
 
 /* ---------------------- secondary typography: content, lists and links ---------------------- */
 
-	.content { 
-		font-size:1.1em;
-	}
-	
-	
+.content { 
+    font-size: 1.1em;
+}
 
-	
-	.sideTitle { 
-		border-top:1px solid #666;
-		padding-top:0.5em;
-		color:#666;
-	}
-	
-	ul.sideList { 
-		list-style:none;
-		margin:0;
-		padding:0;
-	}
+.sideTitle { 
+    border-top: 1px solid #666;
+    padding-top: 0.5em;
+    color: #666;
+}
+
+ul.sideList { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 
 /* ---------------------- END secondary typography: content, lists and links ---------------------- */
@@ -342,154 +337,154 @@
 
 
 /* ---------------------- Brand, navigation, sidebar, footer styles ---------------------- */
-	
-	#CellMLLogo {
-		float:left;
-	}
 
-	#portal-searchbox form  {
-		clear: right;
-		margin-top:2.5em;
-		float:right;	
-		text-align:right;
-		width:432px;
-	}
-	
-	#portal-searchbox form fieldset {
-		border:none;
-	}
-	
-	#portal-searchbox form input,
-	#portal-searchbox form select {
-		font-family:inherit;
-		padding:0.2em 0.1em;
-	}
-	
-	#portal-searchbox form #siteSearchInput {
-		width:150px;
-	}		
-	
-	#breadCrumb {			
-		margin-top:1em;
-	}
-	
-	#footer #copyright {			
-		float:left;
-		width:48%		
-	}
-	
-	#footer #portal-siteactions {			
-		float:right;
-		width:auto;
-		text-align:right;		
-	}
+#CellMLLogo {
+    float: left;
+}
 
-	#footer #portal-siteactions li {
-		display: block;
-		float: left;
-		border-left: 1px solid #ccc;
-		margin: 0;
-		padding: 0 0.5em;
-	}
+#portal-searchbox form  {
+    clear: right;
+    margin-top: 2.5em;
+    float: right;	
+    text-align: right;
+    width: 432px;
+}
 
-	#footer #portal-siteactions li:first-child {
-		border-left: none;
-	}
+#portal-searchbox form fieldset {
+    border: none;
+}
 
-	
+#portal-searchbox form input,
+#portal-searchbox form select {
+    font-family: inherit;
+    padding: 0.2em 0.1em;
+}
+
+#portal-searchbox form #siteSearchInput {
+    width: 150px;
+}		
+
+#breadCrumb {			
+    margin-top: 1em;
+}
+
+#footer #copyright {			
+    float: left;
+    width:48%		
+}
+
+#footer #portal-siteactions {
+    float: right;
+    width: auto;
+    text-align: right;		
+}
+
+#footer #portal-siteactions li {
+    display: block;
+    float: left;
+    border-left: 1px solid #ccc;
+    margin: 0;
+    padding: 0 0.5em;
+}
+
+#footer #portal-siteactions li:first-child {
+    border-left: none;
+}
+
+
 /* ---------------------- END Brand, navigation, sidebar styles styles ---------------------- */
 
 
 
 /* ---------------------- Links ---------------------- */
 
-	/* 
-		### Links: order is everything: link > visited > hover > focus > active ### 
-		Basic link styles. These might be overridden by section-specific styles below.
-	*/
+/* 
+  ### Links: order is everything: link > visited > hover > focus > active ### 
+  Basic link styles. These might be overridden by section-specific styles below.
+*/
 
-	/* Global navigation */
+/* Global navigation */
 
-	/*
-	Massive Blue menu courtesy of www.cssmenumaker.com: http://www.cssmenumaker.com/builder/menu_info.php?menu=032
-	*/
-	
-		#portal-globalnav {
-			background: #000;
-			float: left;
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			margin-top:0.75em;
-			width: 100%;
-			font-size:1em;
-			font-weight:bold;
-		}
-		#portal-globalnav li {
-			float: left;
-			/* font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif; */
-			margin: 0;
-			padding: 0;
-		}
-		#portal-globalnav a {
-			background: #000 url(++resource++cellml.theme.images/globalnav-separator.gif) bottom right no-repeat;
-			color: #fff;
-			display: block;
-			float: left;
-			margin: 0;
-			padding: 8px 12px;
-			text-decoration: none;
-			font-weight:normal;
-		}
-		#portal-globalnav a:hover,
-		#portal-globalnav li.selected a {
-			background: #CE0026 url(++resource++cellml.theme.images/globalnav-hover.gif) bottom center no-repeat;
-			color: #fff;
-			padding-bottom: 8px;
-		}
+/*
+  Massive Blue menu courtesy of www.cssmenumaker.com: http://www.cssmenumaker.com/builder/menu_info.php?menu=032
+*/
 
-
-	
-	/* Standard link styles for content sections */
-		.content a:link,
-		.content a:visited {
-			color: #CE0025;
-			text-decoration:none;
-		}
-		
-		.content a:visited { 
-			color: #CE0025;
-		}
-		
-		.content a:focus,
-		.content a:hover {
-			color: #CE0025;
-			text-decoration:underline;
-			/* background-color:#cccccc; */
-		}	
-	
-	#breadCrumb ul {
-		list-style: none;
-		margin-left:0;
-	}
+#portal-globalnav {
+    background: #000;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.75em;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bold;
+}
+#portal-globalnav li {
+    float: left;
+    /* font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+#portal-globalnav a {
+    background: #000 url(++resource++cellml.theme.images/globalnav-separator.gif) bottom right no-repeat;
+    color: #fff;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#portal-globalnav a:hover,
+#portal-globalnav li.selected a {
+    background: #CE0026 url(++resource++cellml.theme.images/globalnav-hover.gif) bottom center no-repeat;
+    color: #fff;
+    padding-bottom: 8px;
+}
 
 
-	#breadCrumb ul li {
-		display:inline;
-	}
-	
-	#footer a:link,
-	#footer a:visited {
-		color: #222;
-		text-decoration:none;
-	}
-	
-	#footer a:visited { 
-		color: #222;
-	}
-	
-	#footer a:focus,
-	#footer a:hover {
-		color: #222;
-		text-decoration:underline;
-	}
+
+/* Standard link styles for content sections */
+.content a:link,
+.content a:visited {
+    color: #CE0025;
+    text-decoration: none;
+}
+
+.content a:visited { 
+    color: #CE0025;
+}
+
+.content a:focus,
+.content a:hover {
+    color: #CE0025;
+    text-decoration: underline;
+    /* background-color: #cccccc; */
+}	
+
+#breadCrumb ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+
+#breadCrumb ul li {
+    display: inline;
+}
+
+#footer a:link,
+#footer a:visited {
+    color: #222;
+    text-decoration: none;
+}
+
+#footer a:visited { 
+    color: #222;
+}
+
+#footer a:focus,
+#footer a:hover {
+    color: #222;
+    text-decoration: underline;
+}
