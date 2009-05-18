@@ -400,6 +400,7 @@ ul.sideList {
 #portal-searchbox form #siteSearchInput {
     width: 150px;
 }		
+
 /* @group LiveSearch */
 
 .LSRes {
@@ -411,27 +412,31 @@ ul.sideList {
 
 .LSBox {
     float: right !important;
+    width: 220px;
 }
 
 .LSResult {
     float: right !important;
     overflow: hidden;
     position: absolute;
-    background-color: #fff;
     padding: 8px 0 12px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    margin-top: -1px;
+    margin-top: -15px;
+    margin-left: -152px;
     float: left;
-    width: 198px;
+    width: 372px;
     font-size: 11px;
     line-height: 15px;
+    text-align: left;
     display: none;
 }
 
 .LSResult h4 {
-    display: none;
+    border-right: none;
+    background-color: #fff;
+    border: 1px solid black;
+    border-bottom: none;
+    padding: 5px 10px 1px;
+    display: inline;
 }
 
 .LSHighlight {
@@ -447,22 +452,29 @@ ul.sideList {
 }
 
 .LSResult ul {
+    float: left;
+    background-color: #fff;
+    border: 1px solid black;
 
 }
 
 .LSResult ul li {
     float: left;
-    width: 150px;
+    clear: left;
     padding: 0;
 }
 
 .LSResult ul li a {
     float: left;
     display: block;
+    width: 339px;
     padding: 5px 5px 5px 26px;
-    width: 167px;
     white-space: nowrap;
     text-decoration: none;
+}
+
+.LSResult ul li a:hover {
+    background: #eee;
 }
 
 .LSResult .livesearchResult-title {
@@ -480,7 +492,6 @@ ul.sideList {
     float: left;
     clear: left;
     color: gray;
-    width: 165px;
     white-space: normal;
     display: inline;
 }
