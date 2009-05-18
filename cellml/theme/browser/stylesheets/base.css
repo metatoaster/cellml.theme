@@ -47,6 +47,43 @@ html>body {
     margin-top: 0.75em;	
 }
 
+#portal-personaltools a:link,
+#portal-personaltools a:visited {
+    color: #222;
+    text-decoration: none;
+}
+
+#portal-personaltools a:visited { 
+    color: #222;
+}
+
+#portal-personaltools a:focus,
+#portal-personaltools a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+#footer #portal-siteactions,
+#portal-header #portal-personaltools {
+    float: right;
+    width: auto;
+    text-align: right;		
+}
+
+#footer #portal-siteactions li,
+#portal-header #portal-personaltools li {
+    display: block;
+    float: left;
+    border-left: 1px solid #ccc;
+    margin: 0;
+    padding: 0 0.5em;
+}
+
+#footer #portal-siteactions li:first-child,
+#portal-header #portal-personaltools li:first-child {
+    border-left: none;
+}
+
 #blockContainer {	
     background-color: #fff;
     background: none;
@@ -363,6 +400,108 @@ ul.sideList {
 #portal-searchbox form #siteSearchInput {
     width: 150px;
 }		
+/* @group LiveSearch */
+
+.LSRes {
+    visibility: visible;
+    text-transform: none;
+    margin-left: 0;
+    line-height: 1.1em;
+}
+
+.LSBox {
+    float: right !important;
+}
+
+.LSResult {
+    float: right !important;
+    overflow: hidden;
+    position: absolute;
+    background-color: #fff;
+    padding: 8px 0 12px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: -1px;
+    float: left;
+    width: 198px;
+    font-size: 11px;
+    line-height: 15px;
+    display: none;
+}
+
+.LSResult h4 {
+    display: none;
+}
+
+.LSHighlight {
+}
+
+.LSHighlight a {
+    color: white;
+    background-color: gray;
+}
+
+.LSHighlight a .livesearchResult-description {
+    color: white;
+}
+
+.LSResult ul {
+
+}
+
+.LSResult ul li {
+    float: left;
+    width: 150px;
+    padding: 0;
+}
+
+.LSResult ul li a {
+    float: left;
+    display: block;
+    padding: 5px 5px 5px 26px;
+    width: 167px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.LSResult .livesearchResult-title {
+    font-weight: bold;
+    white-space: normal;
+    display: inline;
+}
+
+.LSResult .livesearchResult-score {
+    display: inline;
+    white-space: normal;
+}
+
+.LSResult .livesearchResult-description {
+    float: left;
+    clear: left;
+    color: gray;
+    width: 165px;
+    white-space: normal;
+    display: inline;
+}
+
+.LSResult ul li a img {
+    margin-left: -20px;
+    float: left;
+    margin-top: -3px;
+}
+.LSRow {
+    white-space: normal;
+    padding:0;
+    margin: 0;
+}
+.LSDescr {
+    background-color: #7dabcf;
+    font-size: 90%;
+}
+
+/* End @group LiveSearch */
+
 
 #breadCrumb {			
     margin-top: 1em;
@@ -371,24 +510,6 @@ ul.sideList {
 #footer #copyright {			
     float: left;
     width:48%		
-}
-
-#footer #portal-siteactions {
-    float: right;
-    width: auto;
-    text-align: right;		
-}
-
-#footer #portal-siteactions li {
-    display: block;
-    float: left;
-    border-left: 1px solid #ccc;
-    margin: 0;
-    padding: 0 0.5em;
-}
-
-#footer #portal-siteactions li:first-child {
-    border-left: none;
 }
 
 
