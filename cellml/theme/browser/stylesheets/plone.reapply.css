@@ -32,10 +32,6 @@ input.searchButton {
     vertical-align: bottom;
 }
 
-#portal-breadcrumbs {
-    clear: both;
-}
-
 dl.portletCalendar dt a.calendarPrevious {
     width: 16px !important;
     height: 0;

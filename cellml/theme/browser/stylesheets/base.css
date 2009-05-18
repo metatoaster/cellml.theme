@@ -513,9 +513,19 @@ ul.sideList {
 
 /* End @group LiveSearch */
 
+#portal-breadcrumbs {
+    margin: 1em 0;
+    clear: both;
+    float: left;
+}
 
-#breadCrumb {			
-    margin-top: 1em;
+#portal-breadcrumbs a {
+    color: #ce0025;
+    text-decoration: none;
+}
+
+#portal-breadcrumbs a {
+    text-decoration: underline;
 }
 
 #footer #copyright {			
