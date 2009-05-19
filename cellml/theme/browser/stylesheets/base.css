@@ -63,14 +63,14 @@ html>body {
     text-decoration: underline;
 }
 
-#footer #portal-siteactions,
+#portal-footer #portal-siteactions,
 #portal-header #portal-personaltools {
     float: right;
     width: auto;
     text-align: right;		
 }
 
-#footer #portal-siteactions li,
+#portal-footer #portal-siteactions li,
 #portal-header #portal-personaltools li {
     display: block;
     float: left;
@@ -79,7 +79,7 @@ html>body {
     padding: 0 0.5em;
 }
 
-#footer #portal-siteactions li:first-child,
+#portal-footer #portal-siteactions li:first-child,
 #portal-header #portal-personaltools li:first-child {
     border-left: none;
 }
@@ -286,7 +286,7 @@ Layout Four: Two columns
 /* End Layout Three */
 
 
-#footer {
+#portal-footer {
     padding: 1em 0;
     border-top: 1px solid #ccc;
     background-color: #fff;		
@@ -528,7 +528,7 @@ ul.sideList {
     text-decoration: underline;
 }
 
-#footer #copyright {			
+#portal-footer #copyright {			
     float: left;
     width:48%		
 }
@@ -615,18 +615,18 @@ ul.sideList {
     display: inline;
 }
 
-#footer a:link,
-#footer a:visited {
+#portal-footer a:link,
+#portal-footer a:visited {
     color: #222;
     text-decoration: none;
 }
 
-#footer a:visited { 
+#portal-footer a:visited { 
     color: #222;
 }
 
-#footer a:focus,
-#footer a:hover {
+#portal-footer a:focus,
+#portal-footer a:hover {
     color: #222;
     text-decoration: underline;
 }

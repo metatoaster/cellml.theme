@@ -200,7 +200,7 @@
 
       <metal:block i18n:domain="plone">
 
-        <div id="footer" tal:content="structure provider:plone.portalfooter" />
+        <div id="portal-footer" tal:content="structure provider:plone.portalfooter" />
 
       </metal:block>
 
