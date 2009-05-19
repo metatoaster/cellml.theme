@@ -7,11 +7,18 @@
 
 /* ---------------------- core ---------------------- */
 
+html {
+    background: #f4f4f4 url(++resource++cellml.theme.images/background.png) center;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     padding: 2em auto;
     color: #222;
     font-family: Verdana, Arial, Helvetica, sans-serif;	
-    background: #f4f4f4 url(++resource++cellml.theme.images/background.png) center;
 }
 
 html>body {	
@@ -25,11 +32,12 @@ html>body {
 /* ---------------------- structure ---------------------- */
 
 #visual-portal-wrapper {	
-    margin: 0 auto;
-    padding: 2em 3em;
+    margin: 0 auto -4em;
+    padding: 0 3em 0;
     width: 940px;
     text-align: left;	
     background: url(++resource++cellml.theme.images/body-shadow.png) center repeat-y;
+    min-height: 100%;
     
     /*
     min-width: 800px;
@@ -39,10 +47,15 @@ html>body {
     /* background: #f4f4f4 url(/templates/cellml/global/img/layout-grid.gif); */
 }
 
+#portal-top-wrapper {
+    padding-top: 2em;
+}
+
 #portal-top {
     /* border-top: 1px solid #CE0227; */
     border-top: 1px solid #ccc;
     padding-top: 0.75em;	
+    width: 940px;
 }
 
 #portal-personaltools a:link,
@@ -66,6 +79,10 @@ html>body {
     float: right;
     width: auto;
     text-align: right;		
+}
+
+#portal-footer #portal-siteactions {
+    padding-bottom: 1em;
 }
 
 #portal-footer #portal-siteactions li,
@@ -534,6 +551,7 @@ ul.sideList {
 #portal-footer #copyright {			
     float: left;
     width:48%		
+    padding-bottom: 1em;
 }
 
 
