@@ -8,7 +8,7 @@
 /* ---------------------- core ---------------------- */
 
 html {
-    background: #f4f4f4 url(++resource++cellml.theme.images/background.png) center;
+    background: #e6e8f0 center;
 }
 
 html, body {
@@ -582,20 +582,16 @@ ul.sideList {
     width: 100%;
     font-size: 1em;
     font-weight: bold;
-    background: #555 url(++resource++cellml.theme.images/globalnav-separator-right-shadow.png) bottom right no-repeat;
 }
 #portal-globalnav li {
     float: left;
     /* font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif; */
     margin: 0;
     padding: 0;
-    background: #555 url(++resource++cellml.theme.images/globalnav-separator-shadows.png) bottom right no-repeat;
-    padding-right: 5px;
-    margin-right: -5px;
+    background: #555 url(++resource++cellml.theme.images/globalnav-separator.png) bottom right no-repeat;
 }
 #portal-globalnav a {
     color: #fff;
-    background: url(++resource++cellml.theme.images/globalnav-separator-left-shadow.png) bottom left no-repeat;
     display: block;
     float: left;
     margin: 0;
@@ -606,7 +602,6 @@ ul.sideList {
 }
 #portal-globalnav a:hover,
 #portal-globalnav li.selected a {
-    background: #CE0026 url(++resource++cellml.theme.images/globalnav-hover.gif) bottom center no-repeat;
     color: #fff;
     padding-bottom: 8px;
 }
