@@ -602,6 +602,7 @@ ul.sideList {
 }
 #portal-globalnav a:hover,
 #portal-globalnav li.selected a {
+    background: #CE0026 url(++resource++cellml.theme.images/globalnav-hover.gif) bottom center no-repeat;
     color: #fff;
     padding-bottom: 8px;
 }
