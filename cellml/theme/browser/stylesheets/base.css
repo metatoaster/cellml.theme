@@ -21,10 +21,6 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;	
 }
 
-html>body {	
-
-}
-
 /* ---------------------- END core ---------------------- */
 
 
@@ -103,6 +99,11 @@ html>body {
     background-color: #fff;
     background: none;
 }	
+
+.documentContent {
+    background: #fff;
+    height: auto;
+}
 
 /*
   Grid information
@@ -296,21 +297,16 @@ Layout Four: Two columns
     /* border: 1px solid blue; */
 }
 
-
-
-/* End Layout Three */
-
-
 #portal-footer {
     padding: 1em 0;
     border-top: 1px solid #ccc;
     background-color: #fff;		
 }
+/* Inner blocks need different widths inside the boxes */
 
 .homeTopics {
     border-top: 5px solid #666;
     border-top: 5px solid #CE0026;
-    
 }
 
 .htRowA h2,
@@ -318,14 +314,33 @@ Layout Four: Two columns
     margin-top: 0.5em;
 }
 
+.htRowA,
+.htRowB {
+    width: 220px;
+}
+
+#layoutFour .htRowA,
+#layoutFour .htRowB {
+    width: 300px;
+}
+
+/* XXX not valid grid size */
+#layoutFourSlim .htRowA,
+#layoutFourSlim .htRowB {
+    width: 340px;
+}
+
+#layoutFourSlimmer .htRowA,
+#layoutFourSlimmer .htRowB {
+    width: 380px;
+}
+
 .htRowA {
     float: left;
-    width: 220px;
 }
 
 .htRowB {
     float: right;
-    width: 220px;
 }
 
 /* ---------------------- END structure ---------------------- */

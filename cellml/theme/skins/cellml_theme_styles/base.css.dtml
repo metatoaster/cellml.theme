@@ -7,7 +7,12 @@
 
 /* YOUR CSS RULES START HERE */
 
-
+/* XXX for this compatibilty with TinyMCE import to work, go to
+ * <dtml-var portal_url>/portal_css/manage_cssForm, find the entry for
+ * base.css, then in CSS Media remove 'screen', as imports do not work
+ * in such a section.  You probably want to document this change in
+ * case it breaks another skin you may use. */
+@import url('<dtml-var portal_url>/++resource++cellml.theme.stylesheets/tripoli.base.css');
 
 /* YOUR CSS RULES STOP HERE */
 
