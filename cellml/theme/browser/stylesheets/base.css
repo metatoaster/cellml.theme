@@ -13,6 +13,7 @@ html {
 
 html, body {
     height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -103,6 +104,7 @@ body {
 .documentContent {
     background: #fff;
     height: auto;
+    min-height: 100%;
 }
 
 /*
@@ -123,7 +125,7 @@ body {
     width: 100%;
 }
 
-#layoutZero #block1 {
+#layoutZero #portal-column-content {
     width: 100%;
 }
 
@@ -137,16 +139,18 @@ body {
     width: 100%;
 }
 
-#layoutOne #block1 {
+#layoutOne #portal-column-content {
     margin-right: 480px;
-    /* border: 1px solid green; */
+}
+
+#layoutOne #portal-column-content .photoAlbum {
+    width: 480px;
 }
 
 #layoutOne #block2 {
     float: left;
     margin-left: -460px;
     width: 220px;
-    /* border: 1px solid red; */
 }
 
 #layoutOne #block3 {
@@ -166,23 +170,24 @@ body {
     width: 100%;
 }
 
-#layoutTwo #block1 {
+#layoutTwo #portal-column-content {
     margin-right: 480px;
-    /* border: 1px solid green; */
+}
+
+#layoutTwo #portal-column-content .photoAlbum {
+    width: 480px;
 }
 
 #layoutTwo #block2 {
     float: left;
     margin-left: -460px;
     width: 300px; 
-    /* border: 1px solid red; */
 }
 
 #layoutTwo #block3 {
     float: left;
     margin-left: -140px;
     width: 140px; 
-    /* border: 1px solid blue; */
 }
 
 /* 	
@@ -196,8 +201,12 @@ body {
     margin-right: -480px;  
 }
 
-#layoutThree #block1 {
+#layoutThree #portal-column-content {
     margin-right: 480px;
+}
+
+#layoutThree #portal-column-content .photoAlbum {
+    width: 480px;
 }
 
 #layoutThree #block2 {
@@ -216,8 +225,12 @@ Layout Four: Two columns
     margin-right: -320px;  
 }
 
-#layoutFour #block1 {
+#layoutFour #portal-column-content {
     margin-right: 320px;
+}
+
+#layoutFour #portal-column-content .photoAlbum {
+    width: 640px;
 }
 
 #layoutFour #block2 ,
@@ -237,8 +250,12 @@ Layout Four: Two columns
     margin-right: -240px;  
 }
 
-#layoutFourSlim #block1 {
+#layoutFourSlim #portal-column-content {
     margin-right: 240px;
+}
+
+#layoutFourSlim #portal-column-content .photoAlbum {
+    width: 720px;
 }
 
 #layoutFourSlim #block2 ,
@@ -258,8 +275,12 @@ Layout Four: Two columns
     margin-right: -160px;  
 }
 
-#layoutFourSlimmer #block1 {
+#layoutFourSlimmer #portal-column-content {
     margin-right: 160px;
+}
+
+#layoutFourSlimmer #portal-column-content .photoAlbum {
+    width: 800px;
 }
 
 #layoutFourSlimmer #block2 ,
@@ -278,9 +299,13 @@ Layout Four: Two columns
     width: 100%;
 }
 
-#layoutFive #block1 {
+#layoutFive #portal-column-content {
     margin-right: 480px;
     /* border: 1px solid green; */
+}
+
+#layoutFive #portal-column-content .photoAlbum {
+    width: 480px;
 }
 
 #layoutFive #block2 {
@@ -344,6 +369,24 @@ Layout Four: Two columns
 }
 
 /* ---------------------- END structure ---------------------- */
+
+/* photos */
+
+.photoAlbumEntry {
+    width: 140px;
+    float: left;
+    margin-right: 20px;
+}
+
+.photoAlbumEntryWrapper {
+    display: block;
+    text-align: center;
+}
+
+.photoAlbumEntryTitle {
+    text-align: center;
+    display: block;
+}
 
 
 
@@ -671,6 +714,10 @@ ul.sideList {
 
 /* Plone portlets */
 
+.portlet {
+    margin-bottom: 1.6em;
+}
+
 .portletHeader {
     font-size: 1.3em;
     margin-bottom: 0.615em;
@@ -679,6 +726,13 @@ ul.sideList {
     padding-top: 0.5em;
 }
 
-.portlet {
-    margin-bottom: 1.6em;
+.navTreeItem a,
+.portletItem a:link {
+    color: #222;
+}
+
+.navTreeCurrentItem,
+.navTreeItem a:hover {
+    background-color: #fee !important;
+    border: 1px solid #ecc !important;
 }

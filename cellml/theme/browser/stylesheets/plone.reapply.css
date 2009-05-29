@@ -432,14 +432,21 @@ dl.error dd {
     margin: -1px 0 0 -1px !important;
 }
 
+.image-inline {
+}
+
 .image-left {
     float: left;
-    margin-right: 1em;
+    margin-right: 20px;
+}
+
+.image-left-only {
+    float: left;
 }
 
 .image-right {
     float: right;
-    margin-left: 1em;
+    margin-left: 20px;
 }
 
 /*

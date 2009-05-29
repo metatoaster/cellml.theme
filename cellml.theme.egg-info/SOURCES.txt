@@ -40,8 +40,14 @@ cellml/theme/browser/sections.pt
 cellml/theme/browser/view.py
 cellml/theme/browser/viewlets.py
 cellml/theme/browser/images/README.txt
+cellml/theme/browser/images/background.png
+cellml/theme/browser/images/body-shadow.png
 cellml/theme/browser/images/globalnav-hover.gif
+cellml/theme/browser/images/globalnav-separator-left-shadow.png
+cellml/theme/browser/images/globalnav-separator-right-shadow.png
+cellml/theme/browser/images/globalnav-separator-shadows.png
 cellml/theme/browser/images/globalnav-separator.gif
+cellml/theme/browser/images/globalnav-separator.png
 cellml/theme/browser/images/logo-cellml.png
 cellml/theme/browser/stylesheets/README.txt
 cellml/theme/browser/stylesheets/base.css
