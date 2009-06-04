@@ -472,6 +472,10 @@ ul.sideList {
     display: none;
 }
 
+#content h1:first-child {
+    margin-top: 0 !important;
+}
+
 
 /* ---------------------- END secondary typography: content, lists and links ---------------------- */
 

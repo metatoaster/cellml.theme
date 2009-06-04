@@ -7,6 +7,14 @@
 
 /* YOUR CSS RULES START HERE */
 
+.documentFirstHeading {
+    margin-top: 0 !important;
+}
+
+#portal-breadcrumbs {
+    padding-bottom: 10px;
+}
+
 /* YOUR CSS RULES STOP HERE */
 
 /* </dtml-with> */
