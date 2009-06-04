@@ -757,10 +757,8 @@ ul.sideList {
     padding-top: 0.5em;
 }
 
-.portletCollection .portletItem,
+.portletRecent .portletItem,
 .portletCollection .portletItem {
-    text-indent: -20px;
-    padding-left: 20px;
 }
 
 .navTreeItem {
@@ -772,13 +770,33 @@ ul.sideList {
     vertical-align: bottom;
 }
 
-.navTreeItem a,
-.portletItem a:link {
+.portletCollection .portletItem a,
+.portletRecent .portletItem a,
+.navTreeItem a {
+    border: 1px solid white;
+    display: block;
+    padding: 2px 0 2px 20px;
+    text-indent: -20px;
     color: #222;
 }
 
+.portletRecent .portletItem a:hover,
+.portletCollection .portletItem a:hover,
 .navTreeCurrentItem,
 .navTreeItem a:hover {
     background-color: #fee !important;
     border: 1px solid #ecc !important;
+    text-decoration: none;
+}
+
+.portletRecent .portletItem a:focus,
+.portletCollection .portletItem a:focus,
+.navTreeItem a:focus {
+    text-decoration: none;
+}
+
+.portletItemDetails {
+    color: #222;
+    display: block;
+    text-align: right;
 }
