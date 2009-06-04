@@ -352,13 +352,13 @@ Layout Four: Two columns
 }
 
 .homeTopics {
-    border-top: 5px solid #666;
-    border-top: 5px solid #CE0026;
 }
 
 .htRowA h2,
 .htRowB h2 {
-    margin-top: 0.5em;
+    margin-top: 0;
+    border-top: 2px solid #CE0026;
+    padding-top: 0.5em;
 }
 
 .htRowA,
