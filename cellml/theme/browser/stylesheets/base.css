@@ -74,6 +74,7 @@ a[name] {
     text-decoration: underline;
 }
 
+.documentActions,
 #portal-footer #portal-siteactions,
 #portal-header #portal-personaltools {
     float: right;
@@ -81,10 +82,7 @@ a[name] {
     text-align: right;		
 }
 
-#portal-footer #portal-siteactions {
-    padding-bottom: 1em;
-}
-
+.documentActions li,
 #portal-footer #portal-siteactions li,
 #portal-header #portal-personaltools li {
     display: block;
@@ -94,9 +92,21 @@ a[name] {
     padding: 0 0.5em;
 }
 
+.documentActions li a:link {
+    color: #222;
+}
+
+.documentActions li a:hover {
+    text-decoration: underline;
+}
+
 #portal-footer #portal-siteactions li:first-child,
 #portal-header #portal-personaltools li:first-child {
     border-left: none;
+}
+
+#portal-footer #portal-siteactions {
+    padding-bottom: 1em;
 }
 
 #portal-footer-wrapper {
