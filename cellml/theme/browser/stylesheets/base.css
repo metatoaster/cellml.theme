@@ -624,7 +624,7 @@ ul.sideList {
     text-decoration: none;
 }
 
-#portal-breadcrumbs a {
+#portal-breadcrumbs a:hover {
     text-decoration: underline;
 }
 
