@@ -648,23 +648,22 @@ ul.sideList {
     padding: 0;
     background: #555 url(++resource++cellml.theme.images/globalnav-separator.png) bottom right no-repeat;
 }
+
 #portal-globalnav a {
     color: #fff;
     display: block;
     float: left;
     margin: 0;
-    padding: 8px 12px;
+    padding: 7px 12px;
     text-decoration: none;
     font-weight: bold;
     margin-right: 1px;
 }
 #portal-globalnav a:hover,
 #portal-globalnav li.selected a {
-    background: #CE0026 url(++resource++cellml.theme.images/globalnav-hover.gif) bottom center no-repeat;
+    background: #CE0026;
     color: #fff;
-    padding-bottom: 8px;
 }
-
 
 
 /* Standard link styles for content sections */
