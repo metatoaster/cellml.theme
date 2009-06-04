@@ -201,14 +201,15 @@
              CellML Theme Layout
           </a>
       </div>
-      <div id="vertical-push"><!-- --></div>
-
-      <metal:block i18n:domain="plone">
-        <div id="portal-footer" tal:content="structure provider:plone.portalfooter" />
-      </metal:block>
 
       <div class="visualClear"><!-- --></div>
     </div>
+
+    <metal:block i18n:domain="plone">
+      <div id="portal-footer-wrapper">
+        <div id="portal-footer" tal:content="structure provider:plone.portalfooter" />
+      </div>
+    </metal:block>
 <div id="kss-spinner"><img tal:attributes="src string:${portal_url}/spinner.gif" alt="" /></div>
 </body>
 </html>

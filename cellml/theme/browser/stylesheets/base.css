@@ -29,12 +29,14 @@ body {
 /* ---------------------- structure ---------------------- */
 
 #visual-portal-wrapper {	
-    margin: 0 auto -4em;
+    margin: 0 auto -3.1em;
     padding: 0 3em 0;
     width: 940px;
     text-align: left;	
     background: url(++resource++cellml.theme.images/body-shadow.png) center repeat-y;
     min-height: 100%;
+    height: auto !important;
+    height: 100%;
     
     /*
     min-width: 800px;
@@ -94,6 +96,22 @@ body {
 #portal-footer #portal-siteactions li:first-child,
 #portal-header #portal-personaltools li:first-child {
     border-left: none;
+}
+
+#portal-footer-wrapper {
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+    /* XXX this will break image backgrounds */ 
+    background: #e6e8f0 url(++resource++cellml.theme.images/body-shadow.png) center repeat-y;
+    height: 3.1em;
+}
+
+#portal-footer {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 1em;
+    border-top: 1px solid #ccc;
 }
 
 #blockContainer {	
@@ -321,13 +339,6 @@ Layout Four: Two columns
     width: 300px; 
     /* border: 1px solid blue; */
 }
-
-#portal-footer {
-    padding: 1em 0;
-    border-top: 1px solid #ccc;
-    background-color: #fff;		
-}
-/* Inner blocks need different widths inside the boxes */
 
 .homeTopics {
     border-top: 5px solid #666;
