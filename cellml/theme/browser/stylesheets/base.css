@@ -22,6 +22,10 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;	
 }
 
+a[name] {
+    text-decoration: none;
+}
+
 /* ---------------------- END core ---------------------- */
 
 
