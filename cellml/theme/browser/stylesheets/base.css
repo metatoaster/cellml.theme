@@ -736,6 +736,21 @@ ul.sideList {
     padding-top: 0.5em;
 }
 
+.portletCollection .portletItem,
+.portletCollection .portletItem {
+    text-indent: -20px;
+    padding-left: 20px;
+}
+
+.navTreeItem {
+    line-height: 1.5em;
+}
+
+.navTreeItem a img,
+.portletItem a img {
+    vertical-align: bottom;
+}
+
 .navTreeItem a,
 .portletItem a:link {
     color: #222;
