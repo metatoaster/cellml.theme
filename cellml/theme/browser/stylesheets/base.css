@@ -58,6 +58,12 @@ a[name] {
     width: 940px;
 }
 
+#portal-personaltools-wrapper {
+    /* XXX Firefox 2 somehow calculates width as 100% 
+     * anyway, width normally don't exceed this much anyway */
+    max-width: 620px;
+}
+
 #portal-personaltools a:link,
 #portal-personaltools a:visited {
     color: #222;
