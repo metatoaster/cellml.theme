@@ -476,7 +476,11 @@ ul.sideList {
     display: none;
 }
 
-#content h1:first-child {
+.documentContent h1:first-child {
+    margin-top: 0 !important;
+}
+
+#viewlet-above-content + h1 {
     margin-top: 0 !important;
 }
 
