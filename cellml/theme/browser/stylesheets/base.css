@@ -361,6 +361,10 @@ Layout Four: Two columns
     /* border: 1px solid blue; */
 }
 
+/*
+ * content classes for indexes pages.
+ */
+
 .homeTopics {
 }
 
@@ -398,6 +402,22 @@ Layout Four: Two columns
 
 .htRowB {
     float: right;
+}
+
+/* Other content classes */
+
+.projectTeamList p {
+    margin-left: 100px;
+    margin-bottom: 2.5em;
+}
+
+.projectTeamList h3 {
+}
+
+.projectTeamList img {
+    padding: 4px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
 }
 
 /* ---------------------- END structure ---------------------- */
