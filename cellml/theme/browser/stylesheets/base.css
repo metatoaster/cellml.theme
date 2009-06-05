@@ -765,6 +765,12 @@ ul.sideList {
     line-height: 1.5em;
 }
 
+.portletCollection .portletItem,
+.portletRecent .portletItem,
+.navTreeItem {
+    margin-bottom: 1px;
+}
+
 .navTreeItem a img,
 .portletItem a img {
     vertical-align: bottom;
@@ -780,12 +786,19 @@ ul.sideList {
     color: #222;
 }
 
+.navTreeCurrentItem,
 .portletRecent .portletItem a:hover,
 .portletCollection .portletItem a:hover,
-.navTreeCurrentItem,
 .navTreeItem a:hover {
     background-color: #fee !important;
     border: 1px solid #ecc !important;
+    text-decoration: none;
+}
+
+.portletRecent .portletItem a:visited,
+.portletCollection .portletItem a:visited,
+.navTreeItem a:visited {
+    color: #222;
     text-decoration: none;
 }
 
