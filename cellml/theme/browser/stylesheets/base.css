@@ -773,23 +773,45 @@ ul.sideList {
 
 .portletHeader {
     font-size: 1.3em;
-    margin-bottom: 0.615em;
     border-top: 1px solid #666666;
     color: #666666;
-    padding-top: 0.5em;
+    line-height: 1.9em;
+    padding: 0.15em 0;
+}
+
+.portletHeader a {
+    display: block;
+    border: 1px solid #fff;
+}
+
+.portletHeader a:hover {
+    background-color: #fee;
+    border: 1px solid #ecc;
+    text-decoration: none;
+}
+
+/* viewlet manager */
+
+.notify .portletHeader a {
+    display: inline;
+    border: none;
+}
+
+.notify .portletHeader a:hover {
+    background-color: transparent;
 }
 
 .portletRecent .portletItem,
 .portletCollection .portletItem {
 }
 
-.navTreeItem {
+.portletNavigationTree .navTreeItem {
     line-height: 1.5em;
 }
 
 .portletCollection .portletItem,
 .portletRecent .portletItem,
-.navTreeItem {
+.portletNavigationTree .navTreeItem {
     margin-bottom: 1px;
 }
 
@@ -800,7 +822,7 @@ ul.sideList {
 
 .portletCollection .portletItem a,
 .portletRecent .portletItem a,
-.navTreeItem a {
+.portletNavigationTree .navTreeItem a {
     border: 1px solid white;
     display: block;
     padding: 2px 0 2px 20px;
@@ -808,10 +830,10 @@ ul.sideList {
     color: #222;
 }
 
-.navTreeCurrentItem,
+.portletNavigationTree .navTreeCurrentItem,
 .portletRecent .portletItem a:hover,
 .portletCollection .portletItem a:hover,
-.navTreeItem a:hover {
+.portletNavigationTree .navTreeItem a:hover {
     background-color: #fee !important;
     border: 1px solid #ecc !important;
     text-decoration: none;
@@ -819,14 +841,14 @@ ul.sideList {
 
 .portletRecent .portletItem a:visited,
 .portletCollection .portletItem a:visited,
-.navTreeItem a:visited {
+.portletNavigationTree .navTreeItem a:visited {
     color: #222;
     text-decoration: none;
 }
 
 .portletRecent .portletItem a:focus,
 .portletCollection .portletItem a:focus,
-.navTreeItem a:focus {
+.portletNavigationTree .navTreeItem a:focus {
     text-decoration: none;
 }
 
@@ -834,4 +856,19 @@ ul.sideList {
     color: #222;
     display: block;
     text-align: right;
+}
+
+.portletFooter {
+    text-align: right;
+}
+
+.portletFooter a {
+    display: block;
+    border: 1px solid #fff;
+}
+
+.portletFooter a:hover {
+    background-color: #fee;
+    border: 1px solid #ecc;
+    text-decoration: none;
 }
