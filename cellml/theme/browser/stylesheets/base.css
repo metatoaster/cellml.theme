@@ -88,6 +88,10 @@ a[name] {
     text-align: right;		
 }
 
+.documentActions li {
+    font-size: 90%;
+}
+
 .documentActions li,
 #portal-footer #portal-siteactions li,
 #portal-header #portal-personaltools li {
