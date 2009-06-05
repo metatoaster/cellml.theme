@@ -331,43 +331,43 @@ CONTENT */
 .documentContent h1
 {
 	font-size:1.6em;
-	line-height:1;
-	margin:1em 0 .5em;
+	line-height:1.25em;
+	margin:0.875em 0 0.375em;
 }
 
 .documentContent h2
 {
 	font-size:1.5em;
-	line-height:1;
-	margin:1.07em 0 .535em;
+	line-height:1.25em;
+	margin:0.933em 0 .4em;
 }
 
 .documentContent h3
 {
 	font-size:1.4em;
-	line-height:1;
-	margin:1.14em 0 .57em;
+	line-height:1.25em;
+	margin:1em 0 .429em;
 }
 
 .documentContent h4
 {
 	font-size:1.3em;
-	line-height:1;
-	margin:1.23em 0 .615em;
+	line-height:1.25em;
+	margin:1.077em 0 .462em;
 }
 
 .documentContent h5
 {
 	font-size:1.2em;
-	line-height:1;
-	margin:1.33em 0 .67em;
+	line-height:1.25em;
+	margin:1.167em 0 .5em;
 }
 
 .documentContent h6
 {
 	font-size:1em;
-	line-height:1;
-	margin:1.6em 0 .8em;
+	line-height:1.25em;
+	margin:1.4em 0 .6em;
 }
 
 .documentContent hr
