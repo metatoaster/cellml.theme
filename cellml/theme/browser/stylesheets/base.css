@@ -842,7 +842,8 @@ ul.sideList {
 
 .portletCollection .portletItem a,
 .portletRecent .portletItem a,
-.portletNavigationTree .navTreeItem a {
+.portletNavigationTree .navTreeItem a,
+.portletNavigationTree a {
     border: 1px solid white;
     display: block;
     padding: 2px 0 2px 20px;
@@ -853,7 +854,8 @@ ul.sideList {
 .portletNavigationTree .navTreeCurrentItem,
 .portletRecent .portletItem a:hover,
 .portletCollection .portletItem a:hover,
-.portletNavigationTree .navTreeItem a:hover {
+.portletNavigationTree .navTreeItem a:hover,
+.portletNavigationTree a:hover {
     background-color: #fee !important;
     border: 1px solid #ecc !important;
     text-decoration: none;
