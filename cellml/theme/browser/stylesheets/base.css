@@ -119,6 +119,13 @@ a[name] {
     padding-bottom: 1em;
 }
 
+/* Opera 9 bug requires another nested class to clear */
+
+#portal-footer-sticky {
+    clear: both;
+    width: 100%;
+}
+
 #portal-footer-wrapper {
     clear: both;
     width: 1000px;

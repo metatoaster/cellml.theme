@@ -198,8 +198,10 @@
     </div>
 
     <metal:block i18n:domain="plone">
-      <div id="portal-footer-wrapper">
-        <div id="portal-footer" tal:content="structure provider:plone.portalfooter" />
+      <div id="portal-footer-sticky">
+        <div id="portal-footer-wrapper">
+          <div id="portal-footer" tal:content="structure provider:plone.portalfooter" />
+        </div>
       </div>
     </metal:block>
 <div id="kss-spinner"><img tal:attributes="src string:${portal_url}/spinner.gif" alt="" /></div>
