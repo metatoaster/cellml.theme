@@ -812,11 +812,13 @@ ul.sideList {
 
 /* viewlet manager */
 
+.managedPortlet .portletHeader a,
 .notify .portletHeader a {
     display: inline;
     border: none;
 }
 
+.managedPortlet .portletHeader a:hover,
 .notify .portletHeader a:hover {
     background-color: transparent;
 }
