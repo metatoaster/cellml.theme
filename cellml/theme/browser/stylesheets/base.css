@@ -18,7 +18,7 @@ html, body {
 
 body {
     padding: 2em auto;
-    color: #222;
+    color: #333;
     font-family: Verdana, Arial, Helvetica, sans-serif;	
 }
 
@@ -382,7 +382,7 @@ Layout Four: Two columns
 .htRowA h2,
 .htRowB h2 {
     margin-top: 0;
-    border-top: 2px solid #CE0026;
+    border-top: 2px solid #c00;
     padding-top: 0.5em;
 }
 
@@ -673,7 +673,7 @@ ul.sideList {
 }
 
 #portal-breadcrumbs a {
-    color: #ce0025;
+    color: #c00;
     text-decoration: none;
 }
 
@@ -706,7 +706,7 @@ ul.sideList {
 */
 
 #portal-globalnav {
-    background: #555;
+    background: #333;
     float: left;
     list-style: none;
     margin: 0;
@@ -721,7 +721,7 @@ ul.sideList {
     /* font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif; */
     margin: 0;
     padding: 0;
-    background: #555 url(++resource++cellml.theme.images/globalnav-separator.png) bottom right no-repeat;
+    background: #333 url(++resource++cellml.theme.images/globalnav-separator.png) bottom right no-repeat;
 }
 
 #portal-globalnav a {
@@ -740,7 +740,7 @@ ul.sideList {
 }
 #portal-globalnav a:hover,
 #portal-globalnav li.selected a {
-    background: #CE0026;
+    background: #c00;
     color: #fff;
 }
 
@@ -748,17 +748,17 @@ ul.sideList {
 /* Standard link styles for content sections */
 .content a:link,
 .content a:visited {
-    color: #CE0025;
+    color: #c00;
     text-decoration: none;
 }
 
 .content a:visited { 
-    color: #CE0025;
+    color: #c00;
 }
 
 .content a:focus,
 .content a:hover {
-    color: #CE0025;
+    color: #c00;
     text-decoration: underline;
 }	
 
@@ -781,7 +781,6 @@ ul.sideList {
     list-style: none;
     margin-left: 0;
 }
-
 
 #breadCrumb ul li {
     display: inline;
@@ -813,7 +812,7 @@ ul.sideList {
 .portletHeader {
     font-size: 1.3em;
     border-top: 1px solid #666666;
-    color: #666666;
+    color: #333;
     line-height: 1.9em;
     padding: 0.15em 0;
 }
