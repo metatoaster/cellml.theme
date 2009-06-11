@@ -451,7 +451,10 @@ Layout Four: Two columns
     display: block;
 }
 
-
+.tileImage, .newsImage {
+    float: right;
+    margin-left: 20px;
+}
 
 /* ---------------------- helpers ---------------------- */
 
