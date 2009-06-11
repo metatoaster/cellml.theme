@@ -2,6 +2,7 @@
      i18n:domain="plone">
     <form name="searchform"
           action="search"
+          class="searchCellML"
           tal:attributes="action string:${view/site_url}/search">
 
         <label for="searchGadget" class="hiddenStructure"

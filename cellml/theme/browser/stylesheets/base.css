@@ -545,6 +545,10 @@ ul.sideList {
     width: 150px;
 }		
 
+.searchCellML .searchButton {
+    display: none;
+}
+
 /* @group LiveSearch */
 
 .LSRes {
