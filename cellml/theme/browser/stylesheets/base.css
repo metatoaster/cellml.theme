@@ -80,7 +80,7 @@ a[name] {
     text-decoration: underline;
 }
 
-.documentActions,
+#portal-column-content #content .documentActions,
 #portal-footer #portal-siteactions,
 #portal-header #portal-personaltools {
     float: right;
@@ -88,11 +88,11 @@ a[name] {
     text-align: right;		
 }
 
-.documentActions li {
+#portal-column-content #content .documentActions li {
     font-size: 90%;
 }
 
-.documentActions li,
+#portal-column-content #content .documentActions li,
 #portal-footer #portal-siteactions li,
 #portal-header #portal-personaltools li {
     display: block;
@@ -102,11 +102,12 @@ a[name] {
     padding: 0 0.5em;
 }
 
-.documentActions li a:link {
+#portal-column-content #content .documentActions li a:link {
     color: #222;
+    border-bottom: none;
 }
 
-.documentActions li a:hover {
+#portal-column-content #content .documentActions li a:hover {
     text-decoration: underline;
 }
 
@@ -506,6 +507,12 @@ ul.sideList {
     padding: 0;
 }
 
+/* Hide filed under: */
+#category {
+    display: none;
+}
+
+/* Hide the description of the object in the pages */
 .documentDescription {
     display: none;
 }
@@ -670,7 +677,7 @@ ul.sideList {
 /* End @group LiveSearch */
 
 #portal-breadcrumbs {
-    margin: 0.5em 0;
+    margin: 0.8em 0;
     clear: both;
     float: left;
 }
@@ -749,6 +756,7 @@ ul.sideList {
 
 
 /* Standard link styles for content sections */
+
 .content a:link,
 .content a:visited {
     color: #c00;
@@ -766,19 +774,84 @@ ul.sideList {
 }	
 
 /* Standard link styles for content sections */
-.documentContent p a:link,
-.documentContent p a:visited {
-    color: #633;
+.portlet dl a:link,
+.portlet dl a:visited,
+.portlet ul a:link,
+.portlet ul a:visited,
+.portlet ol a:link,
+.portlet ol a:visited,
+.portlet p a:link,
+.portlet p a:visited,
+/*
+#portal-column-content dl a:link,
+#portal-column-content dl a:visited,
+#portal-column-content ol a:link,
+#portal-column-content ol a:visited,
+#portal-column-content ul a:link,
+#portal-column-content ul a:visited,
+*/
+#portal-column-content #content a:link,
+#portal-column-content #content a:visited {
     text-decoration: none;
+    color: #666;
     border-bottom: 1px solid #bbb;
 }
 
-.documentContent p a:focus,
-.documentContent p a:hover {
-    color: #933;
+.portlet dl a:focus,
+.portlet dl a:hover,
+.portlet ul a:focus,
+.portlet ul a:hover,
+.portlet ol a:focus,
+.portlet ol a:hover,
+.portlet p a:focus,
+.portlet p a:hover,
+/*
+#portal-column-content dl a:focus,
+#portal-column-content dl a:hover,
+#portal-column-content ol a:focus,
+#portal-column-content ol a:hover,
+#portal-column-content ul a:focus,
+#portal-column-content ul a:hover,
+*/
+#portal-column-content #content a:focus,
+#portal-column-content #content a:hover {
     text-decoration: none;
+    color: #000;
     border-bottom: 1px solid #666;
 }
+
+/* specialized link styles for non-content that is in content section */
+
+/* this part is requried for very explicitness
+#portal-column-content #content a:link,
+#portal-column-content #content a:visited,
+*/
+#portal-column-content #content .homeTopics a:link,
+#portal-column-content #content .homeTopics a:visited,
+#portal-column-content #content #document-toc li a:link,
+#portal-column-content #content #document-toc li a:visited,
+#portal-column-content #content .documentByLine a:link,
+#portal-column-content #content .documentByLine a:visited {
+    color: #c00;
+    text-decoration: none;
+    border: 0;
+}
+
+/* this part is requried for very explicitness
+#portal-column-content #content a:focus,
+#portal-column-content #content a:hover,
+*/
+#portal-column-content #content .homeTopics a:focus,
+#portal-column-content #content .homeTopics a:hover,
+#portal-column-content #content .documentByLine a:focus,
+#portal-column-content #content .documentByLine a:hover,
+#portal-column-content #content #document-toc li a:focus,
+#portal-column-content #content #document-toc li a:hover {
+    color: #c00;
+    text-decoration: underline;
+}	
+
+/* breadcrumbs and other sections */
 
 #breadCrumb ul {
     list-style: none;
@@ -826,8 +899,8 @@ ul.sideList {
 }
 
 .portletHeader a:hover {
-    background-color: #fee;
-    border: 1px solid #ecc;
+    background-color: #eee;
+    border: 1px solid #eee;
     text-decoration: none;
 }
 
@@ -865,7 +938,7 @@ ul.sideList {
 
 .portletCollection .portletItem a,
 .portletRecent .portletItem a,
-.portletNavigationTree .navTreeItem a,
+.portletNavigationTree .navTree .navTreeItem a,
 .portletNavigationTree a {
     border: 1px solid white;
     display: block;
@@ -875,12 +948,16 @@ ul.sideList {
 }
 
 .portletNavigationTree .navTreeCurrentItem,
+.portletRecent .portletItem a:focus,
+.portletCollection .portletItem a:focus,
+.portletNavigationTree .navTreeItem a:focus,
+.portletNavigationTree a:focus,
 .portletRecent .portletItem a:hover,
 .portletCollection .portletItem a:hover,
 .portletNavigationTree .navTreeItem a:hover,
 .portletNavigationTree a:hover {
-    background-color: #fee !important;
-    border: 1px solid #ecc !important;
+    background-color: #eee;
+    border: 1px solid #eee;
     text-decoration: none;
 }
 
@@ -913,7 +990,7 @@ ul.sideList {
 }
 
 .portletFooter a:hover {
-    background-color: #fee;
-    border: 1px solid #ecc;
+    background-color: #eee;
+    border: 1px solid #eee;
     text-decoration: none;
 }

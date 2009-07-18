@@ -30,7 +30,6 @@ cellml/theme/vocab.zcml
 cellml/theme/browser/__init__.py
 cellml/theme/browser/cellml_header.pt
 cellml/theme/browser/cellml_logo.pt
-cellml/theme/browser/common.py
 cellml/theme/browser/configure.zcml
 cellml/theme/browser/footer.pt
 cellml/theme/browser/form.py
@@ -60,6 +59,7 @@ cellml/theme/browser/stylesheets/tripoli.base.css
 cellml/theme/browser/stylesheets/plugins/base.css
 cellml/theme/browser/stylesheets/plugins/tripoli.type.css
 cellml/theme/browser/stylesheets/plugins/tripoli.visual.css
+cellml/theme/profiles/default/actions.xml
 cellml/theme/profiles/default/cellml.theme_various.txt
 cellml/theme/profiles/default/cssregistry.xml
 cellml/theme/profiles/default/import_steps.xml
@@ -68,14 +68,18 @@ cellml/theme/profiles/default/metadata.xml
 cellml/theme/profiles/default/skins.xml
 cellml/theme/profiles/default/viewlets.xml
 cellml/theme/skins/cellml_theme_custom_images/CONTENT.txt
+cellml/theme/skins/cellml_theme_custom_images/favicon.ico
 cellml/theme/skins/cellml_theme_custom_templates/CONTENT.txt
 cellml/theme/skins/cellml_theme_custom_templates/livesearch_reply.py
 cellml/theme/skins/cellml_theme_custom_templates/main_template.pt
 cellml/theme/skins/cellml_theme_custom_templates/portlet_prefs.pt
 cellml/theme/skins/cellml_theme_custom_templates/prefs_main_template.pt
 cellml/theme/skins/cellml_theme_styles/CONTENT.txt
+cellml/theme/skins/cellml_theme_styles/IEFixes.css.dtml
+cellml/theme/skins/cellml_theme_styles/RTL.css.dtml
 cellml/theme/skins/cellml_theme_styles/base.css.dtml
 cellml/theme/skins/cellml_theme_styles/base_properties.props
+cellml/theme/skins/cellml_theme_styles/navtree.css.dtml
 cellml/theme/skins/cellml_theme_styles/portlets.css.dtml
 cellml/theme/skins/cellml_theme_styles/public.css.dtml
 docs/HISTORY.txt
