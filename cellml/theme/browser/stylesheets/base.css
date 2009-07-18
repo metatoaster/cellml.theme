@@ -26,6 +26,11 @@ a[name] {
     text-decoration: none;
 }
 
+pre {
+    padding: 2em;
+    border: 1px solid #ccc;
+}
+
 /* ---------------------- END core ---------------------- */
 
 
