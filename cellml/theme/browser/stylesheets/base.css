@@ -756,6 +756,7 @@ ul.sideList {
     overflow: hidden;
     white-space: nowrap;
 }
+
 #portal-globalnav a:hover,
 #portal-globalnav li.selected a {
     background: #c00;
@@ -834,6 +835,8 @@ ul.sideList {
 #portal-column-content #content a:link,
 #portal-column-content #content a:visited,
 */
+#portal-column-content #content .listingBar a:link,
+#portal-column-content #content .listingBar a:visited,
 #portal-column-content #content .homeTopics a:link,
 #portal-column-content #content .homeTopics a:visited,
 #portal-column-content #content #document-toc li a:link,
@@ -849,6 +852,8 @@ ul.sideList {
 #portal-column-content #content a:focus,
 #portal-column-content #content a:hover,
 */
+#portal-column-content #content .listingBar a:focus,
+#portal-column-content #content .listingBar a:hover,
 #portal-column-content #content .homeTopics a:focus,
 #portal-column-content #content .homeTopics a:hover,
 #portal-column-content #content .documentByLine a:focus,
