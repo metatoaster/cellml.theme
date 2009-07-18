@@ -17,7 +17,8 @@ html, body {
 }
 
 body {
-    padding: 2em auto;
+    margin: 0;
+    padding: 0;
     color: #333;
     font-family: Verdana, Arial, Helvetica, sans-serif;	
 }
@@ -139,6 +140,8 @@ pre {
     /* XXX this will break image backgrounds */ 
     background: #e6e8f0 url(++resource++cellml.theme.images/body-shadow.png) center repeat-y;
     height: 3.1em;
+    margin-top: -3.1em;
+    position: relative;
 }
 
 #portal-footer {
