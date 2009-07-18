@@ -183,7 +183,7 @@ code,kbd,samp,pre,tt,var,input[type='text'],input[type='password'],textarea
 	font-family:mono-space,monospace;
 }
 
-pre
+pre,code
 {
 	white-space:pre;
 }
@@ -395,7 +395,7 @@ CONTENT */
 	border-collapse:collapse;
 }
 
-.documentContent hr,.documentContent p,.documentContent ul,.documentContent ol,.documentContent dl,.documentContent pre, .documentContent address,.documentContent table,.documentContent form
+.documentContent hr,.documentContent p,.documentContent ul,.documentContent ol,.documentContent dl,.documentContent pre,.documentContent code.blockcode, .documentContent address,.documentContent table,.documentContent form
 {
 	margin-bottom:1.6em;
 }
