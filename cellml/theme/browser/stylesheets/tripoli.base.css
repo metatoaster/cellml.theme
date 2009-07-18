@@ -167,12 +167,12 @@ a
 	text-decoration:underline;
 }
 
-strong,th,thead td,h1,h2,h3,h4,h5,h6,dt
+strong,th,thead td,h1,h2,h3,h4,h5,h6,dt,b
 {
 	font-weight:bold;
 }
 
-cite,em,dfn
+cite,em,dfn,i
 {
 	font-style:italic;
 }
