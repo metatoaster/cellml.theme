@@ -56,6 +56,10 @@ pre {
     /* background: #f4f4f4 url(/templates/cellml/global/img/layout-grid.gif); */
 }
 
+#block1Wrapper {
+    margin-bottom: 3.1em;
+}
+
 #portal-top-wrapper {
 }
 
@@ -140,8 +144,6 @@ pre {
     /* XXX this will break image backgrounds */ 
     background: #e6e8f0 url(++resource++cellml.theme.images/body-shadow.png) center repeat-y;
     height: 3.1em;
-    margin-top: -3.1em;
-    position: relative;
 }
 
 #portal-footer {
@@ -379,6 +381,12 @@ Layout Four: Two columns
     margin-left: -300px;
     width: 300px; 
     /* border: 1px solid blue; */
+}
+
+/* Safari Bug Fix as there might be negative margins that prevent 
+ * interaction with elements within these blocks. */
+#block2, #block3 {
+    position: relative;
 }
 
 /*
