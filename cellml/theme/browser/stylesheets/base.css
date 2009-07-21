@@ -837,8 +837,8 @@ ul.sideList {
 */
 #portal-column-content #content .listingBar a:link,
 #portal-column-content #content .listingBar a:visited,
-#portal-column-content #content .homeTopics a:link,
-#portal-column-content #content .homeTopics a:visited,
+#portal-column-content #content .homeTopics h2 a:link,
+#portal-column-content #content .homeTopics h2 a:visited,
 #portal-column-content #content #document-toc li a:link,
 #portal-column-content #content #document-toc li a:visited,
 #portal-column-content #content .documentByLine a:link,
@@ -854,8 +854,8 @@ ul.sideList {
 */
 #portal-column-content #content .listingBar a:focus,
 #portal-column-content #content .listingBar a:hover,
-#portal-column-content #content .homeTopics a:focus,
-#portal-column-content #content .homeTopics a:hover,
+#portal-column-content #content .homeTopics h2 a:focus,
+#portal-column-content #content .homeTopics h2 a:hover,
 #portal-column-content #content .documentByLine a:focus,
 #portal-column-content #content .documentByLine a:hover,
 #portal-column-content #content #document-toc li a:focus,
