@@ -788,22 +788,8 @@ ul.spacious li {
 }	
 
 /* Standard link styles for content sections */
-.portlet dl a:link,
-.portlet dl a:visited,
-.portlet ul a:link,
-.portlet ul a:visited,
-.portlet ol a:link,
-.portlet ol a:visited,
-.portlet p a:link,
-.portlet p a:visited,
-/*
-#portal-column-content dl a:link,
-#portal-column-content dl a:visited,
-#portal-column-content ol a:link,
-#portal-column-content ol a:visited,
-#portal-column-content ul a:link,
-#portal-column-content ul a:visited,
-*/
+.portlet a:link,
+.portlet a:visited,
 #portal-column-content #content a:link,
 #portal-column-content #content a:visited {
     text-decoration: none;
@@ -811,22 +797,8 @@ ul.spacious li {
     border-bottom: 1px solid #bbb;
 }
 
-.portlet dl a:focus,
-.portlet dl a:hover,
-.portlet ul a:focus,
-.portlet ul a:hover,
-.portlet ol a:focus,
-.portlet ol a:hover,
-.portlet p a:focus,
-.portlet p a:hover,
-/*
-#portal-column-content dl a:focus,
-#portal-column-content dl a:hover,
-#portal-column-content ol a:focus,
-#portal-column-content ol a:hover,
-#portal-column-content ul a:focus,
-#portal-column-content ul a:hover,
-*/
+.portlet a:focus,
+.portlet a:hover,
 #portal-column-content #content a:focus,
 #portal-column-content #content a:hover {
     text-decoration: none;
@@ -840,6 +812,16 @@ ul.spacious li {
 #portal-column-content #content a:link,
 #portal-column-content #content a:visited,
 */
+.portlet .portletHeader a:link,
+.portlet .portletHeader a:visited,
+.portlet .portletItem h1 a:link,
+.portlet .portletItem h1 a:visited,
+.portlet .portletItem h2 a:link,
+.portlet .portletItem h2 a:visited,
+.portlet .portletItem h3 a:link,
+.portlet .portletItem h3 a:visited,
+.portlet .portletFooter a:link,
+.portlet .portletFooter a:visited,
 #portal-column-content #content .listingBar a:link,
 #portal-column-content #content .listingBar a:visited,
 #portal-column-content #content .homeTopics h2 a:link,
@@ -862,6 +844,16 @@ ul.spacious li {
 #portal-column-content #content a:focus,
 #portal-column-content #content a:hover,
 */
+.portlet .portletHeader a:focus,
+.portlet .portletHeader a:hover,
+.portlet .portletItem h1 a:focus,
+.portlet .portletItem h1 a:hover,
+.portlet .portletItem h2 a:focus,
+.portlet .portletItem h2 a:hover,
+.portlet .portletItem h3 a:focus,
+.portlet .portletItem h3 a:hover,
+.portlet .portletFooter a:focus,
+.portlet .portletFooter a:hover,
 #portal-column-content #content .listingBar a:focus,
 #portal-column-content #content .listingBar a:hover,
 #portal-column-content #content .homeTopics h2 a:focus,
