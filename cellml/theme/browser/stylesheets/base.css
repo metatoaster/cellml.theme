@@ -533,6 +533,11 @@ ul.sideList {
     margin-top: 0 !important;
 }
 
+ol.spacious li,
+ul.spacious li {
+    margin: 0.4em 0;
+}
+
 
 /* ---------------------- END secondary typography: content, lists and links ---------------------- */
 
