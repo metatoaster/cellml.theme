@@ -844,11 +844,16 @@ ul.spacious li {
 #portal-column-content #content .listingBar a:visited,
 #portal-column-content #content .homeTopics h2 a:link,
 #portal-column-content #content .homeTopics h2 a:visited,
-#portal-column-content #content #document-toc li a:link,
-#portal-column-content #content #document-toc li a:visited,
 #portal-column-content #content .documentByLine a:link,
 #portal-column-content #content .documentByLine a:visited {
     color: #c00;
+    text-decoration: none;
+    border: 0;
+}
+
+#portal-column-content #content #document-toc li a:link,
+#portal-column-content #content #document-toc li a:visited {
+    color: #333;
     text-decoration: none;
     border: 0;
 }
@@ -862,12 +867,17 @@ ul.spacious li {
 #portal-column-content #content .homeTopics h2 a:focus,
 #portal-column-content #content .homeTopics h2 a:hover,
 #portal-column-content #content .documentByLine a:focus,
-#portal-column-content #content .documentByLine a:hover,
-#portal-column-content #content #document-toc li a:focus,
-#portal-column-content #content #document-toc li a:hover {
+#portal-column-content #content .documentByLine a:hover {
     color: #c00;
     text-decoration: underline;
 }	
+
+#portal-column-content #content #document-toc li a:focus,
+#portal-column-content #content #document-toc li a:hover {
+    color: #333;
+    text-decoration: underline;
+    border: 0
+}
 
 /* breadcrumbs and other sections */
 
