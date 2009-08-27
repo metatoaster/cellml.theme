@@ -38,6 +38,11 @@ pre {
 
 /* ---------------------- structure ---------------------- */
 
+#global-wrapper {	
+    height: 100%;
+    min-height: 100%;
+}
+
 #visual-portal-wrapper {	
     margin: 0 auto -3.1em;
     padding: 0 3em 0;
@@ -177,6 +182,25 @@ pre {
     background: #fff;
     height: auto;
     min-height: 100%;
+}
+
+/* Dynamic bottom footer depending on layers */
+/* 3.1 + (7 * n) em */
+
+.footer-1 #visual-portal-wrapper {	
+    margin: 0 auto -10.1em;
+}
+
+.footer-1 #portal-footer-wrapper {
+    height: 10.1em;
+}
+
+.footer-2 #visual-portal-wrapper {	
+    margin: 0 auto -17.1em;
+}
+
+.footer-2 #portal-footer-wrapper {
+    height: 17.1em;
 }
 
 /*
@@ -911,6 +935,7 @@ ul.spacious li {
 #portal-footer a:visited {
     color: #222;
     text-decoration: none;
+    border: none;
 }
 
 #portal-footer a:visited { 
@@ -921,6 +946,7 @@ ul.spacious li {
 #portal-footer a:hover {
     color: #222;
     text-decoration: underline;
+    border: none;
 }
 
 
@@ -1038,4 +1064,16 @@ ul.spacious li {
     background-color: #eee;
     border: 1px solid #eee;
     text-decoration: none;
+}
+
+#portal-footer .portlet {
+    clear: both;
+    height: 7em;
+    overflow: hidden;
+    /* background: url(++resource++cellml.theme.images/body-shadow.png) center repeat-y; */
+    padding: 1em 3em 0;
+}
+
+#portal-footer .portlet .portletHeader {
+    display: none;
 }

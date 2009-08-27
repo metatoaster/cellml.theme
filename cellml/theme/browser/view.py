@@ -1,10 +1,21 @@
+from ZODB.POSException import ConflictError
+
 from zope import interface
 from zope.component import queryAdapter, queryMultiAdapter
+from zope.component import getMultiAdapter, getUtility
 from zope.publisher import browser
 from zope.contentprovider.interfaces import IContentProvider
 
+from plone.portlets.interfaces import IPortletManager
+from plone.portlets.interfaces import IPortletRetriever
+from plone.portlets.interfaces import IPortletRenderer
+from plone.portlets.interfaces import IPortletManagerRenderer
+
 from Acquisition import aq_inner, aq_parent, Explicit
 from Products.CMFPlone.browser.interfaces import IPlone
+
+import logging
+logger = logging.getLogger('cellml.theme')
 
 
 class Layout(Explicit):
@@ -94,3 +105,72 @@ class Layout(Explicit):
 
         self.layout = o.get_layout(sl, sr)
         return self.layout
+
+
+class FooterPortletCount(Explicit):
+    """Snippet to figure out how many cellml.footer_portlets we have.
+    """
+
+    interface.implements(IContentProvider)
+
+    def __init__(self, context, request, view):
+        self.__parent__ = view
+        self.view = view
+        self.context = context
+        self.request = request
+        self.count = 0
+
+    def update(self):
+        manager = None
+        # XXX sometimes "nested" objects can't get managers, so we try
+        # to go up
+        context = aq_inner(self.context)
+        while context is not None and manager is None:
+            try:
+                manager = getUtility(
+                    IPortletManager, name=u"cellml.footer_portlets", 
+                    context=context)
+            except:
+                context = aq_parent(context)
+
+        if manager is None:
+            # and if we fail, return nothing
+            return []
+
+        retriever = getMultiAdapter((context, manager), IPortletRetriever)
+        retriever.getPortlets()
+
+        items = []
+        for p in self.filter(retriever.getPortlets()):
+            renderer = getMultiAdapter(
+                (context, self.request, 
+                    self.__parent__, manager, p['assignment'].data,), 
+                IPortletRenderer)
+            try:
+                isAvailable = renderer.available
+            except ConflictError:
+                raise
+            except Exception, e:
+                isAvailable = False
+                logger.exception('Error while determining renderer availability of portlet %r: %s' % (p, str(e)))
+
+            if isAvailable:
+                items.append(p)
+
+        self.count = len(items)
+
+    def filter(self, portlets):
+        filtered = []
+        for p in portlets:
+            try:
+                if p['assignment'].available:
+                    filtered.append(p)
+            except ConflictError:
+                raise
+            except Exception, e:
+                logger.exception('Error while determining assignment availability of portlet %r: %s' % (p, str(e)))
+        return filtered
+
+    def render(self):
+        # magic css class, magic max value
+        return 'footer-%d' % min(self.count, 2)

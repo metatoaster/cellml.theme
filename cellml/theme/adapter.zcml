@@ -16,4 +16,11 @@
       name="cellml.theme.layoutTheme"
       />
 
+  <adapter
+      factory=".browser.view.FooterPortletCount"
+      provides="zope.contentprovider.interfaces.IContentProvider"
+      for="* zope.publisher.interfaces.browser.IDefaultBrowserLayer *"
+      name="cellml.theme.footer_portlet_count"
+      />
+
 </configure>

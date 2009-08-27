@@ -1,5 +1,7 @@
 import zope.interface
 import zope.schema
+from plone.portlets.interfaces import IPortletManager
+
 
 class ILayoutSettings(zope.interface.Interface):
     """\
@@ -17,3 +19,9 @@ class ILayoutSettings(zope.interface.Interface):
         """\
         Return the layout based on the columns.
         """
+
+
+class ICellMLFooterPortlets(IPortletManager):
+    """CellML Footer portlets - can be used for sponsor logos.
+    """
+
