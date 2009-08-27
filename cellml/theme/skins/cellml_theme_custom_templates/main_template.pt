@@ -196,7 +196,10 @@
     <metal:block i18n:domain="plone">
       <div id="portal-footer-sticky">
         <div id="portal-footer-wrapper">
-          <div id="portal-footer" tal:content="structure provider:plone.portalfooter" />
+          <div id="portal-footer">
+            <div id="portal-footer-divider"></div>
+            <tal:block tal:content="structure provider:plone.portalfooter" />
+          </div>
         </div>
       </div>
     </metal:block>
