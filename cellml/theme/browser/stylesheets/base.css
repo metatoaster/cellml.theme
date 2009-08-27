@@ -112,6 +112,9 @@ pre {
     padding: 0 0.5em;
 }
 
+#portal-column-content #content .documentActions li a:focus,
+#portal-column-content #content .documentActions li a:hover,
+#portal-column-content #content .documentActions li a:visited,
 #portal-column-content #content .documentActions li a:link {
     color: #222;
     border-bottom: none;
