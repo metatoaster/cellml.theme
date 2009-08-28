@@ -62,9 +62,9 @@
   </head>
 
   <body tal:attributes="class string:${here/getSectionFromURL} template-${template/id};
-                        dir python:test(isRTL, 'rtl', 'ltr')">
-    <div id="global-wrapper" 
-        tal:attributes="class provider:cellml.theme.footer_portlet_count">
+                        dir python:test(isRTL, 'rtl', 'ltr');
+                        id provider:cellml.theme.footer_portlet_count"
+                        >
     <div id="visual-portal-wrapper">
 
       <div id="portal-top-wrapper" i18n:domain="plone">
@@ -193,6 +193,7 @@
       </div>
 
       <div class="visualClear"><!-- --></div>
+      <div id="sticky-pusher"><!-- --></div>
     </div>
 
     <metal:block i18n:domain="plone">
@@ -206,7 +207,6 @@
       </div>
     </metal:block>
 <div id="kss-spinner"><img tal:attributes="src string:${portal_url}/spinner.gif" alt="" /></div>
-  </div>
 </body>
 </html>
 </metal:page>

@@ -61,10 +61,6 @@ pre {
     /* background: #f4f4f4 url(/templates/cellml/global/img/layout-grid.gif); */
 }
 
-#block1Wrapper {
-    margin-bottom: 3.1em;
-}
-
 #portal-top-wrapper {
 }
 
@@ -152,7 +148,6 @@ pre {
     margin: 0 auto;
     /* XXX this will break image backgrounds */ 
     background: #e6e8f0 url(++resource++cellml.theme.images/body-shadow.png) center repeat-y;
-    height: 3.1em;
 }
 
 #portal-footer {
@@ -184,22 +179,60 @@ pre {
     min-height: 100%;
 }
 
-/* Dynamic bottom footer depending on layers */
+/* Sticky footer related styles */
+
+#sticky-pusher:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#sticky-pusher {
+    display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html #sticky-pusher { height: 1%;}
+#sticky-pusher {display: block;}
+/* End hide from IE-mac */
+
+/* "Dynamic" bottom footer depending on layers */
 /* 3.1 + (7 * n) em */
 
-.footer-1 #visual-portal-wrapper {	
+#footer-0 #visual-portal-wrapper {	
+    margin: 0 auto -3.1em;
+}
+
+#footer-1 #visual-portal-wrapper {	
     margin: 0 auto -10.1em;
 }
 
-.footer-1 #portal-footer-wrapper {
-    height: 10.1em;
-}
-
-.footer-2 #visual-portal-wrapper {	
+#footer-2 #visual-portal-wrapper {	
     margin: 0 auto -17.1em;
 }
 
-.footer-2 #portal-footer-wrapper {
+#footer-0 #sticky-pusher {
+    padding-bottom: 3.1em;
+}
+
+#footer-1 #sticky-pusher {
+    padding-bottom: 10.1em;
+}
+
+#footer-2 #sticky-pusher {
+    padding-bottom: 17.1em;
+}
+
+/* heights here to constrain user-added content */
+#footer-0 #portal-footer-wrapper {
+    height: 3.1em;
+}
+
+#footer-1 #portal-footer-wrapper {
+    height: 10.1em;
+}
+
+#footer-2 #portal-footer-wrapper {
     height: 17.1em;
 }
 
@@ -949,7 +982,6 @@ ul.spacious li {
     border: none;
 }
 
-
 /* Plone portlets */
 
 .portlet {
@@ -1068,9 +1100,10 @@ ul.spacious li {
 
 #portal-footer .portlet {
     clear: both;
-    height: 7em;
+    height: 6em;
     overflow: hidden;
     /* background: url(++resource++cellml.theme.images/body-shadow.png) center repeat-y; */
+    margin: 0;
     padding: 1em 3em 0;
 }
 

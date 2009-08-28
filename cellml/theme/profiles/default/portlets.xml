@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<portlets> 
+ <portletmanager 
+    name="cellml.footer_portlets"
+    type="cellml.theme.interfaces.ICellMLFooterPortlets"
+ />
+</portlets>
