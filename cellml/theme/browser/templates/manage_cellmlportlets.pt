@@ -13,9 +13,16 @@
 <body>
 
 <div metal:fill-slot="main">
-  <h1 class="documentFirstHeading">Manage CellML Footer Portlets</h1>
-  <p>The portlets defined here will be displayed at the footer.</p>
+  <h1 class="documentFirstHeading">Manage CellML Portlets</h1>
+
+  <h2 class="documentSecondHeading">Header</h2>
+  <p class="discrete">The portlets defined here will be displayed at the header.</p>
+  <span tal:replace="structure provider:cellml.header_portlets" />
+
+  <h2 class="documentSecondHeading">Footer</h2>
+  <p class="discrete">The portlets defined here will be displayed at the footer.</p>
   <span tal:replace="structure provider:cellml.footer_portlets" />
+
 </div>
 
 <div metal:fill-slot="column_one_slot">

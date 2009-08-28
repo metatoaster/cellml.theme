@@ -44,6 +44,7 @@
 
   <order manager="plone.portalheader" skinname="CellML Theme">
     <viewlet name="plone.skip_links" />
+    <viewlet name="cellml.header_portlets" />
     <viewlet name="cellml.logo" />
     <viewlet name="cellml.personal_bar" />
     <viewlet name="cellml.search" />

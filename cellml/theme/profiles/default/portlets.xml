@@ -4,4 +4,8 @@
     name="cellml.footer_portlets"
     type="cellml.theme.interfaces.ICellMLFooterPortlets"
  />
+ <portletmanager 
+    name="cellml.header_portlets"
+    type="cellml.theme.interfaces.ICellMLHeaderPortlets"
+ />
 </portlets>

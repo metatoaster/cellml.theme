@@ -90,6 +90,14 @@
         />
 
     <browser:viewlet
+        name="cellml.header_portlets"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        template="templates/header_portlets.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View" 
+        /> 
+
+    <browser:viewlet
         name="cellml.footer_portlets"
         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
         template="templates/footer_portlets.pt"

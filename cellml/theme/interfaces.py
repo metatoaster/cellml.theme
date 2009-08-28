@@ -21,6 +21,12 @@ class ILayoutSettings(zope.interface.Interface):
         """
 
 
+class ICellMLHeaderPortlets(IPortletManager):
+    """CellML Header portlets - can be used for sponsor messages.
+    """
+
+
+
 class ICellMLFooterPortlets(IPortletManager):
     """CellML Footer portlets - can be used for sponsor logos.
     """

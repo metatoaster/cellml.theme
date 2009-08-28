@@ -1089,13 +1089,21 @@ ul.spacious li {
 
 .portletFooter a {
     display: block;
-    border: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
 .portletFooter a:hover {
     background-color: #eee;
-    border: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     text-decoration: none;
+}
+
+/* Header and footer portlets rules */
+
+#portal-header .portlet {
+    margin: 0 0 0.7em 0;
+    padding: 0 0 0.7em 0;
+    border-bottom: 1px solid #ccc;
 }
 
 #portal-footer .portlet {
@@ -1107,6 +1115,7 @@ ul.spacious li {
     padding: 1em 3em 0;
 }
 
+#portal-header .portlet .portletHeader,
 #portal-footer .portlet .portletHeader {
     display: none;
 }
