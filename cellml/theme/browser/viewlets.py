@@ -9,7 +9,7 @@ from plone.app.layout.viewlets.common import PathBarViewlet
 
 
 class CellMLLogoViewlet(ViewletBase):
-    index = ViewPageTemplateFile('cellml_logo.pt')
+    index = ViewPageTemplateFile('templates/cellml_logo.pt')
 
     def update(self):
         super(CellMLLogoViewlet, self).update()
@@ -28,7 +28,7 @@ class CellMLSearchBoxViewlet(ViewletBase):
     Can customize this to search through many different things.
     """
 
-    index = ViewPageTemplateFile('searchbox.pt')
+    index = ViewPageTemplateFile('templates/searchbox.pt')
 
     def update(self):
         super(CellMLSearchBoxViewlet, self).update()
@@ -48,7 +48,7 @@ class CellMLSearchBoxViewlet(ViewletBase):
 
 
 class CellMLGlobalSectionsViewlet(GlobalSectionsViewlet):
-    index = ViewPageTemplateFile('sections.pt')
+    index = ViewPageTemplateFile('templates/sections.pt')
 
 
 class CellMLPersonalBarViewlet(PersonalBarViewlet):
