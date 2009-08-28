@@ -41,6 +41,14 @@
         />
 
     <browser:viewlet
+        name="cellml.logo_linked"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.CellMLLogoLinkedViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
         name="cellml.search"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         class=".viewlets.CellMLSearchBoxViewlet"

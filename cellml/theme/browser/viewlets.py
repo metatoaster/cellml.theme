@@ -23,6 +23,15 @@ class CellMLLogoViewlet(ViewletBase):
         self.portal_title = self.portal_state.portal_title()
 
 
+class CellMLLogoLinkedViewlet(CellMLLogoViewlet):
+
+    def update(self):
+        super(CellMLLogoLinkedViewlet, self).update()
+        self.protocol = self.navigation_root_url.split('://')[0]
+        # <3 CellML.
+        self.navigation_root_url = '%s://www.cellml.org/' % self.protocol
+
+
 class CellMLSearchBoxViewlet(ViewletBase):
     """\
     Can customize this to search through many different things.

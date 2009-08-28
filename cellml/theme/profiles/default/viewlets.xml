@@ -51,6 +51,7 @@
   </order>
 
   <hidden manager="plone.portalheader" skinname="CellML Theme">
+    <viewlet name="cellml.logo_linked" />
     <viewlet name="plone.logo" />
     <viewlet name="plone.searchbox" />
     <viewlet name="plone.global_sections" />
