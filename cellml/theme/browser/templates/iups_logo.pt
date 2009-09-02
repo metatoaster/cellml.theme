@@ -1,0 +1,4 @@
+<a id="IUPSLogo" href="http://www.physiome.org.nz"><img 
+     alt="IUPS Physiome Project"
+     title="IUPS Physiome Project"
+     tal:attributes="src string:${view/site_url}/++resource++cellml.theme.images/logo-iups-physiome.png"/></a>

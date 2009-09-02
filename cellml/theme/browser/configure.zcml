@@ -41,6 +41,14 @@
         />
 
     <browser:viewlet
+        name="cellml.logo.iups"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.CellMLIUPSLogoViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
         name="cellml.logo_linked"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         class=".viewlets.CellMLLogoLinkedViewlet"
@@ -65,6 +73,14 @@
         />
 
     <browser:viewlet
+        name="cellml.personal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class=".viewlets.CellMLPersonalBarViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
         name="cellml.global_sections"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         class=".viewlets.CellMLGlobalSectionsViewlet"
@@ -81,10 +97,10 @@
         />
 
     <browser:viewlet
-        name="cellml.footer"
+        name="cellml.copyright"
         for="*"
         manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-        template="templates/footer.pt"
+        template="templates/cellml_copyright.pt"
         layer=".interfaces.IThemeSpecific"
         permission="zope2.View"
         />

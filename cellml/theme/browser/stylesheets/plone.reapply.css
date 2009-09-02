@@ -17,21 +17,6 @@ input.searchButton {
     border: 1px solid #ccc;
 }
 
-#portal-personaltools-wrapper {
-    line-height: 16px;
-    clear: right;
-    float: right;
-}
-
-#portal-personaltools-wrapper li {
-    float: left;
-    padding: 0 0.5em;
-}
-
-#portal-personaltools-wrapper li img {
-    vertical-align: bottom;
-}
-
 dl.portletCalendar dt a.calendarPrevious {
     width: 16px !important;
     height: 0;

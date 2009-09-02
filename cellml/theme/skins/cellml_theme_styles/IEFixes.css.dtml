@@ -12,6 +12,10 @@
 }
 
 #portal-breadcrumbs {
+    width: 100%;
+}
+
+#portal-personaltools-wrapper {
     padding-bottom: 10px;
 }
 

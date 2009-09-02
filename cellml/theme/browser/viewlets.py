@@ -27,7 +27,9 @@ class CellMLLogoLinkedViewlet(CellMLLogoViewlet):
 
     def update(self):
         super(CellMLLogoLinkedViewlet, self).update()
-        self.protocol = self.navigation_root_url.split('://')[0]
+        self.protocol = 'http'
+        # XXX cellml.org still needs https.
+        #self.protocol = self.navigation_root_url.split('://')[0]
         # <3 CellML.
         self.navigation_root_url = '%s://www.cellml.org/' % self.protocol
 
@@ -63,5 +65,10 @@ class CellMLGlobalSectionsViewlet(GlobalSectionsViewlet):
 class CellMLPersonalBarViewlet(PersonalBarViewlet):
     pass
 
+
 class CellMLPathBarViewlet(PathBarViewlet):
     pass
+
+
+class CellMLIUPSLogoViewlet(ViewletBase):
+    index = ViewPageTemplateFile('templates/iups_logo.pt')
