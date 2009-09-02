@@ -79,9 +79,14 @@
   </order>
   -->
 
-  <order manager="plone.portalfooter" skinname="CellML Theme">
+  <order manager="cellml.stickyfooter" skinname="CellML Theme">
+    <viewlet name="cellml.footer_divider" />
     <viewlet name="cellml.copyright" />
     <viewlet name="cellml.site_actions" />
+    <viewlet name="cellml.stickyfooter_portlets" />
+  </order>
+
+  <order manager="plone.portalfooter" skinname="CellML Theme">
     <viewlet name="cellml.footer_portlets" />
   </order>
 

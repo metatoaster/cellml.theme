@@ -20,8 +20,12 @@
   <span tal:replace="structure provider:cellml.header_portlets" />
 
   <h2 class="documentSecondHeading">Footer</h2>
-  <p class="discrete">The portlets defined here will be displayed at the footer.</p>
+  <p class="discrete">The portlets defined here will be displayed at the footer, which is directly below all content including the side bars..</p>
   <span tal:replace="structure provider:cellml.footer_portlets" />
+
+  <h2 class="documentSecondHeading">Sticky Footer</h2>
+  <p class="discrete">The portlets defined here will be displayed at the sticky footer, below the site copyright notice.</p>
+  <span tal:replace="structure provider:cellml.stickyfooter_portlets" />
 
 </div>
 

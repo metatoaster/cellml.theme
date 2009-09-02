@@ -108,7 +108,7 @@ class Layout(Explicit):
 
 
 class FooterPortletCount(Explicit):
-    """Snippet to figure out how many cellml.footer_portlets we have.
+    """Snippet to figure out how many cellml.sticky_portlets we have.
     """
 
     interface.implements(IContentProvider)
@@ -128,7 +128,7 @@ class FooterPortletCount(Explicit):
         while context is not None and manager is None:
             try:
                 manager = getUtility(
-                    IPortletManager, name=u"cellml.footer_portlets", 
+                    IPortletManager, name=u"cellml.stickyfooter_portlets", 
                     context=context)
             except:
                 context = aq_parent(context)
@@ -173,4 +173,4 @@ class FooterPortletCount(Explicit):
 
     def render(self):
         # magic css class, magic max value
-        return 'footer-%d' % min(self.count, 2)
+        return 'sticky-%d' % min(self.count, 2)

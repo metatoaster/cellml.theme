@@ -32,6 +32,14 @@
         permission="plone.app.portlets.ManagePortlets"
         />
 
+    <browser:viewletManager
+        name="cellml.stickyfooter"
+        provides=".interfaces.ICellMLStickyFooter"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
     <browser:viewlet
         name="cellml.logo"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
@@ -97,15 +105,6 @@
         />
 
     <browser:viewlet
-        name="cellml.copyright"
-        for="*"
-        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-        template="templates/cellml_copyright.pt"
-        layer=".interfaces.IThemeSpecific"
-        permission="zope2.View"
-        />
-
-    <browser:viewlet
         name="cellml.header_portlets"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         template="templates/header_portlets.pt"
@@ -122,11 +121,36 @@
         /> 
 
     <browser:viewlet
+        name="cellml.footer_divider"
+        manager=".interfaces.ICellMLStickyFooter"
+        template="templates/footer_divider.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View" 
+        /> 
+
+    <browser:viewlet
+        name="cellml.copyright"
+        for="*"
+        manager=".interfaces.ICellMLStickyFooter"
+        template="templates/cellml_copyright.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
         name="cellml.site_actions"
-        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        manager=".interfaces.ICellMLStickyFooter"
         class="plone.app.layout.viewlets.common.SiteActionsViewlet"
         permission="zope2.View"
         />
+
+    <browser:viewlet
+        name="cellml.stickyfooter_portlets"
+        manager=".interfaces.ICellMLStickyFooter"
+        template="templates/stickyfooter_portlets.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View" 
+        /> 
 
     <!-- Zope 3 browser resources -->
 

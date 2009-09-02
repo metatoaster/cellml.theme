@@ -193,19 +193,19 @@
       </div>
 
       <div class="visualClear"><!-- --></div>
+      <metal:block i18n:domain="plone">
+      <div id="footer">
+        <tal:block tal:content="structure provider:plone.portalfooter" />
+      </div>
+      </metal:block>
+      <div class="visualClear"><!-- --></div>
       <div id="sticky-pusher"><!-- --></div>
     </div>
 
-    <metal:block i18n:domain="plone">
-      <div id="portal-footer-sticky">
-        <div id="portal-footer-wrapper">
-          <div id="portal-footer">
-            <div id="portal-footer-divider"></div>
-            <tal:block tal:content="structure provider:plone.portalfooter" />
-          </div>
-        </div>
-      </div>
-    </metal:block>
+    <div id="sticky-footer">
+      <tal:block tal:content="structure provider:cellml.stickyfooter" />
+    </div>
+
 <div id="kss-spinner"><img tal:attributes="src string:${portal_url}/spinner.gif" alt="" /></div>
 </body>
 </html>

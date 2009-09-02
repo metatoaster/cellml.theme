@@ -1,1 +1,1 @@
-<tal:block replace="structure provider:cellml.footer_portlets" />
+<tal:block replace="structure provider:cellml.stickyfooter_portlets" />
