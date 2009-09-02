@@ -53,12 +53,14 @@
     <viewlet name="plone.skip_links" />
     <viewlet name="cellml.header_portlets" />
     <viewlet name="cellml.logo" />
+    <viewlet name="cellml.logo_linked" />
     <viewlet name="cellml.logo.iups" />
     <viewlet name="cellml.search" />
     <viewlet name="cellml.global_sections" />
   </order>
 
   <hidden manager="plone.portalheader" skinname="CellML Theme">
+    <viewlet name="cellml.logo" remove="True" />
     <viewlet name="cellml.logo_linked" />
     <viewlet name="plone.logo" />
     <viewlet name="plone.searchbox" />

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object>
+  <hidden manager="plone.portalheader" skinname="CellML Theme">
+    <viewlet name="cellml.logo" />
+    <viewlet name="cellml.logo_linked" remove="True" />
+  </hidden>
+</object>
