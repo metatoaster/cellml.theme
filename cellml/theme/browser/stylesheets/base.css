@@ -76,23 +76,18 @@ pre {
 #portal-personaltools-wrapper {
     clear: right;
     float: right;
-    margin: 0.8em 0 0.2em;
+    padding: 0.8em 0 0.2em;
 
     /* XXX Firefox 2 somehow calculates width as 100% 
      * anyway, width normally don't exceed this much anyway */
     max-width: 620px;
 }
 
-#portal-personaltools-wrapper li {
-    float: left;
-    padding: 0 0.5em 0.5em;
-}
-
-#portal-personaltools-wrapper li a span {
+#portal-personaltools li a span {
     vertical-align: top;
 }
 
-#portal-personaltools-wrapper li a img {
+#portal-personaltools li a img {
     vertical-align: top;
     margin-top: -0.2em;
 }
@@ -119,6 +114,7 @@ pre {
     float: right;
     width: auto;
     text-align: right;		
+    line-height: 1.1em;
 }
 
 #portal-column-content #content .documentActions li {
