@@ -69,6 +69,10 @@ pre {
     width: 940px;
 }
 
+#portal-breadcrumbs span {
+    padding-bottom: 0.5em;
+}
+
 #portal-personaltools-wrapper {
     clear: right;
     float: right;
@@ -81,7 +85,7 @@ pre {
 
 #portal-personaltools-wrapper li {
     float: left;
-    padding: 0 0.5em;
+    padding: 0 0.5em 0.5em;
 }
 
 #portal-personaltools-wrapper li a span {

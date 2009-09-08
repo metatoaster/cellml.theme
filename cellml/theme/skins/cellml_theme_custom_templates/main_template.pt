@@ -36,7 +36,7 @@
                           content python:keyval[1];" />
 
     <!-- Internet Explorer CSS Fixes -->
-    <tal:iefixstart replace="structure string:&lt;!--[if IE]&gt;" />
+    <tal:iefixstart replace="structure string:&lt;!--[if lt IE 7]&gt;" />
         <style type="text/css" media="all" tal:condition="exists: portal/IEFixes.css"
                tal:content="string:@import url($portal_url/IEFixes.css);">
         </style>

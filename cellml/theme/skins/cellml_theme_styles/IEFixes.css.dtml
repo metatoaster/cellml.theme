@@ -11,12 +11,8 @@
     margin-top: 0 !important;
 }
 
-#portal-breadcrumbs {
-    width: 100%;
-}
-
 #portal-personaltools-wrapper {
-    padding-bottom: 10px;
+    padding-bottom: 0.5em;
 }
 
 /* YOUR CSS RULES STOP HERE */
