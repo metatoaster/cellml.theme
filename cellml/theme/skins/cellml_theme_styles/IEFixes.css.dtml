@@ -11,10 +11,6 @@
     margin-top: 0 !important;
 }
 
-#portal-personaltools-wrapper {
-    padding-bottom: 0.5em;
-}
-
 /* YOUR CSS RULES STOP HERE */
 
 /* </dtml-with> */

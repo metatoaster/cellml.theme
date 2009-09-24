@@ -61,22 +61,18 @@ pre {
     /* background: #f4f4f4 url(/templates/cellml/global/img/layout-grid.gif); */
 }
 
-#portal-top-wrapper {
-}
-
 #portal-top {
     padding-top: 0.75em;	
     width: 940px;
 }
 
-#portal-breadcrumbs span {
-    padding-bottom: 0.5em;
+#clear-space-before-wrapper-table {
+    padding-bottom: 0.6em;
 }
 
 #portal-personaltools-wrapper {
-    clear: right;
     float: right;
-    padding: 0.8em 0 0.2em;
+    padding: 0.8em 0 0;
 
     /* XXX Firefox 2 somehow calculates width as 100% 
      * anyway, width normally don't exceed this much anyway */
@@ -89,7 +85,7 @@ pre {
 
 #portal-personaltools li a img {
     vertical-align: top;
-    margin-top: -0.2em;
+    margin: -0.2em 0 -0.2em;
 }
 
 #portal-personaltools a:link,
@@ -796,7 +792,7 @@ ul.spacious li {
 /* End @group LiveSearch */
 
 #portal-breadcrumbs {
-    margin: 0.8em 0;
+    margin: 0.8em 0 0;
     clear: left;
     float: left;
     width: auto;
