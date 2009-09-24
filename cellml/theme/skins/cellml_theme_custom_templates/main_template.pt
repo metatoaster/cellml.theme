@@ -71,9 +71,6 @@
         <div id="portal-top" i18n:domain="plone">
           <div tal:replace="structure provider:plone.portaltop" />
         </div>
-        <tal:iefixstart replace="structure string:&lt;!--[if IE 7]&gt;" />
-          <div class="visualClear" style="padding-bottom: 1em;"></div>
-        <tal:iefixend replace="structure string:&lt;![endif]--&gt;" />
       </div>
 
       <div class="visualClear" id="clear-space-before-wrapper-table"><!-- --></div>

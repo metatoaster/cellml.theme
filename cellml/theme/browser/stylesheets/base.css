@@ -108,6 +108,10 @@ pre {
     text-decoration: underline;
 }
 
+#portal-columns {
+    clear: both;
+}
+
 #portal-column-content #content .documentActions,
 #sticky-footer #portal-siteactions,
 #portal-personaltools {
@@ -185,6 +189,7 @@ pre {
     background: #fff;
     height: auto;
     min-height: 100%;
+    clear: both;
 }
 
 /* Sticky footer related styles */
@@ -794,6 +799,7 @@ ul.spacious li {
     margin: 0.8em 0;
     clear: left;
     float: left;
+    width: auto;
 }
 
 #portal-breadcrumbs a {

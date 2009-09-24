@@ -177,7 +177,7 @@ div.documentEditable {
 div.contentActions {
     float: left;
     background: #333;
-    margin: -1em 0 1em;
+    margin: -1em 0 0;
     padding: 0;
     border: 0;
     width: 100%;
@@ -351,6 +351,7 @@ dl.portalMessage {
     background-color: #ffffe3;
     border: 1px solid #996;
     clear: both;
+    margin-bottom: 1em;
 }
 dl.portalMessage a {
     color: black;
