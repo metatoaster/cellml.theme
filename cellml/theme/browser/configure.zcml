@@ -152,6 +152,14 @@
         permission="zope2.View" 
         /> 
 
+    <browser:viewlet
+        name="cellml.analytics"
+        manager=".interfaces.ICellMLStickyFooter"
+        class="plone.app.layout.analytics.view.AnalyticsViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View" 
+        /> 
+
     <!-- Zope 3 browser resources -->
 
     <!-- Resource directory for images

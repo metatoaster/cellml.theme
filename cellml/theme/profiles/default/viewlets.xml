@@ -86,6 +86,7 @@
     <viewlet name="cellml.copyright" />
     <viewlet name="cellml.site_actions" />
     <viewlet name="cellml.stickyfooter_portlets" />
+    <viewlet name="plone.analytics" />
   </order>
 
   <order manager="plone.portalfooter" skinname="CellML Theme">
@@ -95,6 +96,7 @@
   <hidden manager="plone.portalfooter" skinname="CellML Theme">
     <viewlet name="plone.footer" />
     <viewlet name="plone.colophon" />
+    <viewlet name="plone.analytics" />
   </hidden>
 
 </object>
