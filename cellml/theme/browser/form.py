@@ -25,5 +25,16 @@ class ThemeLayoutForm(z3c.form.form.EditForm):
 
         return queryAdapter(self.context, name='CellMLThemeSettings')
 
-ThemeLayoutFormView = layout.wrap_form(ThemeLayoutForm, 
+
+class ThemeLayoutFormWrapper(browser.BrowserPage):
+
+    template = ViewPageTemplateFile('templates/cellml_layout_wrapper.pt')
+
+    def content(self):
+        return ThemeLayoutForm(self.context, self.request)()
+
+    def __call__(self):
+        return self.template()
+
+ThemeLayoutFormView = layout.wrap_form(ThemeLayoutFormWrapper, 
     label=u'Select CellML Theme')
