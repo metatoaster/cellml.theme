@@ -352,6 +352,7 @@ dl.portalMessage {
     border: 1px solid #996;
     clear: both;
     margin-bottom: 1em;
+    padding: 0.5em;
 }
 dl.portalMessage a {
     color: black;
@@ -361,22 +362,23 @@ dl.portalMessage a {
 dl.portalMessage dt {
     background-color: #996;
     font-weight: bold;
+    display: inline;
     float: left;
-    margin: 0 0.5em 0 0;
+    margin: -0.5em 0.5em 0.5em -0.5em;
     padding: 0.5em 0.75em;
+    border: 0;
     color: White;
     line-height: 1.25em;
 }
 dl.portalMessage dd {
-    padding: 0.5em 0.5em;
-    margin: 0;
     line-height: 1.25em;
+    display: inline;
 }
 dl.warning {
     border-color: #d80;
+    background-color: #d80;
 }
 dl.warning dt {
-    background-color: #d80;
 }
 dl.error {
     border-color: #d00;
@@ -386,15 +388,15 @@ dl.error dt {
 }
 dl.warning {
     border-color: #d80;
+    background-color: #fd7;
 }
 dl.warning dd {
-    background-color: #fd7;
 }
 dl.error {
     border-color: #d80;
+    background-color: #fd7;
 }
 dl.error dd {
-    background-color: #fd7;
 }
 
 /* Other overrides that are necessary due to the way this skin is built */
