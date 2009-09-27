@@ -353,6 +353,8 @@ dl.portalMessage {
     clear: both;
     margin-bottom: 1em;
     padding: 0.5em;
+    line-height: 1.25em;
+    font-size: 0.91em;
 }
 dl.portalMessage a {
     color: black;
@@ -368,10 +370,8 @@ dl.portalMessage dt {
     padding: 0.5em 0.75em;
     border: 0;
     color: White;
-    line-height: 1.25em;
 }
 dl.portalMessage dd {
-    line-height: 1.25em;
     display: inline;
 }
 dl.warning {
