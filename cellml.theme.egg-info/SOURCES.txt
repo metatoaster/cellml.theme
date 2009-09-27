@@ -57,6 +57,7 @@ cellml/theme/browser/stylesheets/plugins/tripoli.type.css
 cellml/theme/browser/stylesheets/plugins/tripoli.visual.css
 cellml/theme/browser/templates/cellml_copyright.pt
 cellml/theme/browser/templates/cellml_header.pt
+cellml/theme/browser/templates/cellml_layout_wrapper.pt
 cellml/theme/browser/templates/cellml_logo.pt
 cellml/theme/browser/templates/footer_divider.pt
 cellml/theme/browser/templates/footer_portlets.pt
