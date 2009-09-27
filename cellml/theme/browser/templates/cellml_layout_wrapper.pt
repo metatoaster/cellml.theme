@@ -1,0 +1,14 @@
+<div tal:content="structure view/content"/>
+<dl>
+<dt>Other layout related links:</dt>
+<dd>
+<ul>
+<li><a tal:attributes="
+         href string:${context/absolute_url}/@@manage-cellmlportlets;
+         ">Manage CellML Theme portlets</a></li>
+<li><a tal:attributes="
+         href string:${context/absolute_url}/@@manage-portlets;
+         ">Manage standard portlets</a></li>
+</ul>
+</dd>
+</dl>
