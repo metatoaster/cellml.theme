@@ -648,8 +648,13 @@ ul.spacious li {
     float: left;
 }
 
-#IUPSLogo {
+#PhysiomeLogo {
+    float: left;
+}
+
+#PartOfLogo {
     float: right;
+    height: 50px;
 }
 
 #portal-searchbox form  {

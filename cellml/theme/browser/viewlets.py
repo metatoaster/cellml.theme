@@ -70,5 +70,20 @@ class CellMLPathBarViewlet(PathBarViewlet):
     pass
 
 
-class CellMLIUPSLogoViewlet(ViewletBase):
+class CellMLPartOfIUPSViewlet(ViewletBase):
     index = ViewPageTemplateFile('templates/iups_logo.pt')
+
+
+class CellMLPartOfFillerViewlet(ViewletBase):
+    index = ViewPageTemplateFile('templates/filler.pt')
+
+
+class PhysiomeLogoLinkedViewlet(CellMLLogoViewlet):
+    index = ViewPageTemplateFile('templates/physiome_logo.pt')
+
+    def update(self):
+        super(PhysiomeLogoLinkedViewlet, self).update()
+        self.protocol = 'http'
+        # XXX physiomeproject.org still needs https.
+        #self.protocol = self.navigation_root_url.split('://')[0]
+        self.navigation_root_url = '%s://physiomeproject.org/' % self.protocol

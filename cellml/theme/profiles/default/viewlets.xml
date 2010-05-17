@@ -54,7 +54,9 @@
     <viewlet name="cellml.header_portlets" />
     <viewlet name="cellml.logo" />
     <viewlet name="cellml.logo_linked" />
-    <viewlet name="cellml.logo.iups" />
+    <viewlet name="cellml.logo_linked.physiome" />
+    <viewlet name="cellml.partof.iups" />
+    <viewlet name="cellml.partof.filler" />
     <viewlet name="cellml.search" />
     <viewlet name="cellml.global_sections" />
   </order>
@@ -62,6 +64,9 @@
   <hidden manager="plone.portalheader" skinname="CellML Theme">
     <viewlet name="cellml.logo" remove="True" />
     <viewlet name="cellml.logo_linked" />
+    <viewlet name="cellml.logo_linked.physiome" />
+    <viewlet name="cellml.partof.iups" remove="True" />
+    <viewlet name="cellml.partof.filler" />
     <viewlet name="plone.logo" />
     <viewlet name="plone.searchbox" />
     <viewlet name="plone.global_sections" />
@@ -117,6 +122,9 @@
       based-on="CellML Theme">
     <viewlet name="cellml.logo" />
     <viewlet name="cellml.logo_linked" remove="True" />
+    <viewlet name="cellml.logo_linked.physiome" />
+    <viewlet name="cellml.partof.iups" remove="True" />
+    <viewlet name="cellml.partof.filler" />
   </hidden>
 
   <hidden manager="plone.contentviews" skinname="CellML Theme (models)"
@@ -132,6 +140,45 @@
   </order>
 
   <hidden manager="plone.portalfooter" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+  </hidden>
+
+  <!-- models.physiomeproject.org customization -->
+
+  <order manager="plone.portaltop" skinname="CellML Theme (PMR2)"
+      based-on="CellML Theme">
+  </order>
+
+  <hidden manager="plone.portaltop" skinname="CellML Theme (PMR2)"
+      based-on="CellML Theme">
+  </hidden>
+
+  <order manager="plone.portalheader" skinname="CellML Theme (PMR2)"
+      based-on="CellML Theme">
+  </order>
+
+  <hidden manager="plone.portalheader" skinname="CellML Theme (PMR2)"
+      based-on="CellML Theme">
+    <viewlet name="cellml.logo" />
+    <viewlet name="cellml.logo_linked" />
+    <viewlet name="cellml.logo_linked.physiome" remove="True" />
+    <viewlet name="cellml.partof.iups" />
+    <viewlet name="cellml.partof.filler" remove="True" />
+  </hidden>
+
+  <hidden manager="plone.contentviews" skinname="CellML Theme (PMR2)"
+      based-on="CellML Theme">
+  </hidden>
+
+  <order manager="cellml.stickyfooter" skinname="CellML Theme (PMR2)"
+      based-on="CellML Theme">
+  </order>
+
+  <order manager="plone.portalfooter" skinname="CellML Theme (PMR2)"
+      based-on="CellML Theme">
+  </order>
+
+  <hidden manager="plone.portalfooter" skinname="CellML Theme (PMR2)"
       based-on="CellML Theme">
   </hidden>
 

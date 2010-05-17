@@ -23,6 +23,12 @@
         name="CellML Theme (models)"
         />
 
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="CellML Theme (PMR2)"
+        />
+
     <browser:page
         for="*"
         name="cellml_theme_layout"
@@ -55,9 +61,17 @@
         />
 
     <browser:viewlet
-        name="cellml.logo.iups"
+        name="cellml.partof.iups"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-        class=".viewlets.CellMLIUPSLogoViewlet"
+        class=".viewlets.CellMLPartOfIUPSViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="cellml.partof.filler"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.CellMLPartOfFillerViewlet"
         layer=".interfaces.IThemeSpecific"
         permission="zope2.View"
         />
@@ -66,6 +80,14 @@
         name="cellml.logo_linked"
         manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
         class=".viewlets.CellMLLogoLinkedViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="cellml.logo_linked.physiome"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.PhysiomeLogoLinkedViewlet"
         layer=".interfaces.IThemeSpecific"
         permission="zope2.View"
         />
