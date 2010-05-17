@@ -44,6 +44,7 @@ cellml/theme/browser/images/globalnav-separator.gif
 cellml/theme/browser/images/globalnav-separator.png
 cellml/theme/browser/images/logo-cellml.png
 cellml/theme/browser/images/logo-iups-physiome.png
+cellml/theme/browser/images/logo-physiome.png
 cellml/theme/browser/stylesheets/README.txt
 cellml/theme/browser/stylesheets/base.css
 cellml/theme/browser/stylesheets/ie.css
@@ -57,12 +58,15 @@ cellml/theme/browser/stylesheets/plugins/tripoli.type.css
 cellml/theme/browser/stylesheets/plugins/tripoli.visual.css
 cellml/theme/browser/templates/cellml_copyright.pt
 cellml/theme/browser/templates/cellml_header.pt
+cellml/theme/browser/templates/cellml_layout_wrapper.pt
 cellml/theme/browser/templates/cellml_logo.pt
+cellml/theme/browser/templates/filler.pt
 cellml/theme/browser/templates/footer_divider.pt
 cellml/theme/browser/templates/footer_portlets.pt
 cellml/theme/browser/templates/header_portlets.pt
 cellml/theme/browser/templates/iups_logo.pt
 cellml/theme/browser/templates/manage_cellmlportlets.pt
+cellml/theme/browser/templates/physiome_logo.pt
 cellml/theme/browser/templates/searchbox.pt
 cellml/theme/browser/templates/sections.pt
 cellml/theme/browser/templates/stickyfooter_portlets.pt
@@ -75,7 +79,6 @@ cellml/theme/profiles/default/metadata.xml
 cellml/theme/profiles/default/portlets.xml
 cellml/theme/profiles/default/skins.xml
 cellml/theme/profiles/default/viewlets.xml
-cellml/theme/profiles/pmr2/viewlets.xml
 cellml/theme/skins/cellml_theme_custom_images/CONTENT.txt
 cellml/theme/skins/cellml_theme_custom_images/favicon.ico
 cellml/theme/skins/cellml_theme_custom_templates/CONTENT.txt
