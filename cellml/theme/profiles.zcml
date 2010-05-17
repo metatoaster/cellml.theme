@@ -11,12 +11,4 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <genericsetup:registerProfile
-      name="pmr2"
-      title="CellML Theme (PMR2)"
-      directory="profiles/pmr2"
-      description='The official theme for the CellML Model Repository.'
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-
 </configure>

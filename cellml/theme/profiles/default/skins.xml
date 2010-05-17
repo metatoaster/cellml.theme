@@ -47,4 +47,7 @@
      insert-after="cellml_theme_custom_templates"/>
  </skin-path>
 
+ <skin-path name="CellML Theme (models)" based-on="CellML Theme">
+ </skin-path>
+
 </object>

@@ -99,4 +99,40 @@
     <viewlet name="plone.analytics" />
   </hidden>
 
+  <!-- models.cellml.org customization -->
+
+  <order manager="plone.portaltop" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+  </order>
+
+  <hidden manager="plone.portaltop" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+  </hidden>
+
+  <order manager="plone.portalheader" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+  </order>
+
+  <hidden manager="plone.portalheader" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+    <viewlet name="cellml.logo" />
+    <viewlet name="cellml.logo_linked" remove="True" />
+  </hidden>
+
+  <hidden manager="plone.contentviews" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+  </hidden>
+
+  <order manager="cellml.stickyfooter" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+  </order>
+
+  <order manager="plone.portalfooter" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+  </order>
+
+  <hidden manager="plone.portalfooter" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+  </hidden>
+
 </object>
