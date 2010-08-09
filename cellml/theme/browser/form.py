@@ -1,3 +1,6 @@
+import os.path
+
+import zope.interface
 from zope.component import queryAdapter
 from zope.publisher import browser
 from zope.app.pagetemplate.viewpagetemplatefile import ViewPageTemplateFile
@@ -6,8 +9,22 @@ import z3c.form.field
 import z3c.form.form
 from z3c.form.i18n import MessageFactory as _
 from plone.z3cform import layout
+from plone.z3cform.templates import ZopeTwoFormTemplateFactory
 
+import cellml.theme.browser
 from cellml.theme.interfaces import ILayoutSettings
+from cellml.theme.browser.interfaces import ICellMLThemeLayoutWrapper
+
+
+path = lambda p: os.path.join(os.path.dirname(cellml.theme.browser.__file__),
+                              'templates', p)
+
+cellmltheme_layout_factory = ZopeTwoFormTemplateFactory(
+    path('cellml_layout_wrapper.pt'), form=ICellMLThemeLayoutWrapper)
+
+
+class CellMLThemeLayoutFormWrapper(layout.FormWrapper):
+    zope.interface.implements(ICellMLThemeLayoutWrapper)
 
 
 class ThemeLayoutForm(z3c.form.form.EditForm):
@@ -25,16 +42,6 @@ class ThemeLayoutForm(z3c.form.form.EditForm):
 
         return queryAdapter(self.context, name='CellMLThemeSettings')
 
-
-class ThemeLayoutFormWrapper(browser.BrowserPage):
-
-    template = ViewPageTemplateFile('templates/cellml_layout_wrapper.pt')
-
-    def content(self):
-        return ThemeLayoutForm(self.context, self.request)()
-
-    def __call__(self):
-        return self.template()
-
-ThemeLayoutFormView = layout.wrap_form(ThemeLayoutFormWrapper, 
+ThemeLayoutFormView = layout.wrap_form(ThemeLayoutForm,
+    __wrapper_class=CellMLThemeLayoutFormWrapper, 
     label=u'Select CellML Theme')
