@@ -84,16 +84,10 @@ cellml/theme/skins/cellml_theme_custom_images/favicon.ico
 cellml/theme/skins/cellml_theme_custom_templates/CONTENT.txt
 cellml/theme/skins/cellml_theme_custom_templates/livesearch_reply.py
 cellml/theme/skins/cellml_theme_custom_templates/main_template.pt
-cellml/theme/skins/cellml_theme_custom_templates/portlet_prefs.pt
-cellml/theme/skins/cellml_theme_custom_templates/prefs_main_template.pt
 cellml/theme/skins/cellml_theme_styles/CONTENT.txt
 cellml/theme/skins/cellml_theme_styles/IEFixes.css.dtml
-cellml/theme/skins/cellml_theme_styles/RTL.css.dtml
-cellml/theme/skins/cellml_theme_styles/base.css.dtml
 cellml/theme/skins/cellml_theme_styles/base_properties.props
-cellml/theme/skins/cellml_theme_styles/navtree.css.dtml
-cellml/theme/skins/cellml_theme_styles/portlets.css.dtml
-cellml/theme/skins/cellml_theme_styles/public.css.dtml
+cellml/theme/skins/cellml_theme_styles/public.css
 docs/HISTORY.txt
 docs/INSTALL.txt
 docs/LICENSE.GPL
