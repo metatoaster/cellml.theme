@@ -53,7 +53,7 @@
                   sr python:plone_view.have_portlets('plone.rightcolumn', view);
                   body_class python:plone_view.bodyClass(template, view);"
     tal:attributes="class body_class;
-                    id provider:cellml.theme.footer_portlet_count"
+                    id provider:cellml.theme.footer_portlet_count;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
 <div id="visual-portal-wrapper">
@@ -74,7 +74,8 @@
     <div tal:attributes="id provider:cellml.theme.layoutTheme">
       <div id="portal-columns" class="content">
 
-        <div id="portal-column-content">
+        <div id="content-wrapper">
+          <div id="portal-column-content">
 
             <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" tal:condition="not:ajax_load" />
             
@@ -142,6 +143,7 @@
             </metal:block>
         
             <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" tal:condition="not:ajax_load" />
+          </div>
         </div>
 
         <tal:notajax tal:condition="not:ajax_load">
