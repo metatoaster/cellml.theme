@@ -56,21 +56,17 @@
                     id provider:cellml.theme.footer_portlet_count;
                     dir python:isRTL and 'rtl' or 'ltr'">
 
-<div id="visual-portal-wrapper">
+  <div id="visual-portal-wrapper">
 
-        <div id="portal-top"
-            class="row"
-            i18n:domain="plone"
-            tal:condition="not:ajax_load">
-<div class="cell width-full position-0"> <!-- TODO: Temporary, this one should be in the template that is inserted -->
-            <div tal:replace="structure provider:plone.portaltop" />
-</div>
-        </div>
+    <div id="portal-top"
+         class="row"
+         i18n:domain="plone"
+         tal:condition="not:ajax_load">
+      <div class="cell width-full position-0"> <!-- TODO: Temporary, this one should be in the template that is inserted -->
+        <div tal:replace="structure provider:plone.portaltop" />
+      </div>
+    </div>
 
-    <tal:comment replace="nothing">
-      Magic happens here.
-      Determine which layout to use from the number of column slots filled.
-    </tal:comment>
     <div tal:attributes="id provider:cellml.theme.layoutTheme">
       <div id="portal-columns" class="content">
 
@@ -169,12 +165,14 @@
     <metal:block i18n:domain="plone" tal:condition="not:ajax_load">
         <div tal:replace="structure provider:plone.portalfooter" />
     </metal:block>
-
-    <div id="sticky-footer">
-      <tal:block tal:content="structure provider:cellml.stickyfooter" />
+    <div id="sticky-pusher"></div>
     </div>
+  </div>
 
+<div id="sticky-footer">
+  <tal:block tal:content="structure provider:cellml.stickyfooter" />
 </div>
+
 </body>
 </html>
 
