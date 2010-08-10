@@ -18,31 +18,15 @@ input.searchButton {
 }
 
 dl.portletCalendar dt a.calendarPrevious {
-    width: 16px !important;
-    height: 0;
-    overflow: hidden;
-    float: right;
-    position: absolute;
-    background: transparent url(buttonBack.png) no-repeat 0 0 !important;
-    top: 10px;
-    padding: 20px 0 0 !important;
-    color: #666;
-    right: 29px;
-    margin: 0 !important;
+    float: left;
+    padding: 0 1em;
+    margin: 0 -0.5em;
 }
 
 dl.portletCalendar dt a.calendarNext {
-    width: 16px !important;
-    height: 0;
-    overflow: hidden;
     float: right;
-    position: absolute;
-    background: transparent url(buttonForward.png) no-repeat 0 0 !important;
-    top: 10px;
-    padding: 20px 0 0 !important;
-    color: #666;
-    right: 10px;
-    margin: 0 !important;
+    margin: 0 -0.5em;
+    padding: 0 1em;
 }
 
 .narrow dl.portletCalendar dt a.calendarPrevious {
@@ -195,7 +179,6 @@ ul#contentActionMenus {
 ul#contentActionMenus li {
     list-style-type: none;
     float: right;
-    position: relative;
     border: 0;
 }
 
@@ -276,7 +259,6 @@ ul#contentActionMenus li dt a:hover {
 }
 
 ul#contentActionMenus dl.activated dt {
-    background: url(listBox-header-right.gif) no-repeat right top;
     position: relative;
     z-index: 1000;
     color: #fff;
@@ -287,7 +269,6 @@ ul#contentActionMenus dl.activated dt a {
     color: #fff;
     text-decoration: none;
 
-    background: url(listBox-header-left.gif) no-repeat left top;
     position: relative;
     z-index: 1000;
 }
@@ -417,6 +398,7 @@ dl.error dd {
  * overriden by Tripoli */
 
 .hiddenStructure {
+    display: none;
     margin: -1px 0 0 -1px !important;
 }
 
