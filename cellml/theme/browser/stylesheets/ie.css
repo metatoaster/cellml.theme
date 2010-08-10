@@ -1,26 +1,9 @@
-* html body {  
-
-	/* 
-		Emulate min-width/max-width for Internet Explorer 
-		Reference: http://fijiwebdesign.com/content/view/91/77/
-	*/
-
-    width: 980px; /* in case JS is off, set a fallback width. default is auto */  
-    width: expression(Math.max(Math.min((document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth) - 20, 980), 800)+'px');  
-} 
-
-
-/* CORRECT UNEXPECTED OVERFLOW IN IE6 WITHIN DIVS CONTAINING FLOATS */
-#videoBox {
-	overflow:hidden;
+#portal-breadcrumbs {
+    width: 100%;
+    padding-bottom: 0.9em;
 }
 
-
-/* PROVIDE PNG ALPHA TRANSPARENCY SUPPORT IN IE6 */
-img { 
-	behavior: url(css/iepngfix.htc) 
+ul#contentActionMenus li {
+    float: right;
+    width: 1%;  /* for some reason it can't automatically scale this down */
 }
-
-/* Close gaps between list items that contain block level elements in IE */	
-ul#peerNav li a {display:inline-block;}
-ul#peerNav li a {display:block;}
