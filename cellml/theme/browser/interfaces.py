@@ -1,5 +1,6 @@
 from zope.viewlet.interfaces import IViewletManager
 from plone.theme.interfaces import IDefaultPloneLayer
+from plone.z3cform.interfaces import IFormWrapper
 
 
 class IThemeSpecific(IDefaultPloneLayer):
@@ -12,3 +13,7 @@ class IThemeSpecific(IDefaultPloneLayer):
 
 class ICellMLStickyFooter(IViewletManager):
     """Viewlet manager for the sticky footers."""
+
+
+class ICellMLThemeLayoutWrapper(IFormWrapper):
+    """Layout wrapper for CellML Theme."""
