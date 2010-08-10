@@ -131,7 +131,7 @@ tr,th,td
 	border:none;
 }
 
-table[border],.documentContent table[border]
+table[border],#content table[border]
 {
 	border-collapse:separate;
 	border-spacing:0;
@@ -322,55 +322,55 @@ input[type='hidden']
 _______________________________
 CONTENT */
 
-.documentContent, .portlets-manager, .portletWrapper
+#content, .portlets-manager, .portletWrapper
 {
 	font-size:1.0em;
 	line-height:1.6em;
 }
 
-.documentContent h1
+#content h1
 {
 	font-size:1.6em;
 	line-height:1.25em;
 	margin:0.875em 0 0.375em;
 }
 
-.documentContent h2
+#content h2
 {
 	font-size:1.5em;
 	line-height:1.25em;
 	margin:0.933em 0 .4em;
 }
 
-.documentContent h3
+#content h3
 {
 	font-size:1.4em;
 	line-height:1.25em;
 	margin:1em 0 .429em;
 }
 
-.documentContent h4
+#content h4
 {
 	font-size:1.3em;
 	line-height:1.25em;
 	margin:1.077em 0 .462em;
 }
 
-.documentContent h5
+#content h5
 {
 	font-size:1.2em;
 	line-height:1.25em;
 	margin:1.167em 0 .5em;
 }
 
-.documentContent h6
+#content h6
 {
 	font-size:1em;
 	line-height:1.25em;
 	margin:1.4em 0 .6em;
 }
 
-.documentContent hr
+#content hr
 {
 	display:block;
 	background:black;
@@ -380,32 +380,32 @@ CONTENT */
 	border:none;
 }
 
-.documentContent ul
+#content ul
 {
 	list-style:disc outside;
 }
 
-.documentContent ol
+#content ol
 {
 	list-style:decimal outside;
 }
 
-.documentContent table
+#content table
 {
 	border-collapse:collapse;
 }
 
-.documentContent hr,.documentContent p,.documentContent ul,.documentContent ol,.documentContent dl,.documentContent pre,.documentContent code.blockcode, .documentContent address,.documentContent table,.documentContent form
+#content hr,#content p,#content ul,#content ol,#content dl,#content pre,#content code.blockcode, #content address,#content table,#content form
 {
 	margin-bottom:1.6em;
 }
 
-.documentContent p+p
+#content p+p
 {
 	margin-top:-.8em;
 }
 
-.documentContent fieldset
+#content fieldset
 {
 	margin:1.6em 0;
 	padding:1.6em;
@@ -413,7 +413,7 @@ CONTENT */
 
 /* \*/
 
-.documentContent legend
+#content legend
 {
 	padding-left:.8em;
 	padding-right:.8em;
@@ -423,78 +423,78 @@ CONTENT */
 
 @media all and (min-width: 0px) /* for Opera 8 */
 { 
-	.documentContent legend
+	#content legend
 	{
 		margin-bottom:1.6em;
 	}
-	.documentContent fieldset
+	#content fieldset
 	{
 		margin-top:0;
 	}
-	.documentContent[class^='content'] fieldset
+	#content[class^='content'] fieldset
 	{
 		margin-top:1.6em;
 	}
 }
 
-.documentContent fieldset>*:first-child
+#content fieldset>*:first-child
 {
 	margin-top:0;
 }
 
-.documentContent textarea,.documentContent input[type='text']
+#content textarea,#content input[type='text']
 {
 	padding:.1em .2em;
 }
 
-.documentContent input
+#content input
 {
 	padding:.2em .1em;
 }
 
-.documentContent select
+#content select
 {
 	padding:.2em .1em 0;
 }
 
-.documentContent select[multiple]
+#content select[multiple]
 {
 	margin-bottom:.8em;
 }
 
-.documentContent option
+#content option
 {
 	padding:0 .4em .1em;
 }
 
-.documentContent button
+#content button
 {
 	padding:.3em .5em;
 }
 
-.documentContent input[type='radio']
+#content input[type='radio']
 {
 	position:relative;
 	bottom:-.2em;
 }
 
-.documentContent dt
+#content dt
 {
 	margin-top:.8em;
 	margin-bottom:.4em;
 }
 
-.documentContent ul,.documentContent ol
+#content ul,#content ol
 {
 	margin-left:2.2em;
 }
 
-.documentContent caption,.documentContent form div
+#content caption,#content form div
 {
 	padding-bottom:.8em;
 }
 
-.documentContent ul ul,.documentContent ol ul,.documentContent ul ol,.documentContent ol ol
+#content ul ul,#content ol ul,#content ul ol,#content ol ol
 {
 	margin-bottom:0;
 }

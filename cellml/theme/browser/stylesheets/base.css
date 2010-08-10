@@ -108,7 +108,7 @@ pre {
     clear: both;
 }
 
-#portal-column-content #content .documentActions,
+#content .documentActions,
 #sticky-footer #portal-siteactions,
 #portal-personaltools {
     float: right;
@@ -117,11 +117,11 @@ pre {
     line-height: 1.1em;
 }
 
-#portal-column-content #content .documentActions li {
+#content .documentActions li {
     font-size: 90%;
 }
 
-#portal-column-content #content .documentActions li,
+#content .documentActions li,
 #sticky-footer #portal-siteactions li,
 #portal-personaltools li {
     display: block;
@@ -131,15 +131,15 @@ pre {
     padding: 0 0.5em;
 }
 
-#portal-column-content #content .documentActions li a:focus,
-#portal-column-content #content .documentActions li a:hover,
-#portal-column-content #content .documentActions li a:visited,
-#portal-column-content #content .documentActions li a:link {
+#content .documentActions li a:focus,
+#content .documentActions li a:hover,
+#content .documentActions li a:visited,
+#content .documentActions li a:link {
     color: #222;
     border-bottom: none;
 }
 
-#portal-column-content #content .documentActions li a:hover {
+#content .documentActions li a:hover {
     text-decoration: underline;
 }
 
@@ -181,7 +181,7 @@ pre {
     font-size: 0.9em;
 }
 
-.documentContent {
+#content {
     background: #fff;
     height: auto;
     min-height: 100%;
@@ -258,7 +258,7 @@ pre {
   Layout Zero: just one big main content area.
 */
 
-#layoutZero #block1Wrapper {
+#layoutZero #content-wrapper {
     float: left;
     width: 100%;
 }
@@ -272,7 +272,7 @@ pre {
   Ref: Alex Robinson's 'One True Layout': http://www.positioniseverything.net/articles/onetruelayout/  
 */
 
-#layoutOne #block1Wrapper {
+#layoutOne #content-wrapper {
     float: left;
     width: 100%;
 }
@@ -285,13 +285,13 @@ pre {
     width: 480px;
 }
 
-#layoutOne #block2 {
+#layoutOne #portal-column-one {
     float: left;
     margin-left: -460px;
     width: 220px;
 }
 
-#layoutOne #block3 {
+#layoutOne #portal-column-two {
     float: left;
     margin-left: -220px;
     width: 220px;
@@ -303,7 +303,7 @@ pre {
   Layout Two: Main column left, two fixed width ancillary columns on right
 */
 
-#layoutTwo #block1Wrapper {
+#layoutTwo #content-wrapper {
     float: left;
     width: 100%;
 }
@@ -316,13 +316,13 @@ pre {
     width: 480px;
 }
 
-#layoutTwo #block2 {
+#layoutTwo #portal-column-one {
     float: left;
     margin-left: -460px;
     width: 300px; 
 }
 
-#layoutTwo #block3 {
+#layoutTwo #portal-column-two {
     float: left;
     margin-left: -140px;
     width: 140px; 
@@ -333,7 +333,7 @@ pre {
   Ref: Ryan Brill: http://www.alistapart.com/articles/negativemargins 
 */
 
-#layoutThree #block1Wrapper {
+#layoutThree #content-wrapper {
     width: 100%;
     float: left; 
     margin-right: -480px;  
@@ -347,7 +347,7 @@ pre {
     width: 480px;
 }
 
-#layoutThree #block2 {
+#layoutThree #portal-column-one {
     width: 460px;
     float: right;
 }
@@ -357,7 +357,7 @@ pre {
 Layout Four: Two columns 
 */
 
-#layoutFour #block1Wrapper {
+#layoutFour #content-wrapper {
     width: 100%;
     float: left; 
     margin-right: -320px;  
@@ -371,8 +371,8 @@ Layout Four: Two columns
     width: 640px;
 }
 
-#layoutFour #block2 ,
-#layoutFour #block3 {
+#layoutFour #portal-column-one ,
+#layoutFour #portal-column-two {
     width: 300px;
     float: right;
 }
@@ -382,7 +382,7 @@ Layout Four: Two columns
   Layout Four Slim: Two columns 
 */
 
-#layoutFourSlim #block1Wrapper {
+#layoutFourSlim #content-wrapper {
     width: 100%;
     float: left; 
     margin-right: -240px;  
@@ -396,8 +396,8 @@ Layout Four: Two columns
     width: 720px;
 }
 
-#layoutFourSlim #block2 ,
-#layoutFourSlim #block3 {
+#layoutFourSlim #portal-column-one ,
+#layoutFourSlim #portal-column-two {
     width: 220px;
     float: right;
 }
@@ -406,7 +406,7 @@ Layout Four: Two columns
   Layout Four Slimmer: Two columns 
 */
 
-#layoutFourSlimmer #block1Wrapper {
+#layoutFourSlimmer #content-wrapper {
     width: 100%;
     float: left; 
     margin-right: -160px;  
@@ -420,8 +420,8 @@ Layout Four: Two columns
     width: 800px;
 }
 
-#layoutFourSlimmer #block2 ,
-#layoutFourSlimmer #block3 {
+#layoutFourSlimmer #portal-column-one ,
+#layoutFourSlimmer #portal-column-two {
     width: 140px;
     float: right;
 }
@@ -431,7 +431,7 @@ Layout Four: Two columns
   Layout Five: Main column left, two fixed width ancillary columns on right
 */
 
-#layoutFive #block1Wrapper {
+#layoutFive #content-wrapper {
     float: left;
     width: 100%;
 }
@@ -445,14 +445,14 @@ Layout Four: Two columns
     width: 480px;
 }
 
-#layoutFive #block2 {
+#layoutFive #portal-column-one {
     float: left;
     margin-left: -460px;
     width: 140px; 
     /* border: 1px solid red; */
 }
 
-#layoutFive #block3 {
+#layoutFive #portal-column-two {
     float: left;
     margin-left: -300px;
     width: 300px; 
@@ -461,7 +461,7 @@ Layout Four: Two columns
 
 /* Safari Bug Fix as there might be negative margins that prevent 
  * interaction with elements within these blocks. */
-#block2, #block3 {
+#portal-column-one, #portal-column-two {
     position: relative;
 }
 
@@ -623,7 +623,7 @@ ul.sideList {
     display: none;
 }
 
-.documentContent h1:first-child {
+#content h1:first-child {
     margin-top: 0 !important;
 }
 
@@ -896,8 +896,8 @@ ul.spacious li {
 /* Standard link styles for content sections */
 .portlet a:link,
 .portlet a:visited,
-#portal-column-content #content a:link,
-#portal-column-content #content a:visited {
+#content a:link,
+#content a:visited {
     text-decoration: none;
     color: #666;
     border-bottom: 1px solid #bbb;
@@ -905,8 +905,8 @@ ul.spacious li {
 
 .portlet a:focus,
 .portlet a:hover,
-#portal-column-content #content a:focus,
-#portal-column-content #content a:hover {
+#content a:focus,
+#content a:hover {
     text-decoration: none;
     color: #000;
     border-bottom: 1px solid #666;
@@ -915,8 +915,8 @@ ul.spacious li {
 /* specialized link styles for non-content that is in content section */
 
 /* this part is requried for very explicitness
-#portal-column-content #content a:link,
-#portal-column-content #content a:visited,
+#content a:link,
+#content a:visited,
 */
 .portlet .portletItem h1 a:link,
 .portlet .portletItem h1 a:visited,
@@ -932,27 +932,27 @@ ul.spacious li {
 .portlet .portletFooter a:visited,
 .portlet .portletFooter a:hover,
 .portlet .portletFooter a:focus,
-#portal-column-content #content .listingBar a:link,
-#portal-column-content #content .listingBar a:visited,
-#portal-column-content #content .homeTopics h2 a:link,
-#portal-column-content #content .homeTopics h2 a:visited,
-#portal-column-content #content .documentByLine a:link,
-#portal-column-content #content .documentByLine a:visited {
+#content .listingBar a:link,
+#content .listingBar a:visited,
+#content .homeTopics h2 a:link,
+#content .homeTopics h2 a:visited,
+#content .documentByLine a:link,
+#content .documentByLine a:visited {
     color: #c00;
     text-decoration: none;
     border: 0;
 }
 
-#portal-column-content #content #document-toc li a:link,
-#portal-column-content #content #document-toc li a:visited {
+#content #document-toc li a:link,
+#content #document-toc li a:visited {
     color: #333;
     text-decoration: none;
     border: 0;
 }
 
 /* this part is requried for very explicitness
-#portal-column-content #content a:focus,
-#portal-column-content #content a:hover,
+#content a:focus,
+#content a:hover,
 */
 .portlet .portletItem h1 a:focus,
 .portlet .portletItem h1 a:hover,
@@ -960,12 +960,12 @@ ul.spacious li {
 .portlet .portletItem h2 a:hover,
 .portlet .portletItem h3 a:focus,
 .portlet .portletItem h3 a:hover,
-#portal-column-content #content .listingBar a:focus,
-#portal-column-content #content .listingBar a:hover,
-#portal-column-content #content .homeTopics h2 a:focus,
-#portal-column-content #content .homeTopics h2 a:hover,
-#portal-column-content #content .documentByLine a:focus,
-#portal-column-content #content .documentByLine a:hover {
+#content .listingBar a:focus,
+#content .listingBar a:hover,
+#content .homeTopics h2 a:focus,
+#content .homeTopics h2 a:hover,
+#content .documentByLine a:focus,
+#content .documentByLine a:hover {
     color: #c00;
     text-decoration: underline;
 }	
@@ -977,8 +977,8 @@ ul.spacious li {
     color: #c00;
 }	
 
-#portal-column-content #content #document-toc li a:focus,
-#portal-column-content #content #document-toc li a:hover {
+#content #document-toc li a:focus,
+#content #document-toc li a:hover {
     color: #333;
     text-decoration: underline;
     border: 0
