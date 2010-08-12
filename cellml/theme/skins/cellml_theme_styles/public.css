@@ -378,8 +378,6 @@ div.listingBar a {
 
 div.listingBar a:hover {
     color: White;
-    background-color: #329fd7;
-    border-color: #329fd7;
 }
 
 /* @end */
@@ -959,10 +957,6 @@ textarea:focus {
 #content select {
     vertical-align: top;
 }
-#content fieldset {
-    border: 0.1em solid #329fd7;
-    border-style: solid none none none;
-}
 #content legend {
     padding: 0.5em;
 }
@@ -990,7 +984,6 @@ dl.enableFormTabbing dd {
     padding-top: 2em;
 }
 .searchSection {
-    color: #76797c;
     margin-top: 0.25em;
 }
 .searchSection label:hover {
