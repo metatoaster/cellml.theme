@@ -453,7 +453,7 @@ dl.error dd {
     font-size: 100%;
 }
 #content dl.portalMessage dt {
-    margin: 0 0.5em 0 0;
+    margin: -0.5em 0.5em 0 -0.5em;
     padding: 0.5em 0.75em;
 }
 #content dl.portalMessage dd {
