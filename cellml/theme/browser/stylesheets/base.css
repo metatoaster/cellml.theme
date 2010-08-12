@@ -178,10 +178,6 @@ pre {
     background: none;
 }	
 
-.contentViews, .contentActions {
-    font-size: 0.9em;
-}
-
 #content {
     background: #fff;
     height: auto;
@@ -707,7 +703,6 @@ ul.spacious li {
     margin-left: -152px;
     float: left;
     width: 372px;
-    font-size: 11px;
     line-height: 15px;
     text-align: left;
     display: none;
@@ -792,7 +787,6 @@ ul.spacious li {
 }
 .LSDescr {
     background-color: #7dabcf;
-    font-size: 90%;
 }
 
 /* End @group LiveSearch */

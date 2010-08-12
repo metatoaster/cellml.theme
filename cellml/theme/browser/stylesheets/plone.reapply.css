@@ -65,7 +65,6 @@ dl.portletCalendar dt {
 
 dl.portletCalendar table {
     width: 100%;
-    font-size: 0.9em;
 }
 
 .narrow dl.portletCalendar table {
@@ -121,7 +120,6 @@ dl.portletCalendar table a {
     width: 100%;
     background-color: #333;
     border: 0;
-    font-size: 0.9em;
     margin-bottom: 1em;
 }
 
@@ -231,7 +229,6 @@ ul#contentActionMenus li dd.actionMenuContent img {
 
 
 ul#contentActionMenus li dt a  span.arrowDownAlternative {
-    font-size: 0.9em;
 }
 
 ul#contentActionMenus li dt.label-state-private a {
@@ -335,7 +332,6 @@ dl.portalMessage {
     margin-bottom: 1em;
     padding: 0.5em;
     line-height: 1.25em;
-    font-size: 0.91em;
 }
 dl.portalMessage a {
     color: black;
