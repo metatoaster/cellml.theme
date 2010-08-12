@@ -1,8 +1,3 @@
-#portal-breadcrumbs {
-    width: 100%;
-    padding-bottom: 0.9em;
-}
-
 ul#contentActionMenus li {
     float: right;
     width: 1%;  /* for some reason it can't automatically scale this down */
