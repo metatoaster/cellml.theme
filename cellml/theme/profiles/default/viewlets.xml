@@ -71,6 +71,7 @@
     <viewlet name="plone.searchbox" />
     <viewlet name="plone.global_sections" />
     <viewlet name="plone.site_actions" />
+    <viewlet name="plone.personal_bar" />
     <viewlet name="cellml.personal_bar" />
   </hidden>
 
@@ -106,6 +107,7 @@
     <viewlet name="plone.footer" />
     <viewlet name="plone.colophon" />
     <viewlet name="plone.analytics" />
+    <viewlet name="plone.site_actions" />
   </hidden>
 
   <!-- models.cellml.org customization -->
