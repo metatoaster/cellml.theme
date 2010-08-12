@@ -594,10 +594,6 @@ html[xmlns] .clearfix {
 
 /* ---------------------- secondary typography: content, lists and links ---------------------- */
 
-.content { 
-    font-size: 1.1em;
-}
-
 .sideTitle { 
     border-top: 1px solid #666;
     padding-top: 0.5em;
