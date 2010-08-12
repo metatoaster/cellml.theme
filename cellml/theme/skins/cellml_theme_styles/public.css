@@ -28,7 +28,6 @@
     right: 1px;
     z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
     padding: 0.25em 0.5em;
-    font-size: 80%;
     max-width: 50%;
 }
 
@@ -127,7 +126,6 @@ dl.portlet {
 }
 
 #category {
-    font-size: 75%;
     margin-bottom: 1em;
     color: #666;
     text-align: right;
@@ -185,7 +183,6 @@ dl.portlet li {
     font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
     padding: 1em;
     overflow-x: auto;
-    font-size: 90%;
     margin-bottom: 1em;
     line-height: 1.25em;
 }
@@ -198,16 +195,9 @@ dl.portlet li {
     font-family: Consolas, Inconsolata, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
 
-#content div.documentByLine {
-    font-size: 85%;
-    display: block;
-    color: #666;
-}
-
 #content .discreet,
 #sidebar .discreet {
     color: #666;
-    font-size: 85%;
     font-weight: normal;
 }
 
@@ -368,7 +358,6 @@ table.grid th {
 }
 
 div.listingBar {
-    font-size: 80%;
     margin: 1em 0;
 }
 
@@ -399,7 +388,6 @@ div.listingBar a:hover {
 
 dl.portalMessage {
     margin: 1em 0;
-    font-size: 80%;
     border: 1px solid #996;
     background-color: #ffffe3;
     clear:both;
@@ -631,7 +619,6 @@ dl.actionMenu.activated dd div {
 /* @group Control panel */
 
 #setup-link {
-    font-size: 90%;
 }
 
 #content ul.configlets {
@@ -807,7 +794,6 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 
 .comment {
     margin-top: 1.5em;
-    font-size: 80%;
 }
 
 .comment .documentByLine {
@@ -929,7 +915,6 @@ dd.image-caption {
     padding: 0 0 0 3px; /*image padding+border with*/
     margin: 0;
     color: #666;
-    font-size: 85%;
 }
 
 /* @end */
@@ -1032,7 +1017,6 @@ textarea:focus {
 }
 #content legend {
     padding: 0.5em;
-    font-size: 85%;
 }
 label {
     font-weight:bold;
@@ -1192,7 +1176,6 @@ dl.toc dd ol {
 /* @group Footer */
 
 #portal-footer {
-    font-size: 75%;
     background: #ddd;
     padding: 1em;
     margin: 1em 0;
@@ -1200,7 +1183,6 @@ dl.toc dd ol {
 }
 
 #portal-colophon {
-    font-size: 70%;
     text-align: center;
     margin-bottom: 1em;
 }
