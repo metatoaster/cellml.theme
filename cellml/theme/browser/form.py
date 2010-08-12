@@ -15,16 +15,8 @@ import cellml.theme.browser
 from cellml.theme.interfaces import ILayoutSettings
 from cellml.theme.browser.interfaces import ICellMLThemeLayoutWrapper
 
-
 path = lambda p: os.path.join(os.path.dirname(cellml.theme.browser.__file__),
                               'templates', p)
-
-cellmltheme_layout_factory = ZopeTwoFormTemplateFactory(
-    path('cellml_layout_wrapper.pt'), form=ICellMLThemeLayoutWrapper)
-
-
-class CellMLThemeLayoutFormWrapper(layout.FormWrapper):
-    zope.interface.implements(ICellMLThemeLayoutWrapper)
 
 
 class ThemeLayoutForm(z3c.form.form.EditForm):
@@ -32,6 +24,8 @@ class ThemeLayoutForm(z3c.form.form.EditForm):
     """
 
     fields = z3c.form.field.Fields(ILayoutSettings)
+    # see below.
+    render = ViewPageTemplateFile(path('cellml_layout_wrapper.pt'))
 
     def getContent(self):
         """
@@ -42,6 +36,13 @@ class ThemeLayoutForm(z3c.form.form.EditForm):
 
         return queryAdapter(self.context, name='CellMLThemeSettings')
 
+    def content(self):
+        """
+        The render method has been replaced by a wrapper template to
+        include the additional links, thus we need a separate method
+        that will return the results of the form to it to render this.
+        """
+        return super(ThemeLayoutForm, self).render()
+
 ThemeLayoutFormView = layout.wrap_form(ThemeLayoutForm,
-    __wrapper_class=CellMLThemeLayoutFormWrapper, 
     label=u'Select CellML Theme')

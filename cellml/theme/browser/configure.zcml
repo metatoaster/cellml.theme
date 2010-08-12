@@ -196,9 +196,6 @@
         permission="zope2.View" 
         /> 
 
-    <!-- layout adapters -->
-    <adapter factory=".form.cellmltheme_layout_factory" />
-
     <!-- Zope 3 browser resources -->
 
     <!-- Resource directory for images
