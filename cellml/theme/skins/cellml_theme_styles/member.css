@@ -1,0 +1,22 @@
+/* - member.css - */
+
+/* workflow state colors */
+
+.state-private {
+	color: Red !important;
+}
+.state-visible {
+	color: #74AE0B !important;
+}
+.state-published {
+	color: #436976 !important;
+}
+.state-pending {
+	color: #FFA500 !important;
+}
+.state-expired {
+	color: Red !important;
+}
+.syndicated {
+	color: #008000 !important;
+}
