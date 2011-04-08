@@ -420,9 +420,21 @@ dl.error dd {
     margin-left: 20px;
 }
 
+/* z3c multiwidgets */
+
+.multi-widget {
+    border: 1px #ccc solid;
+    padding: 0.5em;
+}
+
+.multi-widget-checkbox, .multi-widget-input {
+    display: inline;
+}
+
 /*
 _______________________________
 END */
 
 /* ---------------------- End Plone-specific styles ---------------------- */
+
 
