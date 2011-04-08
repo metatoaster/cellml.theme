@@ -422,8 +422,9 @@ div.listingBar a:hover {
     margin: 0;
 }
 
+#content form ul.formTabs li .selected,
 #content form ul.formTabs li a:hover {
-    background: #c00;
+    background: #ce0026 url(++resource++cellml.theme.stylesheets/++resource++cellml.theme.images/globalnav-hover.gif) no-repeat scroll 50% 100%;
     color: #ccc;
     margin: 0;
 }

@@ -1067,8 +1067,7 @@ ul.spacious li {
 .portletNavigationTree a {
     border: 1px solid white;
     display: block;
-    padding: 2px 0 2px 20px;
-    text-indent: -20px;
+    padding: 2px 0 2px 0px;
     color: #222;
 }
 
