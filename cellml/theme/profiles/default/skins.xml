@@ -45,6 +45,7 @@
      insert-after="cellml_theme_custom_images"/>
   <layer name="cellml_theme_styles"
      insert-after="cellml_theme_custom_templates"/>
+  <layer name="classic_styles" remove="True"/>
  </skin-path>
 
  <skin-path name="CellML Theme (models)" based-on="CellML Theme">
