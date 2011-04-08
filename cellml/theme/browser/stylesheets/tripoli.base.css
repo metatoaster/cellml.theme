@@ -321,8 +321,11 @@ input[type='hidden']
 _______________________________
 CONTENT */
 
-#content, .portlets-manager, .portletWrapper,
-.contentViews, .contentActions
+.portlet,
+.contentViews,
+.contentActions,
+.overlay #content-core,
+#content
 {
 	font-size:1.1em;
 	line-height:1.6em;
