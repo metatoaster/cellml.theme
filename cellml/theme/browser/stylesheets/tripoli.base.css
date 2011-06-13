@@ -321,7 +321,7 @@ input[type='hidden']
 _______________________________
 CONTENT */
 
-.portlet,
+.portletWrapper .portlet,
 .contentViews,
 .contentActions,
 .overlay #content-core,
