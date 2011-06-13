@@ -1066,6 +1066,7 @@ ul.spacious li {
 .portletNavigationTree .navTree .navTreeItem a,
 .portletNavigationTree a {
     border: 1px solid white;
+    border-bottom: 1px solid white;
     display: block;
     padding: 2px 0 2px 0px;
     color: #222;
