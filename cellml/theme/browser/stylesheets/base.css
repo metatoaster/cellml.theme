@@ -36,12 +36,40 @@ pre {
 /* ---------------------- END core ---------------------- */
 
 
+/* Standard link styles for content */
+/* Not having any content links because we want to limit specificity 
+   bloat - it makes adding customized styles impossible because you need
+   to stop fighting against this. */
+
+a:link,
+a:visited,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #666;
+    border-bottom: 1px solid #bbb;
+}
+
+a:focus,
+a:hover,
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #666;
+}
+
 
 /* ---------------------- structure ---------------------- */
 
 #global-wrapper {	
     height: 100%;
     min-height: 100%;
+}
+
+#portal-top a,
+#edit-bar a {
+    border: none;
 }
 
 #visual-portal-wrapper {	
@@ -862,44 +890,6 @@ ul.spacious li {
 #portal-globalnav li.selected a {
     background: #c00;
     color: #fff;
-}
-
-
-/* Standard link styles for content sections */
-
-.content a:link,
-.content a:visited {
-    color: #c00;
-    text-decoration: none;
-}
-
-.content a:visited { 
-    color: #c00;
-}
-
-.content a:focus,
-.content a:hover {
-    color: #c00;
-    text-decoration: underline;
-}	
-
-/* Standard link styles for content sections */
-.portlet a:link,
-.portlet a:visited,
-#content a:link,
-#content a:visited {
-    text-decoration: none;
-    color: #666;
-    border-bottom: 1px solid #bbb;
-}
-
-.portlet a:focus,
-.portlet a:hover,
-#content a:focus,
-#content a:hover {
-    text-decoration: none;
-    color: #000;
-    border-bottom: 1px solid #666;
 }
 
 /* specialized link styles for non-content that is in content section */
