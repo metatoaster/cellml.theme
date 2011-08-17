@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: cellml.theme
-Version: trunk-dev
+Version: 1.3
 Summary: CellML Theme
 Home-page: http://www.cellml.org/
 Author: CellML Web Working Group
@@ -14,10 +14,31 @@ Description: Introduction
         Changelog
         =========
         
-        0.0 - Unreleased
-        ----------------
+        1.3 - Released (2011-08-17)
+        ---------------------------
         
-        * Initial release
+        * Specificity changes, to make it easier to apply more specific changes
+        within inner elements.
+        * Minor style changes, table cells no longer have excessive padding.
+        * More Plone 4 compatiblity fixes.
+        
+        1.2 - Released (2011-04-08)
+        ---------------------------
+        
+        * Compatibility changes for Plone 4
+        
+        1.1 - Released (2010-05-18)
+        ---------------------------
+        
+        * Customization added for models.cellml.org, such that the more generic
+        Physiome Project logo would be used for alternative repositories.
+        
+        
+        1.0 - Released (2009-09-27)
+        ---------------------------
+        
+        * Initial release on production for www.cellml.org
+        * Finalized look and feel of the skin/layout.
         
         
 Keywords: web zope plone theme
