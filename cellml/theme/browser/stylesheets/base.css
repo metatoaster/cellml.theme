@@ -1132,3 +1132,13 @@ ul.spacious li {
 #sticky-footer .portlet .portletHeader {
     display: none;
 }
+
+#anon-personalbar a {
+    border-left: 1px solid #ccc;
+    padding-left: 0.5em;
+    display: inline !important;
+}
+
+#anon-personalbar a:first-child {
+    border-left: none;
+}
