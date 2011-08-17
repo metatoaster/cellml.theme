@@ -1,8 +1,21 @@
 Changelog
 =========
 
-0.0 - Unreleased
-----------------
+1.2 - Released (2011-04-08)
+---------------------------
 
-* Initial release
+* Compatibility changes for Plone 4
+
+1.1 - Released (2010-05-18)
+---------------------------
+
+* Customization added for models.cellml.org, such that the more generic
+  Physiome Project logo would be used for alternative repositories.
+
+
+1.0 - Released (2009-09-27)
+---------------------------
+
+* Initial release on production for www.cellml.org
+* Finalized look and feel of the skin/layout.
 
