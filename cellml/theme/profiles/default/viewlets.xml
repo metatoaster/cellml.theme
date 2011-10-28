@@ -49,19 +49,32 @@
     <viewlet name="plone.personal_bar" />
   </hidden>
 
-  <order manager="plone.portalheader" skinname="CellML Theme">
+  <order manager="plone.portalheader" skinname="CellML Theme" purge="True">
     <viewlet name="plone.skip_links" />
+
     <viewlet name="cellml.header_portlets" />
+
+    <viewlet name="plone.personal_bar" />
+
+    <viewlet name="plone.app.i18n.locales.languageselector" />
+
+    <viewlet name="plone.logo" />
     <viewlet name="cellml.logo" />
     <viewlet name="cellml.logo_linked" />
     <viewlet name="cellml.logo_linked.physiome" />
+
     <viewlet name="cellml.partof.iups" />
     <viewlet name="cellml.partof.filler" />
+
+    <viewlet name="plone.searchbox" />
     <viewlet name="cellml.search" />
+
+    <viewlet name="plone.global_sections" />
     <viewlet name="cellml.global_sections" />
+
   </order>
 
-  <hidden manager="plone.portalheader" skinname="CellML Theme">
+  <hidden manager="plone.portalheader" skinname="CellML Theme" purge="True">
     <viewlet name="cellml.logo" remove="True" />
     <viewlet name="cellml.logo_linked" />
     <viewlet name="cellml.logo_linked.physiome" />
