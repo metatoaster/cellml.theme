@@ -677,7 +677,8 @@ ul.spacious li {
     height: 50px;
 }
 
-#portal-searchbox form  {
+#model-searchbox form,
+#portal-searchbox form {
     clear: right;
     margin-top: 0.6em;
     float: right;	
@@ -685,20 +686,25 @@ ul.spacious li {
     width: 432px;
 }
 
+#model-searchbox form fieldset,
 #portal-searchbox form fieldset {
     border: none;
 }
 
+#model-searchbox form input,
+#model-searchbox form select,
 #portal-searchbox form input,
 #portal-searchbox form select {
     font-family: inherit;
     padding: 0.2em 0.1em;
 }
 
+#model-searchbox form #siteSearchInput,
 #portal-searchbox form #siteSearchInput {
     width: 150px;
 }		
 
+.searchModel .searchButton,
 .searchCellML .searchButton {
     display: none;
 }
