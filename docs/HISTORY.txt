@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.4 - Released (2012-02-10)
+---------------------------
+
+* Some plone.search related styling added.
+* Minor packaging cleanup.
+
 1.3 - Released (2011-08-17)
 ---------------------------
 
