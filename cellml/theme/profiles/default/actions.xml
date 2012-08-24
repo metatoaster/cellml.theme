@@ -20,7 +20,7 @@
   <object name="contact" meta_type="CMF Action" i18n:domain="plone">
    <property name="title" i18n:translate="">Contact</property>
    <property name="description" i18n:translate=""></property>
-   <property name="url_expr">string:${portal_url}/about/contact</property>
+   <property name="url_expr">python:portal_url + (portal.restrictedTraverse('about/contact', None) and '/about/contact' or '/contact-info')</property>
    <property name="icon_expr"></property>
    <property name="available_expr"></property>
    <property name="permissions">
