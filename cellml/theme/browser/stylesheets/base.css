@@ -1162,6 +1162,6 @@ ul.spacious li {
     border-left: none;
 }
 
-form label {
+form div.field label {
     font-size: 1.1em;
 }
