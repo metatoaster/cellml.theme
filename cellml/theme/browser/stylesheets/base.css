@@ -1161,3 +1161,7 @@ ul.spacious li {
 #anon-personalbar a:first-child {
     border-left: none;
 }
+
+form label {
+    font-size: 1.1em;
+}

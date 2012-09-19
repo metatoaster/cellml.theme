@@ -410,8 +410,13 @@ CONTENT */
 
 #content fieldset
 {
-	margin:1.6em 0;
-	padding:1.6em;
+	margin:1em 0;
+	padding:0.5em 1em;
+}
+
+#content fieldset fieldset
+{
+	margin: 0;
 }
 
 /* \*/
@@ -492,7 +497,7 @@ CONTENT */
 	margin-left:2.2em;
 }
 
-#content caption,#content form div
+#content caption
 {
 	padding-bottom:.8em;
 }

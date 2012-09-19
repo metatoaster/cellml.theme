@@ -681,9 +681,11 @@ dl.collapsible dt.collapsibleHeader {
     margin: 0 0 -0.6em 1em;
     padding: 0 0.5em;
 }
-dl.collapsible dd.collapsibleContent {
-    margin: 0;
-    padding: 0 1em 0.4em;
+
+/* don't collapse this excessively for form fieldsets, due to recursion */
+dl.collapsible dd.collapsibleContent,
+#content dl.collapsible dd.collapsibleContent {
+    margin: 1em;
     clear: left;
 }
 
