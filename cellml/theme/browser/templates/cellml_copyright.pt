@@ -1,4 +1,5 @@
-<div id="copyright" metal:define-macro="portal_footer" i18n:domain="plone">
+<div id="copyright" metal:define-macro="portal_footer" 
+     i18n:domain="cellml.theme">
     <p><span i18n:translate="description_copyright" tal:omit-tag="">
     <acronym title="Copyright" i18n:name="copyright" i18n:attributes="title title_copyright;">&copy;</acronym
     > 2001-<span i18n:name="current_year"
