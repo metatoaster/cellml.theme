@@ -107,10 +107,16 @@
   <order manager="cellml.stickyfooter" skinname="CellML Theme">
     <viewlet name="cellml.footer_divider" />
     <viewlet name="cellml.copyright" />
+    <viewlet name="cellml.iups_copyright" />
     <viewlet name="cellml.site_actions" />
     <viewlet name="cellml.stickyfooter_portlets" />
     <viewlet name="plone.analytics" />
   </order>
+
+  <hidden manager="cellml.stickyfooter" skinname="CellML Theme">
+    <viewlet name="cellml.copyright" remove="True" />
+    <viewlet name="cellml.iups_copyright" />
+  </hidden>
 
   <order manager="plone.portalfooter" skinname="CellML Theme">
     <viewlet name="cellml.footer_portlets" />
@@ -154,6 +160,12 @@
       based-on="CellML Theme">
   </order>
 
+  <hidden manager="cellml.stickyfooter" skinname="CellML Theme (models)"
+      based-on="CellML Theme">
+    <viewlet name="cellml.copyright" remove="True" />
+    <viewlet name="cellml.iups_copyright" />
+  </hidden>
+
   <order manager="plone.portalfooter" skinname="CellML Theme (models)"
       based-on="CellML Theme">
   </order>
@@ -192,6 +204,12 @@
   <order manager="cellml.stickyfooter" skinname="CellML Theme (PMR2)"
       based-on="CellML Theme">
   </order>
+
+  <hidden manager="cellml.stickyfooter" skinname="CellML Theme (PMR2)"
+      based-on="CellML Theme">
+    <viewlet name="cellml.copyright" />
+    <viewlet name="cellml.iups_copyright" remove="True" />
+  </hidden>
 
   <order manager="plone.portalfooter" skinname="CellML Theme (PMR2)"
       based-on="CellML Theme">
