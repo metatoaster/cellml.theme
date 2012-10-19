@@ -86,6 +86,7 @@
     <viewlet name="plone.site_actions" />
     <viewlet name="plone.personal_bar" />
     <viewlet name="cellml.personal_bar" />
+    <viewlet name="cellml.search" remove="True" />
   </hidden>
 
   <hidden manager="plone.abovecontent" skinname="CellML Theme">
@@ -150,6 +151,7 @@
     <viewlet name="cellml.logo_linked.physiome" />
     <viewlet name="cellml.partof.iups" remove="True" />
     <viewlet name="cellml.partof.filler" />
+    <viewlet name="cellml.search" remove="True" />
   </hidden>
 
   <hidden manager="plone.contentviews" skinname="CellML Theme (models)"
@@ -195,6 +197,7 @@
     <viewlet name="cellml.logo_linked.physiome" remove="True" />
     <viewlet name="cellml.partof.iups" />
     <viewlet name="cellml.partof.filler" remove="True" />
+    <viewlet name="cellml.search" remove="True" />
   </hidden>
 
   <hidden manager="plone.contentviews" skinname="CellML Theme (PMR2)"
