@@ -1,6 +1,15 @@
 Changelog
 =========
 
+1.6 - Released (2012-11-07)
+---------------------------
+
+* Further correction to the definition of viewlets
+* Provide the correct copyright notice for the Physiome version of skin.
+* Correct the i18n:domain for the copyright notice to not have the
+  default Plone i18n placeholder take precedence when switchign to other
+  languages.
+
 1.5 - Released (2012-10-03)
 ---------------------------
 
