@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/genericsetup"
+    i18n_domain="cellml.theme">
+
+    <upgradeStep
+        source="*"
+        destination="2000"
+        title="Upgrade"
+        description=""
+        profile="cellml.theme:default"
+        handler=".upgrades.common"
+        />
+
+</configure>

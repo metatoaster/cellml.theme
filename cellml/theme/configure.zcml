@@ -14,4 +14,9 @@
    <include file="profiles.zcml" />
    <include file="vocab.zcml" />
 
+  <include file="upgrades.zcml"/>
+
+  <plone:static directory="static" type="theme" 
+    name="cellml.theme" />
+
 </configure>

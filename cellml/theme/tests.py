@@ -1,10 +1,9 @@
 import unittest
-import doctest
 
-from zope.component import testing
+#from zope.testing import doctestunit
+#from zope.component import testing
 from Testing import ZopeTestCase as ztc
 
-from Products.Five import zcml
 from Products.Five import fiveconfigure
 from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import PloneSite
@@ -12,13 +11,15 @@ ptc.setupPloneSite()
 
 import cellml.theme
 
+
 class TestCase(ptc.PloneTestCase):
+
     class layer(PloneSite):
+
         @classmethod
         def setUp(cls):
             fiveconfigure.debug_mode = True
-            zcml.load_config('configure.zcml',
-                             cellml.theme)
+            ztc.installPackage(cellml.theme)
             fiveconfigure.debug_mode = False
 
         @classmethod
