@@ -3,7 +3,7 @@ import os.path
 import zope.interface
 from zope.component import queryAdapter
 from zope.publisher import browser
-from zope.app.pagetemplate.viewpagetemplatefile import ViewPageTemplateFile
+from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile
 
 import z3c.form.field
 import z3c.form.form
