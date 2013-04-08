@@ -205,19 +205,6 @@
         permission="zope2.View" 
         /> 
 
-    <!-- Zope 3 browser resources -->
-
-    <!-- Resource directory for images
-      See cellml/theme/browser/images/README.txt
-      for more information about registering images as Zope 3 browser
-      resources.
-      -->
-    <browser:resourceDirectory
-        name="cellml.theme.images"
-        directory="images"
-        layer=".interfaces.IThemeSpecific"
-        />
-
     <!-- Resource directory for stylesheets
       See cellml/theme/browser/stylesheets/README.txt
       for more information about registering stylesheets as Zope 3 browser
