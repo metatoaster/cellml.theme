@@ -1,0 +1,154 @@
+html, body {
+    height: 100%;
+}
+
+html {
+}
+
+body {
+    background: #e6e8f0 url(images/body-shadow.png) center repeat-y fixed;
+}
+
+body #wrap {
+    background: #fff;
+    width: 960px;
+}
+
+#logo {
+    padding: 8px 0;
+}
+
+.navbar-inner {
+    border: none;
+    padding: 0;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.navbar-inner .nav li {
+    line-height: 20px;
+    width: 104px;
+    text-align: center;
+    white-space: nowrap;
+    border-right: 1px solid #ccc;
+}
+
+.navbar-inner .nav li a {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-inner .nav.pull-right li {
+    border-right: 0;
+    border-left: 1px solid #ccc;
+}
+
+.navbar-inner .nav li a {
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-inner .nav li a {
+    overflow: hidden;
+}
+
+#footer {
+    font-size: 10px;
+}
+
+#footer #footer-inner .inline {
+    padding: 0;
+    margin: 0;
+}
+
+#footer #footer-inner .inline li {
+    padding-right: 0;
+}
+
+#footer #footer-inner .inline li + li a {
+    border-left: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+/* Sticky footer fix */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -31px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 31px;
+    line-height: 30px;
+}
+#footer .container {
+    border-top: 1px solid #ccc;
+}
+
+/* "fluid" inner layout */
+
+#content.span6 .spansplit2 {
+    width: 220px;
+}
+
+#content.span7 .spansplit2 {
+    width: 260px;
+}
+
+#content.span8 .spansplit2 {
+    width: 300px;
+}
+
+#content.span9 .spansplit2 {
+    width: 340px;
+}
+
+#content.span10 .spansplit2 {
+    width: 380px;
+}
+
+#content.span11 .spansplit2 {
+    width: 420px;
+}
+
+#content.span12 .spansplit2 {
+    width: 440px;
+}
+
+/* link colors */
+
+.portlet .portletItem h1 a:link,
+.portlet .portletItem h1 a:visited,
+.portlet .portletItem h2 a:link,
+.portlet .portletItem h2 a:visited,
+.portlet .portletItem h3 a:link,
+.portlet .portletItem h3 a:visited,
+.portlet .portletHeader a:link,
+.portlet .portletHeader a:visited,
+.portlet .portletHeader a:hover,
+.portlet .portletHeader a:focus,
+.portlet .portletFooter a:link,
+.portlet .portletFooter a:visited,
+.portlet .portletFooter a:hover,
+.portlet .portletFooter a:focus,
+#content .listingBar a:link,
+#content .listingBar a:visited,
+#content h2 a:link,
+#content h2 a:visited,
+#content .homeTopics h2 a:link,
+#content .homeTopics h2 a:visited,
+#content .documentByLine a:link,
+#content .documentByLine a:visited {
+    color: #c00;
+}
+
+#headings .row .spansplit2 {
+    border-top: 2px #c00 solid;
+}
+
