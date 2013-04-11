@@ -1095,3 +1095,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 }
 
 /* @end */
+
+.portletHeader {
+    border-top: 1px solid #666666;
+    font-size: 14px;
+    padding: 6px 0;
+}
