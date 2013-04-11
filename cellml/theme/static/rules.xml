@@ -56,6 +56,9 @@
 
         <rules if="$have_both_portlets">
             <prepend css:theme="#content" css:content="#edit-bar" />
+            <prepend css:theme="#content"
+                css:content="#portal-column-content &gt; div &gt; .portalMessage" />
+
             <replace css:content-children="#content"
                 css:theme-children="#content" />
             <replace css:content-children="#portal-column-one"
@@ -71,6 +74,8 @@
                         />span9</xsl:attribute>
             </prepend>
             <prepend css:theme="#content" css:content="#edit-bar" />
+            <prepend css:theme="#content"
+                css:content="#portal-column-content &gt; div &gt; .portalMessage" />
 
             <replace css:content-children="#content"
                 css:theme-children="#content" />
@@ -86,6 +91,8 @@
                         />span9</xsl:attribute>
             </prepend>
             <prepend css:theme="#content" css:content="#edit-bar" />
+            <prepend css:theme="#content"
+                css:content="#portal-column-content &gt; div &gt; .portalMessage" />
 
             <replace css:content-children="#content"
                 css:theme-children="#content" />
@@ -101,6 +108,8 @@
                         />span12</xsl:attribute>
             </prepend>
             <prepend css:theme="#content" css:content="#edit-bar" />
+            <prepend css:theme="#content"
+                css:content="#portal-column-content &gt; div &gt; .portalMessage" />
 
             <replace css:content-children="#content"
                 css:theme-children="#content" />
