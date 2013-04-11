@@ -45,15 +45,93 @@
         <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
         <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" />
 
-        <!-- Edit bar -->
-        <before css:theme-children="#content" css:content="#edit-bar" />
-
         <!-- Portal messages -->
 
+        <!-- Edit bar -->
+        <!-- Do this later as there are other rules
+        <prepend css:theme="#content" css:content="#edit-bar" />
+        -->
+
         <!-- Main columns -->
-        <replace css:content-children="#content" css:theme-children="#content" />
-        <replace css:content-children="#portal-column-one" css:theme-children="#left-column" />
-        <replace css:content-children="#portal-column-two" css:theme-children="#right-column" />
+
+        <rules if="$have_both_portlets">
+            <prepend css:theme="#content" css:content="#edit-bar" />
+            <replace css:content-children="#content"
+                css:theme-children="#content" />
+            <replace css:content-children="#portal-column-one"
+                css:theme-children="#left-column" />
+            <replace css:content-children="#portal-column-two"
+                css:theme-children="#right-column" />
+        </rules>
+
+        <rules if="$have_left_portlets">
+            <prepend css:theme="#content">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="//*[@class='content']/@class"
+                        />span9</xsl:attribute>
+            </prepend>
+            <prepend css:theme="#content" css:content="#edit-bar" />
+
+            <replace css:content-children="#content"
+                css:theme-children="#content" />
+            <replace css:content-children="#portal-column-one"
+                css:theme-children="#left-column" />
+            <drop css:theme="#right-column" />
+        </rules>
+
+        <rules if="$have_right_portlets">
+            <prepend css:theme="#content">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="//*[@class='content']/@class"
+                        />span9</xsl:attribute>
+            </prepend>
+            <prepend css:theme="#content" css:content="#edit-bar" />
+
+            <replace css:content-children="#content"
+                css:theme-children="#content" />
+            <drop css:theme="#left-column" />
+            <replace css:content-children="#portal-column-two"
+                css:theme-children="#right-column" />
+        </rules>
+
+        <rules if="$have_no_portlets">
+            <prepend css:theme="#content">
+                <xsl:attribute name="class">
+                    <xsl:value-of select="//*[@class='content']/@class"
+                        />span12</xsl:attribute>
+            </prepend>
+            <prepend css:theme="#content" css:content="#edit-bar" />
+
+            <replace css:content-children="#content"
+                css:theme-children="#content" />
+            <drop css:theme="#left-column" />
+            <drop css:theme="#right-column" />
+        </rules>
+
+        <!-- Legacy tripoli-based skin -->
+        <replace css:content-children=".homeTopics.clearfix">
+            <xsl:attribute name="class">
+                <xsl:value-of select="string('container')" />
+            </xsl:attribute>
+            <xsl:attribute name="id">
+                <xsl:value-of select="string('headings')" />
+            </xsl:attribute>
+            <div class="row">
+                <xsl:apply-templates select="node()"/>
+            </div>
+        </replace>
+        <replace css:content-children=".htRowA">
+            <xsl:attribute name="class">
+                <xsl:value-of select="string('spansplit2')" />
+            </xsl:attribute>
+            <xsl:apply-templates select="node()"/>
+        </replace>
+        <replace css:content-children=".htRowB">
+            <xsl:attribute name="class">
+                <xsl:value-of select="string('spansplit2')" />
+            </xsl:attribute>
+            <xsl:apply-templates select="node()"/>
+        </replace>
 
         <!-- Footer -->
         <replace css:theme-children="#siteactions" css:content-children="#portal-siteactions" />
