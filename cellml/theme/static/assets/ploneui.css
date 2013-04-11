@@ -1101,3 +1101,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     font-size: 14px;
     padding: 6px 0;
 }
+
+.visualClear {
+    clear: both;
+}
