@@ -152,3 +152,10 @@ body #wrap {
     border-top: 2px #c00 solid;
 }
 
+
+/* form element scrollbar confusion fix - force it on */
+
+body {
+    overflow-y: scroll;
+}
+
