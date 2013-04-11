@@ -1,4 +1,0 @@
-ul#contentActionMenus li {
-    float: right;
-    width: 1%;  /* for some reason it can't automatically scale this down */
-}
