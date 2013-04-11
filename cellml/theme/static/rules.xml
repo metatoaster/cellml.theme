@@ -30,7 +30,13 @@
         <copy attributes="href" css:theme="#brand" css:content="#portal-logo" />
 
         <!-- Tabs -->
-        <replace css:theme-children="#tabs" css:content-children="#portal-globalnav" />
+        <replace css:theme-children="#tabs" css:content-children="#portal-globalnav"/>
+        <replace css:content-children="#portal-globalnav .selected">
+            <xsl:attribute name="class">
+                <xsl:value-of select="string('active')" />
+            </xsl:attribute>
+            <xsl:apply-templates select="node()"/>
+        </replace>
 
         <!-- Personal tools -->
         <replace css:theme="#account-info" css:content="#portal-personaltools" />
