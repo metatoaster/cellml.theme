@@ -39,27 +39,16 @@
 -->
 
   <order manager="plone.portaltop" skinname="CellML Theme">
-    <viewlet name="plone.app.i18n.locales.languageselector" />
-    <viewlet name="plone.header" />
-    <viewlet name="cellml.path_bar" />
-    <viewlet name="cellml.personal_bar" />
   </order>
 
   <hidden manager="plone.portaltop" skinname="CellML Theme">
-    <viewlet name="plone.personal_bar" />
+    <viewlet name="cellml.path_bar" />
+    <viewlet name="cellml.personal_bar" />
   </hidden>
 
-  <order manager="plone.portalheader" skinname="CellML Theme" purge="True">
-    <viewlet name="plone.skip_links" />
-
-    <viewlet name="cellml.header_portlets" />
-
-    <viewlet name="plone.personal_bar" />
-
-    <viewlet name="plone.app.i18n.locales.languageselector" />
-
+  <order manager="plone.portalheader" skinname="CellML Theme">
     <viewlet name="plone.logo" />
-    <viewlet name="cellml.logo" />
+    <viewlet name="cellml.logo" after="plone.logo" />
     <viewlet name="cellml.logo_linked" />
     <viewlet name="cellml.logo_linked.physiome" />
 
@@ -67,34 +56,28 @@
     <viewlet name="cellml.partof.filler" />
 
     <viewlet name="plone.searchbox" />
-    <viewlet name="cellml.search" />
 
     <viewlet name="plone.global_sections" />
-    <viewlet name="cellml.global_sections" />
 
+    <viewlet name="cellml.header_portlets" />
   </order>
 
   <hidden manager="plone.portalheader" skinname="CellML Theme" purge="True">
+    <viewlet name="cellml.global_sections" />
     <viewlet name="cellml.logo" remove="True" />
     <viewlet name="cellml.logo_linked" />
     <viewlet name="cellml.logo_linked.physiome" />
     <viewlet name="cellml.partof.iups" remove="True" />
     <viewlet name="cellml.partof.filler" />
     <viewlet name="plone.logo" />
-    <viewlet name="plone.searchbox" />
-    <viewlet name="plone.global_sections" />
-    <viewlet name="plone.site_actions" />
-    <viewlet name="plone.personal_bar" />
     <viewlet name="cellml.personal_bar" />
-    <viewlet name="cellml.search" remove="True" />
+    <viewlet name="cellml.search" />
   </hidden>
 
   <hidden manager="plone.abovecontent" skinname="CellML Theme">
-    <viewlet name="plone.path_bar" />
   </hidden>
 
   <hidden manager="plone.contentviews" skinname="CellML Theme">
-    <viewlet name="cellml.path_bar" />
   </hidden>
 
   <!--
@@ -105,16 +88,16 @@
   </order>
   -->
 
-  <order manager="cellml.stickyfooter" skinname="CellML Theme">
+  <order manager="cellml.cellmlfooter" skinname="CellML Theme">
     <viewlet name="cellml.footer_divider" />
     <viewlet name="cellml.copyright" />
     <viewlet name="cellml.iups_copyright" />
     <viewlet name="cellml.site_actions" />
-    <viewlet name="cellml.stickyfooter_portlets" />
+    <viewlet name="cellml.cellmlfooter_portlets" />
     <viewlet name="plone.analytics" />
   </order>
 
-  <hidden manager="cellml.stickyfooter" skinname="CellML Theme">
+  <hidden manager="cellml.cellmlfooter" skinname="CellML Theme">
     <viewlet name="cellml.copyright" remove="True" />
     <viewlet name="cellml.iups_copyright" />
   </hidden>
@@ -124,10 +107,6 @@
   </order>
 
   <hidden manager="plone.portalfooter" skinname="CellML Theme">
-    <viewlet name="plone.footer" />
-    <viewlet name="plone.colophon" />
-    <viewlet name="plone.analytics" />
-    <viewlet name="plone.site_actions" />
   </hidden>
 
   <!-- models.cellml.org customization -->
@@ -158,11 +137,11 @@
       based-on="CellML Theme">
   </hidden>
 
-  <order manager="cellml.stickyfooter" skinname="CellML Theme (models)"
+  <order manager="cellml.cellmlfooter" skinname="CellML Theme (models)"
       based-on="CellML Theme">
   </order>
 
-  <hidden manager="cellml.stickyfooter" skinname="CellML Theme (models)"
+  <hidden manager="cellml.cellmlfooter" skinname="CellML Theme (models)"
       based-on="CellML Theme">
     <viewlet name="cellml.copyright" remove="True" />
     <viewlet name="cellml.iups_copyright" />
@@ -204,11 +183,11 @@
       based-on="CellML Theme">
   </hidden>
 
-  <order manager="cellml.stickyfooter" skinname="CellML Theme (PMR2)"
+  <order manager="cellml.cellmlfooter" skinname="CellML Theme (PMR2)"
       based-on="CellML Theme">
   </order>
 
-  <hidden manager="cellml.stickyfooter" skinname="CellML Theme (PMR2)"
+  <hidden manager="cellml.cellmlfooter" skinname="CellML Theme (PMR2)"
       based-on="CellML Theme">
     <viewlet name="cellml.copyright" />
     <viewlet name="cellml.iups_copyright" remove="True" />

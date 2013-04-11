@@ -46,7 +46,7 @@
         />
 
     <browser:viewletManager
-        name="cellml.stickyfooter"
+        name="cellml.cellmlfooter"
         provides=".interfaces.ICellMLStickyFooter"
         class="plone.app.viewletmanager.manager.OrderedViewletManager"
         layer=".interfaces.IThemeSpecific"
@@ -191,7 +191,7 @@
         />
 
     <browser:viewlet
-        name="cellml.stickyfooter_portlets"
+        name="cellml.cellmlfooter_portlets"
         manager=".interfaces.ICellMLStickyFooter"
         template="templates/stickyfooter_portlets.pt"
         layer=".interfaces.IThemeSpecific"

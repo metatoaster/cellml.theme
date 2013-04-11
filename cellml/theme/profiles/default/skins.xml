@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
-   default_skin="cellml.theme">
+   default_skin="CellML Theme">
 
- <object name="cellml_theme_custom"
+ <object name="cellml_theme_custom_template"
     meta_type="Filesystem Directory View"
-    directory="cellml.theme:skins/cellml_theme_custom"/>
+    directory="cellml.theme:skins/cellml_theme_custom_template"/>
 
- <skin-path name="cellml.theme" based-on="Sunburst Theme">
-  <layer name="cellml_theme_custom"
+ <skin-path name="CellML Theme" based-on="Sunburst Theme">
+  <layer name="cellml_theme_custom_template"
      insert-after="custom"/>
  </skin-path>
 

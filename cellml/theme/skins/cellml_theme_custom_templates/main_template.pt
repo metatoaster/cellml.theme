@@ -161,6 +161,9 @@
         </tal:notajax>
     </div>
 
+<div id="cellml-footer">
+  <tal:block tal:content="structure provider:cellml.cellmlfooter" />
+</div>
 
     <div id="portal-footer-wrapper"
         class="row"
@@ -170,11 +173,6 @@
             <div tal:replace="structure provider:plone.portalfooter" />
         </div>
     </div>
-
-<div id="sticky-footer">
-  <tal:block tal:content="structure provider:cellml.stickyfooter" />
-</div>
-
 
 </div>
 </body>
