@@ -151,7 +151,7 @@
 
     <browser:viewlet
         name="cellml.footer_portlets"
-        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        manager=".interfaces.ICellMLStickyFooter"
         template="templates/footer_portlets.pt"
         layer=".interfaces.IThemeSpecific"
         permission="zope2.View" 
