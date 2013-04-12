@@ -152,6 +152,20 @@ body #wrap {
     border-top: 2px #c00 solid;
 }
 
+/* sponsor bar */
+
+.portlet-static-sponsors .portletHeader {
+    display: none;
+}
+
+.sponsor-bar {
+    text-align: center;
+}
+
+.sponsor-bar img {
+    margin: 0 10px;
+}
+
 
 /* form element scrollbar confusion fix - force it on */
 
