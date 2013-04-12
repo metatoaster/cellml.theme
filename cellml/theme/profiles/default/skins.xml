@@ -4,7 +4,7 @@
 
  <object name="cellml_theme_custom_template"
     meta_type="Filesystem Directory View"
-    directory="cellml.theme:skins/cellml_theme_custom_template"/>
+    directory="cellml.theme:skins/cellml_theme_custom_templates"/>
 
  <skin-path name="CellML Theme" based-on="Sunburst Theme">
   <layer name="cellml_theme_custom_template"
