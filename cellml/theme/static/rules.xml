@@ -42,8 +42,7 @@
         <replace css:theme="#account-info" css:content="#portal-personaltools" />
 
         <!-- Search -->
-        <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
-        <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" />
+        <replace css:theme-children="#searchbox" css:content="#portal-searchbox" />
 
         <!-- Portal messages -->
 

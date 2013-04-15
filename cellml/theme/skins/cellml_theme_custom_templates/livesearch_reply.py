@@ -147,7 +147,7 @@ else:
         full_title = full_title.replace('"', '&quot;')
         klass = 'contenttype-%s' \
                     % ploneUtils.normalizeString(result.portal_type)
-        write('''<a href="%s" title="%s" class="%s">%s</a>'''
+        write('''<a href="%s" title="%s" class="%s"><span class="LSTitle">%s</span>'''
                 % (itemUrl, full_title, klass, display_title))
         display_description = safe_unicode(result.Description)
         if len(display_description) > MAX_DESCRIPTION:
@@ -157,7 +157,7 @@ else:
         # need to quote it, to avoid injection of html containing javascript
         # and other evil stuff
         display_description = html_quote(display_description)
-        write('''<div class="LSDescr">%s</div>''' % (display_description))
+        write('''<span class="LSDescr">%s</span></a>''' % (display_description))
         write('''</li>''')
         full_title, display_title, display_description = None, None, None
 
