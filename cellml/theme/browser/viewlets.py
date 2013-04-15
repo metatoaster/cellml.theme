@@ -64,7 +64,7 @@ class CellMLGlobalSectionsViewlet(GlobalSectionsViewlet):
 
 
 class CellMLPersonalBarViewlet(PersonalBarViewlet):
-    pass
+    index = ViewPageTemplateFile(path('personal_bar.pt'))
 
 
 class CellMLPathBarViewlet(PathBarViewlet):

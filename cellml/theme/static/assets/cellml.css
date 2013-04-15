@@ -39,9 +39,12 @@ body #wrap {
     padding: 0;
 }
 
+#portal-personaltools .dropdown-menu > li > a {
+    font-size: 11px;
+}
+
 .navbar-inner .nav.pull-right li {
     border-right: 0;
-    border-left: 1px solid #ccc;
 }
 
 .navbar-inner .nav li a {
@@ -173,3 +176,37 @@ body {
     overflow-y: scroll;
 }
 
+#portal-personaltools .dropdown-menu {
+    min-width: auto;
+}
+
+#portal-personaltools {
+    max-width: 140px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin: 0;
+    float: right;
+}
+
+#user-name {
+    max-width: 120px;
+    overflow: hidden;
+    display: block;
+}
+
+#portal-personaltools dd {
+    margin: 0;
+    padding: 0;
+    top: inherit;
+}
+
+#portal-personaltools dd a,
+#portal-personaltools dt a {
+    color: #ccc;
+    padding: 0 10px;
+}
+
+#portal-personaltools .actionMenuHeader,
+#portal-personaltools li {
+    line-height: 20px;
+}

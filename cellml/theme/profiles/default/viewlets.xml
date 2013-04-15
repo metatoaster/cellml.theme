@@ -70,7 +70,8 @@
     <viewlet name="cellml.partof.iups" remove="True" />
     <viewlet name="cellml.partof.filler" />
     <viewlet name="plone.logo" />
-    <viewlet name="cellml.personal_bar" />
+    <viewlet name="plone.personal_bar" />
+    <viewlet name="cellml.personal_bar" remove="True"/>
     <viewlet name="cellml.search" />
   </hidden>
 
