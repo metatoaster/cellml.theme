@@ -5,4 +5,4 @@
    i18n:domain="cellml"><img 
      alt=""
      title="CellML"
-     tal:attributes="src string:${view/site_url}/++resource++cellml.theme.images/logo-cellml.png"/></a>
+     tal:attributes="src string:${view/site_url}/++theme++cellml.theme/assets/images/logo-cellml.png"/></a>

@@ -18,6 +18,10 @@ body #wrap {
     padding: 8px 0;
 }
 
+#PartOfLogo {
+    margin: 5px 0;
+}
+
 .navbar-inner {
     border: none;
     padding: 0;
@@ -209,4 +213,8 @@ body {
 #portal-personaltools .actionMenuHeader,
 #portal-personaltools li {
     line-height: 20px;
+}
+
+#search input {
+    height: 14px;
 }
