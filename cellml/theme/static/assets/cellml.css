@@ -155,6 +155,15 @@ body #wrap {
     color: #c00;
 }
 
+#headings .spansplit2 h2 {
+    margin: 0;
+}
+
+#headings .spansplit2 h2 a {
+    display: block;
+    padding: 8.8px 0;
+}
+
 #headings .row .spansplit2 {
     border-top: 2px #c00 solid;
 }
@@ -222,6 +231,95 @@ body {
 #searchbox input {
     height: 14px;
     margin: 0;
+}
+
+
+ul.navTree {
+    margin: 0 !important;
+}
+
+.portletHeader {
+    border-top: 1px solid #666666;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.portletHeader a {
+    text-decoration: none;
+    color: #c00;
+}
+
+.portletCollection .portletHeader a:hover,
+.portlet .navTreeItem a:hover,
+.portlet .portletHeader a.tile:hover,
+.portlet .portletFooter a.tile:hover,
+.portlet .portletItem a.tile:hover {
+    background: #eee;
+}
+
+.navTree .navTreeItem a,
+.portlet .portletHeader a,
+.portlet .portletFooter a.tile,
+.portlet .portletItem a.tile {
+    text-decoration: none;
+    display: block;
+    position: relative;  /* this ensures it really behaves as a block */
+}
+
+.navTree .navTreeItem a,
+.portlet .portletFooter a.tile,
+.portlet .portletItem a.tile {
+    padding: 2px 0;
+}
+
+.portlet .portletHeader a {
+    padding: 4px 0;
+}
+
+.portlet .navTreeItem a,
+.portlet .portletFooter a.tile,
+.portlet .portletItem a.tile {
+    color: #000;
+}
+
+.portlet .portletItem .portletItemDetails {
+    text-align: right;
+}
+
+/* text portlets */
+
+dl.portlet dd.portletItem ul li h3 {
+    font-size: 11px;
+}
+
+dl.portlet dd.portletItem ul li {
+    display: block;
+}
+
+dl.portlet dd.portletItem ul {
+    margin: 0;
+}
+
+/* specification document XXX temporary until we sort this out. */
+
+#content-core dl code,
+#content-core ul code,
+#content-core ol code,
+#content-core h1 code,
+#content-core h2 code,
+#content-core h3 code,
+#content-core h4 code,
+#content-core h5 code,
+#content-core table code,
+#content-core .caption code,
+#content-core .text code,
+#content-core .embedded-dtd code,
+#content-core .embedded-xml code {
+    padding: 0;
+    color: #000;
+    border: 0;
+    background-color: transparent;
+    font-size: 12px;
 }
 
 /* live search bootstrap like styles. */
