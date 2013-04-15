@@ -1,15 +1,16 @@
 from zope.component import getMultiAdapter
 
 from Products.CMFCore.utils import getToolByName
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import ViewletBase
 from plone.app.layout.viewlets.common import GlobalSectionsViewlet
 from plone.app.layout.viewlets.common import PersonalBarViewlet
 from plone.app.layout.viewlets.common import PathBarViewlet
 
+from cellml.theme.browser.templates import path, ViewPageTemplateFile
+
 
 class CellMLLogoViewlet(ViewletBase):
-    index = ViewPageTemplateFile('templates/cellml_logo.pt')
+    index = ViewPageTemplateFile(path('cellml_logo.pt'))
 
     def update(self):
         super(CellMLLogoViewlet, self).update()
@@ -39,7 +40,7 @@ class CellMLSearchBoxViewlet(ViewletBase):
     Can customize this to search through many different things.
     """
 
-    index = ViewPageTemplateFile('templates/searchbox.pt')
+    index = ViewPageTemplateFile(path('searchbox.pt'))
 
     def update(self):
         super(CellMLSearchBoxViewlet, self).update()
@@ -59,7 +60,7 @@ class CellMLSearchBoxViewlet(ViewletBase):
 
 
 class CellMLGlobalSectionsViewlet(GlobalSectionsViewlet):
-    index = ViewPageTemplateFile('templates/sections.pt')
+    index = ViewPageTemplateFile(path('sections.pt'))
 
 
 class CellMLPersonalBarViewlet(PersonalBarViewlet):
@@ -71,15 +72,15 @@ class CellMLPathBarViewlet(PathBarViewlet):
 
 
 class CellMLPartOfIUPSViewlet(ViewletBase):
-    index = ViewPageTemplateFile('templates/iups_logo.pt')
+    index = ViewPageTemplateFile(path('iups_logo.pt'))
 
 
 class CellMLPartOfFillerViewlet(ViewletBase):
-    index = ViewPageTemplateFile('templates/filler.pt')
+    index = ViewPageTemplateFile(path('filler.pt'))
 
 
 class PhysiomeLogoLinkedViewlet(CellMLLogoViewlet):
-    index = ViewPageTemplateFile('templates/physiome_logo.pt')
+    index = ViewPageTemplateFile(path('physiome_logo.pt'))
 
     def update(self):
         super(PhysiomeLogoLinkedViewlet, self).update()
