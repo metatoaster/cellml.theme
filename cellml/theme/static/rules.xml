@@ -38,6 +38,9 @@
             <xsl:apply-templates select="node()"/>
         </replace>
 
+        <!-- for the hints on content-type specific styles -->
+        <merge attributes="class" css:theme="body" css:content="body" />
+
         <!-- Personal tools -->
         <replace css:theme="#account-info" css:content="#portal-personaltools" />
 
@@ -140,6 +143,13 @@
             </xsl:attribute>
             <xsl:apply-templates select="node()"/>
         </replace>
+
+        <!--
+          PloneSoftwareCenter is dumb with its lack of classes and 
+          inline styles
+        -->
+
+        <drop attributes="style" css:content=".link-plain img" />
 
         <!-- Footer -->
         <replace css:theme-children="#cellml-footer" css:content-children="#cellml-footer" />

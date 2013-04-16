@@ -415,3 +415,29 @@ dl.portlet dd.portletItem ul {
 #searchform > .row {
     margin-left: 0px;
 }
+
+/* PloneSoftwareCenter */
+
+.portaltype-pscrelease a.link-plain img {
+    float: left;
+    display: block;
+    margin-right: 8px;
+}
+
+.portaltype-pscproject a.link-plain img {
+    position: relative;
+    top: 10px;
+}
+
+/* ugggggggggggghhhhhhhhhhhhhhh */
+
+.portaltype-pscrelease #content div[style="margin-top: 1em;"] div {
+    padding-top: 4px;
+    clear: both;
+}
+
+.portaltype-pscproject #content .pane dl dd {
+    position: relative;
+    top: -10px;
+    margin-left: 44px;
+}
