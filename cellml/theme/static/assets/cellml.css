@@ -64,23 +64,9 @@ body #wrap {
     margin-bottom: 0;
 }
 
-#breadcrumbs:hover {
-    opacity: 1;
-    -webkit-transition: opacity 0.15s linear;
-       -moz-transition: opacity 0.15s linear;
-         -o-transition: opacity 0.15s linear;
-            transition: opacity 0.15s linear;
-}
-
 #breadcrumbs {
     font-size: 10px;
-    margin-top: 3px;
-    margin-bottom: 2px;
-    opacity: 0;
-    -webkit-transition: opacity 0.15s linear;
-       -moz-transition: opacity 0.15s linear;
-         -o-transition: opacity 0.15s linear;
-            transition: opacity 0.15s linear;
+    margin: 3px 0;
 }
 
 #footer {
