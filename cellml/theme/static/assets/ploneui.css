@@ -1001,6 +1001,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 #content label {
     display: inline-block;
 }
+#content .draggable label {
+    display: inline;
+}
 
 #content input {
     margin-right: 0.5em;
