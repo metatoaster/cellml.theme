@@ -1,10 +1,8 @@
 from setuptools import setup, find_packages
 import os
 
-version = open(os.path.join("cellml", "theme", "version.txt")).read()
-
 setup(name='cellml.theme',
-      version=version,
+      version='2.0',
       description="CellML Theme",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
