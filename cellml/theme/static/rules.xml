@@ -38,6 +38,8 @@
             <xsl:apply-templates select="node()"/>
         </replace>
 
+        <replace css:theme-children="#breadcrumbs" css:content="#portal-breadcrumbs" />
+
         <!-- for the hints on content-type specific styles -->
         <merge attributes="class" css:theme="body" css:content="body" />
 
