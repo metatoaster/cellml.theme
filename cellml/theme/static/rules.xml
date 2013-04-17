@@ -154,6 +154,7 @@
         <!-- Footer -->
         <replace css:theme-children="#cellml-footer" css:content-children="#cellml-footer" />
         <replace css:theme-children="#siteactions" css:content-children="#portal-siteactions" />
+        <replace css:theme-children="#copyright" css:content-children="#copyright" />
 
     </rules>
 

@@ -206,6 +206,26 @@
         permission="zope2.View" 
         /> 
 
+    <!-- plone portal footer -->
+
+    <browser:viewlet
+        name="cellml.copyright"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        template="templates/cellml_copyright.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+    <browser:viewlet
+        name="cellml.iups_copyright"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        template="templates/physiome_copyright.pt"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
     <!-- Resource directory for stylesheets
       See cellml/theme/browser/stylesheets/README.txt
       for more information about registering stylesheets as Zope 3 browser
