@@ -14,6 +14,27 @@ body #wrap {
     width: 960px;
 }
 
+/* Existing image styles */
+
+.image-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.image-left-offgrid {
+    float: left;
+    margin: 0 8px 0 0;
+}
+
+.image-left-only {
+    float: left;
+}
+
+.image-right {
+    float: right;
+    margin-left: 20px;
+}
+
 #logo {
     padding: 8px 0;
 }
