@@ -82,12 +82,12 @@ body #wrap {
 }
 
 .navbar {
-    margin-bottom: 0;
+    margin-bottom: 4px;
 }
 
 #breadcrumbs {
     font-size: 10px;
-    margin: 3px 0;
+    margin-bottom: 3px;
 }
 
 #footer {
@@ -366,7 +366,7 @@ dl.portlet dd.portletItem ul {
     background: #fff;
     z-index: 10000;
     display: none;
-    padding: 5px 0;
+    padding: 5px 0 10px;
     margin: 2px 0 0;
     list-style: none;
     background-color: #ffffff;
@@ -430,6 +430,8 @@ dl.portlet dd.portletItem ul {
     text-decoration: none;
 }
 
+#LSNothingFound,
+.livesearchContainer div.LSRow a,
 .LSTable li.LSRow a {
     padding: 5px 20px;
     overflow: hidden;
