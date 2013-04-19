@@ -336,6 +336,15 @@ dl.portlet dd.portletItem ul {
     margin: 0;
 }
 
+input[type="checkbox"] {
+    float: left;
+}
+
+#content label .formHelp {
+    font-weight: normal;
+    display: block;
+}
+
 table.listing {
     display: block;
     overflow: auto;

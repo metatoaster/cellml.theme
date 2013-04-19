@@ -29,6 +29,12 @@
     media=""/>
 
  <stylesheet
+    id="++theme++cellml.theme/assets/ploneui.css"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="1"
+    media=""/>
+
+ <stylesheet
     id="++theme++cellml.theme/assets/theme.css"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
     applyPrefix="1"

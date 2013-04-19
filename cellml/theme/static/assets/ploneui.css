@@ -204,8 +204,11 @@ dl.error dd {
 
 /* Color differences between the two tab types */
 #content ul.formTabs {
-    background-color: #ddd;
-    border: 0.3em solid #ddd;
+    background-color: #343333;
+    border: 0.3em solid #343333;
+}
+#content ul.formTabs a {
+    color: #eee;
 }
 #edit-bar {
     background-color: #343333;
@@ -274,6 +277,7 @@ dl.error dd {
     -webkit-border-top-left-radius: 0.5em;
     -moz-border-radius-topleft: 0.5em;
     -moz-border-radius-topright: 0.5em;
+    border-bottom: 1px solid white;
 }
 #content li.formTab a.notify {
     background-color: red;
@@ -309,7 +313,7 @@ dl.error dd {
 }
 #contentActionMenus dl.actionMenu.activated dd {
     border-bottom: 0.5em solid #343333;
-        right: -3px;
+        right: -2px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
 #contentActionMenus dl.actionMenu.activated dd .actionMenuSelected {
