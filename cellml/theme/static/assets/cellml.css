@@ -351,28 +351,6 @@ table.listing {
     max-width: 100%;
 }
 
-/* specification document XXX temporary until we sort this out. */
-
-#content-core dl code,
-#content-core ul code,
-#content-core ol code,
-#content-core h1 code,
-#content-core h2 code,
-#content-core h3 code,
-#content-core h4 code,
-#content-core h5 code,
-#content-core table code,
-#content-core .caption code,
-#content-core .text code,
-#content-core .embedded-dtd code,
-#content-core .embedded-xml code {
-    padding: 0;
-    color: #000;
-    border: 0;
-    background-color: transparent;
-    font-size: 12px;
-}
-
 /* live search bootstrap like styles. */
 
 .LSResult {
