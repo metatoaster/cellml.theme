@@ -336,6 +336,12 @@ dl.portlet dd.portletItem ul {
     margin: 0;
 }
 
+table.listing {
+    display: block;
+    overflow: auto;
+    max-width: 100%;
+}
+
 /* specification document XXX temporary until we sort this out. */
 
 #content-core dl code,

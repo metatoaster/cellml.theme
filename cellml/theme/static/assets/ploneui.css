@@ -1066,3 +1066,15 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 .visualClear {
     clear: both;
 }
+
+.calendar table {
+    border-collapse: separate;
+}
+
+table[summary="User Listing"] tbody tr th {
+    max-width: 38px;
+}
+
+table[summary="User Listing"] tbody tr th:hover {
+    max-width: none;
+}
