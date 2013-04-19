@@ -59,51 +59,12 @@
 
         <!-- Main columns -->
 
-        <rules if="$have_both_portlets">
-            <prepend css:theme="#content" css:content="#edit-bar" />
-            <prepend css:theme="#content"
-                css:content="#portal-column-content &gt; div &gt; .portalMessage" />
-
-            <replace css:content-children="#content"
-                css:theme-children="#content" />
-            <replace css:content-children="#portal-column-one"
-                css:theme-children="#left-column" />
-            <replace css:content-children="#portal-column-two"
-                css:theme-children="#right-column" />
-        </rules>
-
-        <rules if="$have_left_portlets">
+        <rules if="$have_left_portlets or $have_right_portlets">
             <prepend css:theme="#content">
                 <xsl:attribute name="class">
                     <xsl:value-of select="//*[@class='content']/@class"
                         />span9</xsl:attribute>
             </prepend>
-            <prepend css:theme="#content" css:content="#edit-bar" />
-            <prepend css:theme="#content"
-                css:content="#portal-column-content &gt; div &gt; .portalMessage" />
-
-            <replace css:content-children="#content"
-                css:theme-children="#content" />
-            <replace css:content-children="#portal-column-one"
-                css:theme-children="#left-column" />
-            <drop css:theme="#right-column" />
-        </rules>
-
-        <rules if="$have_right_portlets">
-            <prepend css:theme="#content">
-                <xsl:attribute name="class">
-                    <xsl:value-of select="//*[@class='content']/@class"
-                        />span9</xsl:attribute>
-            </prepend>
-            <prepend css:theme="#content" css:content="#edit-bar" />
-            <prepend css:theme="#content"
-                css:content="#portal-column-content &gt; div &gt; .portalMessage" />
-
-            <replace css:content-children="#content"
-                css:theme-children="#content" />
-            <drop css:theme="#left-column" />
-            <replace css:content-children="#portal-column-two"
-                css:theme-children="#right-column" />
         </rules>
 
         <rules if="$have_no_portlets">
@@ -112,13 +73,24 @@
                     <xsl:value-of select="//*[@class='content']/@class"
                         />span12</xsl:attribute>
             </prepend>
-            <prepend css:theme="#content" css:content="#edit-bar" />
-            <prepend css:theme="#content"
-                css:content="#portal-column-content &gt; div &gt; .portalMessage" />
+        </rules>
 
-            <replace css:content-children="#content"
-                css:theme-children="#content" />
+        <prepend css:theme="#content" css:content="#edit-bar" />
+        <prepend css:theme="#content"
+            css:content="#portal-column-content &gt; div &gt; .portalMessage" />
+
+        <replace css:content-children="#content"
+            css:theme-children="#content" />
+        <replace css:content-children="#portal-column-one"
+            css:theme-children="#left-column" />
+        <replace css:content-children="#portal-column-two"
+            css:theme-children="#right-column" />
+
+        <rules if="$no_left_portlets">
             <drop css:theme="#left-column" />
+        </rules>
+
+        <rules if="$no_right_portlets">
             <drop css:theme="#right-column" />
         </rules>
 
