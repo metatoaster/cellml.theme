@@ -20,3 +20,11 @@
     margin: 0 5px;
 }
 
+#visual-portal-wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+#visual-portal-wrapper > div {
+    margin: 20px;
+}
