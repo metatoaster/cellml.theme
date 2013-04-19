@@ -59,21 +59,23 @@
 
         <!-- Main columns -->
 
-        <rules if="$have_left_portlets or $have_right_portlets">
-            <prepend css:theme="#content">
-                <xsl:attribute name="class">
-                    <xsl:value-of select="//*[@class='content']/@class"
-                        />span9</xsl:attribute>
-            </prepend>
-        </rules>
+        <prepend css:theme="#content">
+            <xsl:attribute name="class">
+                <xsl:value-of select="$cellml_theme_main"
+                    /></xsl:attribute>
+        </prepend>
 
-        <rules if="$have_no_portlets">
-            <prepend css:theme="#content">
-                <xsl:attribute name="class">
-                    <xsl:value-of select="//*[@class='content']/@class"
-                        />span12</xsl:attribute>
-            </prepend>
-        </rules>
+        <prepend css:theme="#left-column">
+            <xsl:attribute name="class">
+                <xsl:value-of select="$cellml_theme_left"
+                    /></xsl:attribute>
+        </prepend>
+
+        <prepend css:theme="#right-column">
+            <xsl:attribute name="class">
+                <xsl:value-of select="$cellml_theme_right"
+                    /></xsl:attribute>
+        </prepend>
 
         <prepend css:theme="#content" css:content="#edit-bar" />
         <prepend css:theme="#content"

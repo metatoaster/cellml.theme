@@ -10,7 +10,7 @@ from cellml.theme.vocab import get_layout
 
 
 class LayoutSettings(Persistent):
-    """\
+    """
     Maps between the two thing,
     """
 
@@ -20,8 +20,8 @@ class LayoutSettings(Persistent):
     layout = fieldproperty.FieldProperty(ILayoutSettings['layout'])
 
     def get_layout(self, sl, sr):
-        """\
-        Returns the new URI to the model, given the old model name.
+        """
+        Return the layout name.
         """
 
         leftcolumn, rightcolumn, bothcolumns = get_layout(self.layout)

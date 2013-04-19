@@ -32,6 +32,14 @@
 
     <browser:page
         for="*"
+        name="cellml_theme"
+        class=".view.CellMLTheme"
+        permission="zope.Public"
+        allowed_attributes="columns"
+        />
+
+    <browser:page
+        for="*"
         name="cellml_theme_layout"
         class=".form.ThemeLayoutFormView"
         permission="cmf.ModifyPortalContent"

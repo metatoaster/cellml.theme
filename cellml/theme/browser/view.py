@@ -13,6 +13,7 @@ from plone.portlets.interfaces import IPortletManagerRenderer
 
 from Acquisition import aq_inner, aq_parent, Explicit
 from Products.CMFPlone.browser.interfaces import IPlone
+from Products.Five import BrowserView
 
 import logging
 logger = logging.getLogger('cellml.theme')
@@ -174,3 +175,49 @@ class FooterPortletCount(Explicit):
     def render(self):
         # magic css class, magic max value
         return 'sticky-%d' % min(self.count, 2)
+
+
+class CellMLTheme(BrowserView):
+
+    # Since the values haven't been modified to be user configurable...
+    _values = {
+        1: (6, 3, 3), # (1, u'Both columns equal width (220px)'),
+        2: (6, 2, 4), # (2, u'Slim left, wide right (140px, 300px)'),
+        3: (6, 4, 2), # (3, u'Wide left, slim right (300px, 140px)'),
+    }
+
+    def slot_status(self):
+        ploneview = queryMultiAdapter((self.context, self.request), 
+                                      name='plone')
+        sl = ploneview.have_portlets('plone.leftcolumn', self.context)
+        sr = ploneview.have_portlets('plone.rightcolumn', self.context)
+        return sl, sr
+
+    def columns(self):
+        """
+        This method returns the span width for all three columns.
+        """
+
+        sl, sr = self.slot_status()
+        context = aq_inner(self.context)
+        index = 0
+
+        while context is not None and index == 0:
+            # see if parents have a specific layout set.
+            try:
+                settings = queryAdapter(context, name='CellMLThemeSettings')
+                if settings.layout is not None:
+                    index = settings.layout
+            except:
+                pass
+            context = aq_parent(context)
+
+        full = 12
+        main, left, right = self._values.get(index, self._values[1])
+
+        left = left * int(bool(sl))
+        right = right * int(bool(sr))
+        main = full - left - right
+        fmt = 'span%d'
+
+        return fmt % main, fmt % left, fmt % right
