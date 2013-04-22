@@ -42,7 +42,7 @@
   </order>
 
   <hidden manager="plone.portaltop" skinname="CellML Theme">
-    <viewlet name="cellml.path_bar" remove="True" />
+    <viewlet name="cellml.path_bar" />
     <viewlet name="cellml.personal_bar" />
   </hidden>
 
@@ -81,6 +81,7 @@
   </hidden>
 
   <hidden manager="plone.contentviews" skinname="CellML Theme">
+    <viewlet name="cellml.path_bar" />
   </hidden>
 
   <!--
@@ -128,7 +129,6 @@
 
   <hidden manager="plone.portaltop" skinname="CellML Theme (models)"
       based-on="CellML Theme">
-    <viewlet name="cellml.path_bar" remove="True" />
   </hidden>
 
   <order manager="plone.portalheader" skinname="CellML Theme (models)"
@@ -177,7 +177,6 @@
 
   <hidden manager="plone.portaltop" skinname="CellML Theme (PMR2)"
       based-on="CellML Theme">
-    <viewlet name="cellml.path_bar" remove="True" />
   </hidden>
 
   <order manager="plone.portalheader" skinname="CellML Theme (PMR2)"
