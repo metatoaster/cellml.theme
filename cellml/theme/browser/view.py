@@ -186,11 +186,17 @@ class CellMLTheme(BrowserView):
         3: (6, 4, 2), # (3, u'Wide left, slim right (300px, 140px)'),
     }
 
+    def set_slots(self, sl, sr):
+        self.request.set('cellml.sl', sl)
+        self.request.set('cellml.sr', sl)
+
     def slot_status(self):
         ploneview = queryMultiAdapter((self.context, self.request), 
                                       name='plone')
-        sl = ploneview.have_portlets('plone.leftcolumn', self.context)
-        sr = ploneview.have_portlets('plone.rightcolumn', self.context)
+        sl = (ploneview.have_portlets('plone.leftcolumn', self.context) or
+                self.request.get('cellml.sl'))
+        sr = (ploneview.have_portlets('plone.rightcolumn', self.context) or
+                self.request.get('cellml.sr'))
         return sl, sr
 
     def columns(self):

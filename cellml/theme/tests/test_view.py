@@ -1,5 +1,7 @@
 from unittest import TestSuite, makeSuite
 
+import zope.component
+
 from Testing import ZopeTestCase as ztc
 
 from Products.Five import fiveconfigure
@@ -33,11 +35,10 @@ class ViewTestCase(TestCase):
 
     def test_manage_portlets(self):
         self.setRoles(['Manager', 'Reviewer'])
-        view = self.portal.restrictedTraverse('front-page/@@manage-portlets')
-        # XXX as the manage-portlets does not give any easy-to-access
-        # hints for notifying the need for columns, we can't do anything
-        # here.
-        self.assertEqual(view.columns(), ('span12', 'span0', 'span0'))
+        mp = self.portal.restrictedTraverse('@@manage-portlets')
+        view = zope.component.getMultiAdapter(
+            (mp, mp.request), name='cellml_theme')
+        self.assertEqual(view.columns(), ('span6', 'span3', 'span3'))
 
 
 def test_suite():

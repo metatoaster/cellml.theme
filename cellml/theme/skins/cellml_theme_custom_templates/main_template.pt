@@ -6,6 +6,7 @@
     tal:define="portal_state context/@@plone_portal_state;
         context_state context/@@plone_context_state;
         plone_view context/@@plone;
+        cellml_view context/@@cellml_theme;
         lang portal_state/language;
         view nocall:view | nocall: plone_view;
         dummy python: plone_view.mark_view(view);
@@ -48,6 +49,7 @@
 <body tal:define="isRTL portal_state/is_rtl;
                   sl python:plone_view.have_portlets('plone.leftcolumn', view);
                   sr python:plone_view.have_portlets('plone.rightcolumn', view);
+                  dummy python: cellml_view.set_slots(sl, sr);
                   body_class python:plone_view.bodyClass(template, view);
                   classes python:context.restrictedTraverse('@@sunburstview').getColumnsClasses(view)"
     tal:attributes="class body_class;

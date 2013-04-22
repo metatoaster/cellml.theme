@@ -35,7 +35,7 @@
         name="cellml_theme"
         class=".view.CellMLTheme"
         permission="zope.Public"
-        allowed_attributes="columns"
+        allowed_attributes="columns set_slots slot_status"
         />
 
     <browser:page
