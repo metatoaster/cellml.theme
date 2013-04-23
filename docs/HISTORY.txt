@@ -1,6 +1,14 @@
 Changelog
 =========
 
+2.0 - Released (2013-04-23)
+---------------------------
+
+* Rebuilt the entire theme from scratch using the reference bootstrap
+  template with customization based on the original theme, with Diazo
+  rules defined to merge the plone templates into the template.
+* No more IE6 compatibility.  Upgrade your browsers.  Tested on IE8.
+
 1.6 - Released (2012-11-07)
 ---------------------------
 
