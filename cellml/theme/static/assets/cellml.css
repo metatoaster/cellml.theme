@@ -351,6 +351,25 @@ table.listing {
     max-width: 100%;
 }
 
+/* Portlet management */
+
+.portlets-manager .portletHeader a,
+.portlets-manager form {
+    display: inline;
+}
+
+.portlets-manager .managedPortletActions {
+    display: block;
+    float: right;
+}
+
+.portlets-manager form button {
+    border: 0;
+    padding: 0;
+    color: #c00;
+    background: transparent;
+}
+
 /* live search bootstrap like styles. */
 
 .LSResult {

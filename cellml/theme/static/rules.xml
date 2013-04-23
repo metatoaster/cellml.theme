@@ -59,6 +59,10 @@
 
         <!-- Main columns -->
 
+        <prepend css:theme="#main">
+            <xsl:attribute name="id">portal-columns</xsl:attribute>
+        </prepend> 
+
         <prepend css:theme="#content">
             <xsl:attribute name="class">
                 <xsl:value-of select="$cellml_theme_main"
