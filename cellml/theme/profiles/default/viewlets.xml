@@ -77,8 +77,7 @@
     <viewlet name="cellml.search" remove="True"/>
   </hidden>
 
-  <hidden manager="plone.abovecontent" skinname="CellML Theme">
-    <viewlet name="plone.path_bar" remove="True" />
+  <hidden manager="plone.abovecontent" skinname="CellML Theme" purge="True">
   </hidden>
 
   <hidden manager="plone.contentviews" skinname="CellML Theme">
