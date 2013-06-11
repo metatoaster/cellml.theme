@@ -28,7 +28,7 @@
         <after css:theme-children="html head" css:content="html head script" />
 
         <!-- Logo -->
-        <copy attributes="href" css:theme="#brand" css:content="#portal-logo" />
+        <replace css:theme="#logo" css:content="#logo" />
 
         <!-- Tabs -->
         <replace css:theme-children="#tabs" css:content-children="#portal-globalnav"/>

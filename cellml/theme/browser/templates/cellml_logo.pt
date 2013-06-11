@@ -1,8 +1,9 @@
-<a metal:define-macro="portal_logo"
-   id="CellMLLogo"
-   accesskey="1"
+<div metal:define-macro="portal_logo"
+     id="logo">
+   <a accesskey="1"
    tal:attributes="href view/navigation_root_url"
    i18n:domain="cellml"><img 
      alt=""
      title="CellML"
      tal:attributes="src string:${view/site_url}/++theme++cellml.theme/assets/images/logo-cellml.png"/></a>
+</div>
