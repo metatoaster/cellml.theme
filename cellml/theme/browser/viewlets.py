@@ -17,12 +17,6 @@ class CellMLLogoViewlet(ViewletBase):
 
         self.navigation_root_url = self.portal_state.navigation_root_url()
 
-        portal = self.portal_state.portal()
-        logoName = portal.restrictedTraverse('base_properties').logoName
-        self.logo_tag = portal.restrictedTraverse(logoName).tag()
-
-        self.portal_title = self.portal_state.portal_title()
-
 
 class CellMLLogoLinkedViewlet(CellMLLogoViewlet):
 
