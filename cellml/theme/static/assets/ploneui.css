@@ -54,6 +54,7 @@ dl dt span.summary a {
 
 /* @group Portlets */
 
+div.portlet dl,
 dl.portlet {
     margin: 0 0 1em;
 }
