@@ -186,6 +186,7 @@
     <viewlet name="cellml.partof.filler" />
     <viewlet name="plone.global_sections" />
     <viewlet name="cellml.pmr2.search" />
+    <viewlet name="cellml.personal_bar" />
   </order>
 
   <hidden manager="plone.portalheader" skinname="CellML Theme (PMR2)"
