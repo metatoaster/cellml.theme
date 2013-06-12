@@ -1,4 +1,6 @@
-<a id="PartOfLogo" href="http://www.physiomeproject.org"><img 
+<div id="PartOfLogo">
+  <a href="http://www.physiomeproject.org"><img 
      alt="IUPS Physiome Project"
      title="cellml.org is part of the IUPS Physiome Project"
      tal:attributes="src string:${view/site_url}/++theme++cellml.theme/assets/images/logo-iups-physiome.png"/></a>
+</div>

@@ -29,6 +29,7 @@
 
         <!-- Logo -->
         <replace css:theme="#logo" css:content="#logo" />
+        <replace css:theme-children="#PartOfLogo" css:content-children="#PartOfLogo" />
 
         <!-- Tabs -->
         <replace css:theme-children="#tabs" css:content-children="#portal-globalnav"/>
@@ -49,6 +50,7 @@
 
         <!-- Search -->
         <replace css:theme-children="#searchbox" css:content="#portal-searchbox" />
+        <after css:theme-children="#searchbox" css:content="#model-searchbox" />
 
         <!-- Portal messages -->
 
