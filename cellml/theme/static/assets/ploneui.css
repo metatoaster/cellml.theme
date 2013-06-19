@@ -1090,3 +1090,27 @@ div.error {
     padding: 0.5em;
     margin: 1em 0;
 }
+
+/* undo some unintended bootstrap side effects */
+
+.field .label {
+    font-size: inherit;
+    text-shadow: none;
+    padding: 0;
+    color: inherit;
+    background-color: transparent;
+}
+
+.ArchetypesCalendarWidget .label {
+    white-space: inherit;
+}
+
+.field .label .formHelp,
+.ArchetypesCalendarWidget .label .formHelp {
+    display: block;
+    font-weight: normal;
+}
+
+.plone_jscalendar select {
+    width: auto;
+}
