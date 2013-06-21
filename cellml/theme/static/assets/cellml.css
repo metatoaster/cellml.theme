@@ -396,6 +396,7 @@ table.listing {
     background-clip: padding-box;
 }
 
+#search-results-bar dd.actionMenuContent:before,
 .LSResult:before {
     position: absolute;
     top: -7px;
@@ -408,6 +409,7 @@ table.listing {
     content: '';
 }
 
+#search-results-bar dd.actionMenuContent:after,
 .LSResult:after {
     position: absolute;
     top: -6px;
@@ -465,6 +467,23 @@ table.listing {
 
 #searchform > .row {
     margin-left: 0px;
+}
+
+#search-results-bar dl.actionMenu {
+    float: none;
+    width: 340px;
+}
+
+#search-results-bar dd.actionMenuContent {
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+
+    background: rgba(255,255,255,.9);
 }
 
 /* PloneSoftwareCenter */

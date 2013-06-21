@@ -1101,6 +1101,11 @@ div.error {
     background-color: transparent;
 }
 
+.field .label,
+.field label {
+    cursor: default;
+}
+
 .ArchetypesCalendarWidget .label {
     white-space: inherit;
 }
