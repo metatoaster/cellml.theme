@@ -396,6 +396,7 @@ table.listing {
     background-clip: padding-box;
 }
 
+#cellml-search-results-bar dd.actionMenuContent:before,
 #search-results-bar dd.actionMenuContent:before,
 .LSResult:before {
     position: absolute;
@@ -409,6 +410,7 @@ table.listing {
     content: '';
 }
 
+#cellml-search-results-bar dd.actionMenuContent:after,
 #search-results-bar dd.actionMenuContent:after,
 .LSResult:after {
     position: absolute;
@@ -469,11 +471,13 @@ table.listing {
     margin-left: 0px;
 }
 
+#cellml-search-results-bar dl.actionMenu,
 #search-results-bar dl.actionMenu {
     float: none;
     width: 340px;
 }
 
+#cellml-search-results-bar dd.actionMenuContent,
 #search-results-bar dd.actionMenuContent {
     border: 1px solid #e5e5e5;
     -webkit-border-radius: 5px;
