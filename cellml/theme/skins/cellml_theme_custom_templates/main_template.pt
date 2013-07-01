@@ -163,7 +163,7 @@
         </tal:notajax>
     </div>
 
-<div id="cellml-footer">
+<div id="cellml-footer" tal:condition="exists:provider:cellml.cellmlfooter">
   <tal:block tal:content="structure provider:cellml.cellmlfooter" />
 </div>
 
