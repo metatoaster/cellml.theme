@@ -347,7 +347,6 @@ input[type="checkbox"] {
 }
 
 table.listing {
-    display: block;
     overflow: auto;
     max-width: 100%;
 }
