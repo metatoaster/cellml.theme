@@ -101,6 +101,7 @@ var context = context || (function () {
 		$(document).on('contextmenu', selector, function (e) {
 			e.preventDefault();
 			e.stopPropagation();
+			context.active = e;
 			
 			$('.dropdown-context:not(.dropdown-context-sub)').hide();
 			
@@ -136,6 +137,7 @@ var context = context || (function () {
 		init: initialize,
 		settings: updateOptions,
 		attach: addContext,
-		destroy: destroyContext
+		destroy: destroyContext,
+		active: null
 	};
 })();
