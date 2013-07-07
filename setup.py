@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import os
 
 setup(name='cellml.theme',
-      version='2.0',
+      version='2.1',
       description="CellML Theme",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
