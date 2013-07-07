@@ -1,6 +1,14 @@
 Changelog
 =========
 
+2.1 - Released (2013-07-08)
+---------------------------
+
+* Viewlet and portlet fixes
+* Restored functionality from 1.x series where logos are variable based
+  on domain name used to access site.
+* Included contextjs, a library for adding Javascript context menu.
+
 2.0.1 - Released (2013-06-07)
 -----------------------------
 
