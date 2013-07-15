@@ -215,9 +215,8 @@ dl.error dd {
     background-color: #343333;
     border: 0.25em solid #343333;
     font-size: 80%;
-    min-height: 2em;
     margin-bottom: 1em;
-    padding-top: 0.05em;
+    height: 17px;
 }
 #content-views {
     float: left;
@@ -278,7 +277,6 @@ dl.error dd {
     -webkit-border-top-left-radius: 0.5em;
     -moz-border-radius-topleft: 0.5em;
     -moz-border-radius-topright: 0.5em;
-    border-bottom: 1px solid white;
 }
 #content li.formTab a.notify {
     background-color: red;
@@ -671,8 +669,7 @@ fieldset,
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
     line-height: 125%;
     color: Black;
-    letter-spacing: -0.05em;
-    margin: inherit -0.05em;
+    margin: inherit 0;
     font-size: 2em; /* 26px equiv */
     font-weight: bold;
 }
