@@ -201,6 +201,7 @@ body #wrap {
 }
 
 .documentFirstHeading {
+    clear: both
     margin-top: 0;
 }
 
