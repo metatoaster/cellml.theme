@@ -515,3 +515,8 @@ table.listing {
     top: -10px;
     margin-left: 44px;
 }
+
+#layout-contents {
+    /* firefox being dumb; */
+    clear: both;
+}
