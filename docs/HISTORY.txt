@@ -1,6 +1,13 @@
 Changelog
 =========
 
+2.1.2 - Released (2013-07-16)
+-----------------------------
+
+* Forcibly clear both the margins for the large content block to address
+  the heading jogging issue in Firefox
+* Add the table class into tables for ones that have no class attribute.
+
 2.1.1 - Released (2013-07-15)
 -----------------------------
 
