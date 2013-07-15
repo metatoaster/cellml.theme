@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.1.1 - Released (2013-07-15)
+-----------------------------
+
+* Edit bar cross-browser incompatible style removed from the imported
+  stylesheet.
+
 2.1 - Released (2013-07-08)
 ---------------------------
 
