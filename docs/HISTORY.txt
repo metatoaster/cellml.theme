@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.1.x - Unreleased
+------------------
+
+* Provide alternate links.
+
 2.1.2 - Released (2013-07-16)
 -----------------------------
 
