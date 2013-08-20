@@ -1116,3 +1116,7 @@ div.error {
 .plone_jscalendar select {
     width: auto;
 }
+
+form .field .option {
+    display: inline-block;
+}
