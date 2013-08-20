@@ -1,10 +1,11 @@
 Changelog
 =========
 
-2.1.x - Unreleased
-------------------
+2.1.3 - Released (2013-08-20)
+-----------------------------
 
 * Provide alternate links.
+* Ensure the inline-block is declared for proper checkbox rendering.
 
 2.1.2 - Released (2013-07-16)
 -----------------------------
